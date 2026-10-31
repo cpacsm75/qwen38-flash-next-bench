@@ -56,8 +56,9 @@ Machine RAM 138.2–138.6 GiB, **engine RSS 127.4–127.7 GiB**, VRAM peak 31.4�
 | 159,287 | 4,192 | 60.7 | 51.7 | 30.2 s | 33.3% |
 | 241,012 | 4,118 | 60.4 | 51.1 | 21.3 s | 47.9% (63.6% prefix cache) |
 | 470,419 | 3,788 | 54.6 | 45.7 | 65.0 s | 23.5% |
+| 904,378 | 3,373 | 36.4 | — | 268.3 s | 1M via YaRN ×4, prefill-chunk 2048 |
 
-MTP adds +4–5% decode at short prompts and **+17–19%** at long ones. The model's native position count is 262,144; YaRN ×2 raises the ceiling to 524,288, and requests above it are rejected (512K cap by design).
+MTP adds +4–5% decode at short prompts and **+17–19%** at long ones. The model's native position count is 262,144; YaRN ×2 raises the ceiling to 524,288. **1M is reachable with `rope-yarn-factor = 4` plus `prefill-chunk = 2048`** — with the default 16,384-token chunk the prefill workspace (7.4 GiB) fails to allocate and the request returns HTTP 500. At 904K tokens decode falls to 36.4 tok/s as KV growth shrinks the expert cache. YaRN ×4 output quality was not evaluated.
 
 ## Cross-engine summary (approximately equal context)
 
@@ -71,6 +72,7 @@ MTP adds +4–5% decode at short prompts and **+17–19%** at long ones. The mod
 | ~512K | Infernix FP8 (on) | 470,419 | **3,788** | 54.6 |
 | ~1M | PolyStrata Q5 (on) | 1,000,964 | 3,230 | **62.6** |
 | ~1M | PolyStrata Q8 (on) | 1,000,964 | 2,631 | 44.4 |
+| ~904K | Infernix FP8 (on) | 904,378 | **3,373** | 36.4 |
 
 Prefill: Infernix FP8 is fastest in every band. Decode: PolyStrata Q5 with MTP is fastest at every length. Q8 is dominated on both axes and only buys quantization quality.
 
