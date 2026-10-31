@@ -82,3 +82,17 @@ Prefill: Infernix FP8 is fastest in every band. Decode: PolyStrata Q5 with MTP i
 - GNOME still held ~1.4 GiB VRAM during these runs.
 - Long-context rows are single requests; prefix cache state differs between rows (noted where it mattered).
 - Speed alone does not establish output quality; quantization and engine kernels differ.
+
+## Xolotl — DeepSeek-V4.1-Flash-1017 XQ (V4)
+
+- GGUF 163GB 재조립(16 parts) + Engram 테이블 202.8GB 추출 · `ds41_generate --serve` · ctx 262144 · DSpark/MTP 미사용
+- 머신 RAM 75GiB · 엔진 RSS 73.8GiB · VRAM 31.1GiB
+
+| 실제 토큰 | 프리필 tok/s | 디코드 tok/s | TTFT | RAM(머신) |
+|---:|---:|---:|---:|---:|
+| 10,257 | 420 | 37.7 | 25.5s | 74.8GiB |
+| 37,388 | 743 | 36.8 | 51.0s | 75.1GiB |
+| 153,067 | 754 | 37.6 | 154.8s | 75.2GiB |
+| 232,223 | 696 | 36.6 | 115.2s | 75.3GiB |
+
+참고: 4090 기준 공개 수치(프리필 289~409, 디코드 25.7)보다 높음. Engram·expert 일부가 NVMe에서 스트리밍되어 RAM 사용은 75GiB로 낮음.

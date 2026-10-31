@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Infernix(OpenAI 호환) 벤치: 지정 토큰 길이의 프롬프트로 prefill/decode/TTFT 측정."""
-import json, sys, time, urllib.request, pathlib, subprocess, threading
+import json, os, sys, time, urllib.request, pathlib, subprocess, threading
 
 BASE = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:20082"
 TARGETS = [int(x) for x in (sys.argv[2].split(",") if len(sys.argv) > 2 else ["8192"])]
@@ -26,7 +26,7 @@ def _vram_used_mib():
 
 def _engine_rss_gib():
     try:
-        pid = subprocess.check_output(["pgrep","-f","infernix-serve"], timeout=5).decode().split()[0]
+        pid = subprocess.check_output(["pgrep","-f", os.environ.get("BENCH_PROC","infernix-serve")], timeout=5).decode().split()[0]
         for line in open(f"/proc/{pid}/status"):
             if line.startswith("VmRSS:"):
                 return int(line.split()[1]) / 1048576
@@ -56,7 +56,7 @@ def make_prompt(tokens: int) -> str:
 def run(target: int) -> dict:
     prompt = make_prompt(target)
     payload = {
-        "model": "Qwen3.8-Flash-Next-FP8-Infernix",
+        "model": os.environ.get("BENCH_MODEL", "Qwen3.8-Flash-Next-FP8-Infernix"),
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": 128,
         "temperature": 0,
