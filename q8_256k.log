@@ -1,0 +1,8 @@
+
+qwen3.8-flash-next-unsloth-q8_0 (qwen4exp, None, context 524288)
+       prompt      tokens in            out         TTFT s  prefill tok/s   decode tok/s     cache hits      MTP right       VRAM GiB        RAM GiB          GPU %          CPU %
+        short             63            120          1.172           55.7           40.3          0.665          0.617          31.58         141.41           74.9           46.9
+  long-200000         266673            256         81.167         3290.7           50.9          0.731          0.635          31.63         142.33           99.5            9.7
+
+VRAM and RAM are the machine's use at its highest while the request ran, not the engine's alone.
+written: /data/bench-results/q8_256k.json
