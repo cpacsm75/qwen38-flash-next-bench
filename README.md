@@ -112,3 +112,17 @@ Q8은 메모리·속도 모두 열세라 실사용 가치는 품질뿐.
 
 **압도적:** FP8 대비 프리필 2.4배(9,100~10,200), 디코드 2.5배(140~153). 긴 구간에서도 140 유지.
 NVFP4 4비트 양자라 품질 트레이드오프는 별도 확인 필요. 비검열(Uncensored) NVFP4도 같은 ngram을 공유하며 /data/models/infernix-uncensored에 준비됨.
+
+## PolyStrata Q5 비검열 (Qwen3.8-Flash-Next-Uncensored Q5_K_M, 4.85bpw)
+
+- 아티팩트: `AtomicChat/Qwen3.8-Flash-Next-Uncensored-GGUF` Q5_K_M 3샤드 100GiB (orcarouter 계보, 게이트 아님)
+- 팩: `tools/iq_pack.py --compat-bf16` → 변환 460텐서, dense 1.38GiB, expert/PLE 바이트 불변
+- PLE: 원본이 Q4_1(엔진 미지원) → unsloth Q5 샤드3의 Q8_0 PLE를 단독 GGUF로 추출해 `--ple-gguf`로 사용
+- 런컨픽: `/data/PolyStrata/strata-orca-unc-q5.json`, 포트 20083, ctx 262,144, KV int8
+
+| 실제 토큰 | 프리필 tok/s | 디코드 tok/s | TTFT |
+|---:|---:|---:|---:|
+| 10,802 | 3,700 | 136.0 | 2.96s |
+| 38,552 | 5,757 | 167.1 | 6.75s |
+
+콜드 스타트(전문가 65GiB 로드 중) 첫 측정은 prefill 1,180으로 나오므로 웜 값과 구분해 기록한다.
