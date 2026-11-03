@@ -1,0 +1,45 @@
+=== 2026-11-03T21:54:01+09:00 poly7 bench start ===
+--- health ---
+{"status": "ok", "max_context": 1048576, "model": "qwen3.8-flash-next-unsloth-ud-q5_k_xl", "images": true, "api_key": false, "image_generation": false, "loaded": true, "service": "strata"}
+--- vram/ram after load ---
+31771 MiB
+메모리:          183         114           4          14          81          69
+--- bench short (64) ---
+
+qwen3.8-flash-next-unsloth-ud-q5_k_xl (qwen4exp, None, context 1048576)
+       prompt      tokens in            out         TTFT s  prefill tok/s   decode tok/s     cache hits      MTP right       VRAM GiB        RAM GiB          GPU %          CPU %
+        short             63            111          0.826           79.5           57.9          0.712           0.65          31.57         114.27           59.6           32.1
+      long-64            152            256          0.695          226.0           84.8          0.742          0.864          31.68         114.73           98.7           48.2
+
+VRAM and RAM are the machine's use at its highest while the request ran, not the engine's alone.
+written: /data/bench-results/poly7_q5_short.json
+--- bench 256k (200000) ---
+
+qwen3.8-flash-next-unsloth-ud-q5_k_xl (qwen4exp, None, context 1048576)
+       prompt      tokens in            out         TTFT s  prefill tok/s   decode tok/s     cache hits      MTP right       VRAM GiB        RAM GiB          GPU %          CPU %
+        short             63            113          0.129           47.3           85.4           0.78          0.789          31.68         114.98          100.0           49.0
+  long-200000         267035            256         63.444         4217.3           77.8          0.823          0.665          31.69         116.49           99.1           10.1
+
+VRAM and RAM are the machine's use at its highest while the request ran, not the engine's alone.
+written: /data/bench-results/poly7_q5_256k.json
+--- bench 512k (400000) ---
+
+qwen3.8-flash-next-unsloth-ud-q5_k_xl (qwen4exp, None, context 1048576)
+       prompt      tokens in            out         TTFT s  prefill tok/s   decode tok/s     cache hits      MTP right       VRAM GiB        RAM GiB          GPU %          CPU %
+        short             63            111          0.926            5.6           72.8           0.76          0.653          31.69          119.5           51.0           32.6
+  long-400000         534873            256         77.777         3516.2           70.9          0.807          0.624          31.69         120.32           99.4            9.1
+
+VRAM and RAM are the machine's use at its highest while the request ran, not the engine's alone.
+written: /data/bench-results/poly7_q5_512k.json
+--- bench 1m (750000) ---
+
+qwen3.8-flash-next-unsloth-ud-q5_k_xl (qwen4exp, None, context 1048576)
+       prompt      tokens in            out         TTFT s  prefill tok/s   decode tok/s     cache hits      MTP right       VRAM GiB        RAM GiB          GPU %          CPU %
+        short             63            113           0.11           58.3           78.6          0.739          0.771          31.69         120.25          100.0           49.8
+  long-750000        1002472            256        243.456         3045.8           66.8          0.824          0.571          31.69         121.51           99.0            7.8
+
+VRAM and RAM are the machine's use at its highest while the request ran, not the engine's alone.
+written: /data/bench-results/poly7_q5_1m.json
+--- stop ---
+{"ok": true, "unit": "strata-engine-poly-q5"}
+=== 2026-11-03T22:01:20+09:00 poly7 bench done ===

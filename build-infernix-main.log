@@ -1,0 +1,876 @@
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- The CUDA compiler identification is NVIDIA 13.4.92 with host compiler GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /data/cuda-13.4/root/usr/local/cuda-13.4/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found CUDAToolkit: /data/cuda-13.4/root/usr/local/cuda-13.4/targets/x86_64-linux/include;/data/cuda-13.4/root/usr/local/cuda-13.4/targets/x86_64-linux/include/cccl (found version "13.4.92")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for modules 'libavformat>=60;libavcodec>=60;libavutil>=58;libswscale>=7'
+--   Found libavformat, version 62.3.100
+--   Found libavcodec, version 62.11.100
+--   Found libavutil, version 60.8.100
+--   Found libswscale, version 9.1.100
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80")
+-- Checking for module 'libcurl>=7.85'
+--   Found libcurl, version 8.18.0
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /data/Infernix-main/build
+[1/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/dtype.cpp.o
+[2/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/io_priority.cpp.o
+[3/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/gpu_telemetry.cpp.o
+[4/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/copy_batch.cpp.o
+[5/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/power_throttling.cpp.o
+[6/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/cpu_topology.cpp.o
+[7/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/host_load.cpp.o
+[8/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/read_only_file_posix.cpp.o
+[9/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/host_memory.cpp.o
+[10/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/gdn_replay_records.cpp.o
+[11/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/host_worker_pool.cpp.o
+[12/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/cyclic_kv_cache.cpp.o
+[13/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/vram_budget.cpp.o
+[14/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/temporary_switches.cpp.o
+[15/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/host_context_arena.cpp.o
+[16/774] Building CUDA object src/core/CMakeFiles/infernix_core.dir/arena.cu.o
+[17/774] Building CUDA object src/core/CMakeFiles/infernix_core.dir/block_copy.cu.o
+[18/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/tensor.cpp.o
+[19/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/layout.cpp.o
+[20/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/linear_attention_state.cpp.o
+[21/774] Building CUDA object src/core/CMakeFiles/infernix_core.dir/vmm_arena.cu.o
+[22/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/dxcore_adapter.cpp.o
+[23/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/weight_view.cpp.o
+[24/774] Building CUDA object src/core/CMakeFiles/infernix_core.dir/link_probe.cu.o
+[25/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/direct_read_queue.cpp.o
+[26/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/host_kv_arena.cpp.o
+[27/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/decode_graph.cpp.o
+[28/774] Building CUDA object src/core/CMakeFiles/infernix_core.dir/device.cu.o
+[29/774] Building CUDA object src/core/CMakeFiles/infernix_core.dir/decode_graph_gate.cu.o
+[30/774] Building CXX object src/core/CMakeFiles/infernix_core.dir/paged_kv_cache.cpp.o
+[31/774] Building CXX object src/ops/CMakeFiles/infernix_offloaded_moe_cpu.dir/offloaded_sparse_moe/cpu/a4r_expert.cpp.o
+[32/774] Building CUDA object src/core/CMakeFiles/infernix_core.dir/evictable_weight_pool.cu.o
+[33/774] Building CUDA object src/ops/CMakeFiles/infernix_nvfp4_non_rdc.dir/gdn_input_proj/nvfp4/nvfp4_gdn_input_a4_tma.cu.o
+[34/774] Linking CXX static library src/core/CMakeFiles/infernix_core.dir/cmake_device_link.o
+[35/774] Linking CXX static library src/core/libinfernix_core.a
+[36/774] Building CUDA object src/ops/CMakeFiles/infernix_nvfp4_non_rdc.dir/attn_input_proj/nvfp4/nvfp4_attn_input_a4_tma.cu.o
+[37/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/weight_input.cpp.o
+[38/774] Building CUDA object src/ops/CMakeFiles/infernix_nvfp4_non_rdc.dir/linear_add/nvfp4/nvfp4_linear_add_a4_tma.cu.o
+[39/774] Building CXX object src/ops/CMakeFiles/infernix_offloaded_moe_cpu.dir/offloaded_sparse_moe/cpu/expert_team.cpp.o
+[40/774] Building CUDA object src/ops/CMakeFiles/infernix_nvfp4_non_rdc.dir/linear_swiglu/nvfp4/nvfp4_linear_swiglu_a4_tma.cu.o
+[41/774] Building CXX object src/ops/CMakeFiles/infernix_offloaded_moe_cpu.dir/offloaded_sparse_moe/cpu/w4a8_expert.cpp.o
+[42/774] Building CXX object src/ops/CMakeFiles/infernix_offloaded_moe_cpu.dir/offloaded_sparse_moe/cpu/w4a16_expert.cpp.o
+[43/774] Building CXX object src/ops/CMakeFiles/infernix_offloaded_moe_cpu.dir/offloaded_sparse_moe/cpu/w4a4_expert.cpp.o
+[44/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/add_bias.cu.o
+[45/774] Building CUDA object src/ops/CMakeFiles/infernix_nvfp4_non_rdc.dir/linear/nvfp4/nvfp4_a4_tma.cu.o
+[46/774] Building CXX object src/ops/CMakeFiles/infernix_offloaded_moe_cpu.dir/offloaded_sparse_moe/cpu/fp8_expert.cpp.o
+[47/774] Building CUDA object src/ops/CMakeFiles/infernix_nvfp4_non_rdc.dir/linear/f16acc/f16acc_split_registers.cu.o
+[48/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/cast.cu.o
+[49/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/gdn_gating.cu.o
+[50/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/mtp_round.cu.o
+[51/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/gelu.cu.o
+[52/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/argmax.cu.o
+[53/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/embed_gather.cu.o
+[54/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/position.cu.o
+[55/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/l2norm.cu.o
+[56/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/layer_norm.cu.o
+[57/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/prepare_masked_block.cu.o
+[58/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/state_codec.cu.o
+[59/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/mtp_pack.cu.o
+[60/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/prepare_ragged_prefix.cu.o
+[61/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/scalar.cu.o
+[62/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/rmsnorm_pack_tail.cu.o
+[63/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/residual_add.cu.o
+[64/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/sigmoid_gate_mul.cu.o
+[65/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/scatter.cu.o
+[66/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/causal_conv1d.cu.o
+[67/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/add_bias.cpp.o
+[68/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/target_logprobs.cu.o
+[69/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/argmax.cpp.o
+[70/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/token_constraint.cu.o
+[71/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/cast.cpp.o
+[72/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/silu_and_mul.cu.o
+[73/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/gelu.cpp.o
+[74/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/gdn_gating.cpp.o
+[75/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/embedding.cpp.o
+[76/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/causal_conv1d_silu.cpp.o
+[77/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/top_logprobs.cu.o
+[78/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/l2norm.cpp.o
+[79/774] Building CUDA object src/ops/CMakeFiles/infernix_nvfp4_non_rdc.dir/softmax_attention/dense/causal_cache/nvfp4/tiled_launch.cu.o
+[80/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/mtp_pack.cpp.o
+[81/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/layer_norm.cpp.o
+[82/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/state_codec.cpp.o
+[83/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/mtp_round.cpp.o
+[84/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/rope.cu.o
+[85/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/residual_add.cpp.o
+[86/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/prepare_ragged_prefix.cpp.o
+[87/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/prepare_masked_block.cpp.o
+[88/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/position.cpp.o
+[89/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/rmsnorm_pack_tail.cpp.o
+[90/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/rmsnorm.cu.o
+[91/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/rmsnorm.cpp.o
+[92/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/scatter.cpp.o
+[93/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/sampling.cpp.o
+[94/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/rope.cpp.o
+[95/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/sigmoid_mul.cpp.o
+[96/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/vision_pos_embed.cu.o
+[97/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/scalar.cpp.o
+[98/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/bf16/bf16_attn_input_plan.cpp.o
+[99/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/silu_mul.cpp.o
+[100/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/vision_pos_embed.cpp.o
+[101/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/target_logprobs.cpp.o
+[102/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/token_constraint.cpp.o
+[103/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/top_logprobs.cpp.o
+[104/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/speculative_round.cpp.o
+[105/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/fp8/fp8_attn_input_plan.cpp.o
+[106/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/sampling.cu.o
+[107/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/speculative_sample_drafts.cu.o
+[108/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/bf16/bf16_attn_input_decode.cu.o
+[109/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/nvfp4/nvfp4_attn_input_small_t.cu.o
+[110/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/fp8/fp8_attn_input_decode.cu.o
+[111/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/nvfp4/nvfp4_attn_input_plan.cpp.o
+[112/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/nvfp4/nvfp4_attn_input_decode.cu.o
+[113/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/bf16/bf16_attn_input_small_t.cu.o
+[114/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q4_q5/q4_q5_attn_input_plan.cpp.o
+[115/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/fp8/fp8_attn_input_a16_gemm.cu.o
+[116/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/bf16/bf16_attn_input_gemm_mma.cu.o
+[117/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/nvfp4/nvfp4_attn_input_a4.cu.o
+[118/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/nvfp4/nvfp4_attn_input_fused_rmsnorm.cu.o
+[119/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/fp8/fp8_attn_input_a16_small_t.cu.o
+[120/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q8/q8_attn_input_plan.cpp.o
+[121/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q8/q8_attn_input_decode.cu.o
+[122/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/attn_input_proj.cpp.o
+[123/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/nvfp4/nvfp4_attn_input_a16.cu.o
+[124/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q4_q5/q4_q5_attn_input_gemm_mma.cu.o
+[125/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/context_kv_materialize/context_kv_materialize.cpp.o
+[126/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q8/q8_attn_input_gemm_simt.cu.o
+[127/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/candidate_selector/bf16/candidate_selector_path_plan.cpp.o
+[128/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/fp8/fp8_attn_input_a8.cu.o
+[129/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/candidate_selector.cpp.o
+[130/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/dynamic_grouped_conv/bf16/bf16_dynamic_grouped_conv_prepare_plan.cpp.o
+[131/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/dynamic_grouped_conv/bf16/bf16_dynamic_grouped_conv_prepare_fused.cu.o
+[132/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/fp8/fp8_attn_input_n17408_k3072.cu.o
+[133/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/dynamic_grouped_conv/q8/q8_dynamic_grouped_conv_add_plan.cpp.o
+[134/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/launcher/speculative_round.cu.o
+[135/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/dynamic_grouped_conv.cpp.o
+[136/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/dynamic_grouped_conv/bf16/bf16_dynamic_grouped_conv_prepare_reduce.cu.o
+[137/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/dynamic_grouped_conv/bf16/bf16_dynamic_grouped_conv_prepare_partial.cu.o
+[138/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/gdn_gating_proj/bf16/bf16_gdn_gating_proj_plan.cpp.o
+[139/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/gdn_gating_proj.cpp.o
+[140/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_gating_proj/bf16/bf16_gdn_norm_gating_proj_27.cu.o
+[141/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/candidate_selector/bf16/candidate_selector_path.cu.o
+[142/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q8/q8_attn_input_gemm_mma.cu.o
+[143/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/fp8/fp8_gdn_input_plan.cpp.o
+[144/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/fp8/fp8_gdn_input_decode.cu.o
+[145/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/context_kv_materialize/materialize.cu.o
+[146/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/fp8/fp8_gdn_conv_plan.cpp.o
+[147/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_input_decode.cu.o
+[148/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_input_small_t.cu.o
+[149/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_input_plan.cpp.o
+[150/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/fp8/fp8_gdn_input_matrix.cu.o
+[151/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/fp8/fp8_gdn_input_a8.cu.o
+[152/774] Building CXX object src/ops/CMakeFiles/infernix_offloaded_moe_cpu.dir/offloaded_sparse_moe/cpu/ggml_expert.cpp.o
+[153/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/fp8/fp8_gdn_conv_fused.cu.o
+[154/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_snapshot_plan.cpp.o
+[155/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_snapshot_post.cu.o
+[156/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_snapshot_decode.cu.o
+[157/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_input_a4.cu.o
+[158/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_input_a16.cu.o
+[159/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q4_q5/q4_q5_gdn_input_plan.cpp.o
+[160/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_gating_proj/bf16/bf16_gdn_gating_proj_kernels.cu.o
+[161/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/fp8/fp8_gdn_input_n20480_k3072.cu.o
+[162/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q8/q8_gdn_input_plan.cpp.o
+[163/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q4_q5/q4_q5_gdn_input_gemm_mma.cu.o
+[164/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q8/q8_gdn_input_decode.cu.o
+[165/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/gdn_input_proj.cpp.o
+[166/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q8/q8_gdn_input_gemm_mma.cu.o
+[167/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/gdn_projected_conv.cu.o
+[168/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ggml/ggml_encode_producers.cu.o
+[169/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/nvfp4/nvfp4_gdn_snapshot_small_t.cu.o
+[170/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ggml/ggml_linear_a8_wide.cu.o
+[171/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q4_q5/q4_q5_attn_input_small_t.cu.o
+[172/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ggml/ggml_rows.cu.o
+[173/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/hyper_connection/hyper_connection.cu.o
+[174/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/hyper_connection/hyper_connection_q8_repack.cu.o
+[175/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/kv_cache/append/kv_cache_append.cpp.o
+[176/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/hyper_connection/hyper_connection_up_collapse.cu.o
+[177/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q4_q5/q4_q5_gdn_input_conv_snapshot.cu.o
+[178/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q8/q8_attn_input_n17408.cu.o
+[179/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ggml/ggml_linear_a8.cu.o
+[180/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/kv_cache/append/bf16p_launch.cu.o
+[181/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/kv_cache/append/nvfp4_launch.cu.o
+[182/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/kv_cache/append/launch.cu.o
+[183/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/linear.cpp.o
+[184/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/common/sliced_k_route.cpp.o
+[185/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ggml/ggml_linear_a8_tiled.cu.o
+[186/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/bf16_dispatch.cpp.o
+[187/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/kv_cache/append/k8v4_launch.cu.o
+[188/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/kv_cache/vq2_codebook.cu.o
+[189/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q8/q8_attn_input_gemm_splitk.cu.o
+[190/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/attn_input_proj/q8/q8_dflash2_attn_input.cu.o
+[191/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n14336_k5120.cu.o
+[192/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n5120_k6144.cu.o
+[193/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/hyper_connection/hyper_connection_mix_fused.cu.o
+[194/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n256_k5120.cu.o
+[195/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n48_k2560.cu.o
+[196/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/bf16_general.cu.o
+[197/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n1664_k2560.cu.o
+[198/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q4_q5/q4_q5_gdn_input_independent.cu.o
+[199/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n96_k2560.cu.o
+[200/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n320_k10240.cu.o
+[201/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n324_k10240.cu.o
+[202/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n10240_k320.cu.o
+[203/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n248320_k2560.cu.o
+[204/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n12800_k2560.cu.o
+[205/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/gdn_input_proj/q8/q8_gdn_input_gemm_splitk.cu.o
+[206/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n16384_k2560.cu.o
+[207/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ggml/ggml_linear_a8_rows.cu.o
+[208/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n2560_k2560.cu.o
+[209/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n2560_k640.cu.o
+[210/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n1280_k2560.cu.o
+[211/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n13952_k2560.cu.o
+[212/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n2560_k6144.cu.o
+[213/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n1152_k1536.cu.o
+[214/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n3456_k1152.cu.o
+[215/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16_p12/bf16_p12_pack.cu.o
+[216/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n4304_k1152.cu.o
+[217/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/fp8_format.cpp.o
+[218/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n1152_k1152.cu.o
+[219/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n1152_k4304.cu.o
+[220/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/fp8_dispatch.cpp.o
+[221/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/f16acc/f16acc_encode.cu.o
+[222/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n2560_k4608.cu.o
+[223/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/fp8_a8.cu.o
+[224/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n4608_k4608.cu.o
+[225/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/fp8_a8_pair.cu.o
+[226/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16/shapes/n5120_k4608.cu.o
+[227/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16_p12/bf16_p12_n2560_k6144.cu.o
+[228/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16_p12/bf16_p12_linear.cu.o
+[229/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n16384_k5120.cu.o
+[230/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n14336_k5120.cu.o
+[231/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n16384_k2560.cu.o
+[232/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n34816_k5120.cu.o
+[233/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n5120_k6144.cu.o
+[234/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/mxfp8/mxfp8_format.cpp.o
+[235/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/mxfp8/mxfp8_dispatch.cpp.o
+[236/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n13312_k2560.cu.o
+[237/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n5120_k17408.cu.o
+[238/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16_p12/bf16_p12_n13952_k2560.cu.o
+[239/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/bf16_p12/bf16_p12_n16384_k2560.cu.o
+[240/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n3072_k1024_f32.cu.o
+[241/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n2560_k6144.cu.o
+[242/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/nvfp4_format.cpp.o
+[243/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/nvfp4_dispatch.cpp.o
+[244/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/nvfp4_a4.cu.o
+[245/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n1280_k2560.cu.o
+[246/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n2560_k640.cu.o
+[247/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/mxfp8/shapes/n2560_k640.cu.o
+[248/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/shapes/n14336_k5120.cu.o
+[249/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/dynamic_grouped_conv/q8/q8_dynamic_grouped_conv_add_materialized.cu.o
+[250/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/mxfp8/shapes/n2560_k6144.cu.o
+[251/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/shapes/n16384_k5120.cu.o
+[252/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/shapes/n34816_k5120.cu.o
+[253/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/q4_dispatch.cpp.o
+[254/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n1024_k5120.cu.o
+[255/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/mxfp8/shapes/n1280_k2560.cu.o
+[256/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n4096_k5120.cu.o
+[257/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n248320_k5120.cu.o
+[258/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/q4_a16_simt.cu.o
+[259/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n5120_k6144.cu.o
+[260/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/q4_a16_gemv.cu.o
+[261/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/mxfp8/shapes/n13952_k2560.cu.o
+[262/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n6144_k5120.cu.o
+[263/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n7168_k5120.cu.o
+[264/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/mxfp8/shapes/n16384_k2560.cu.o
+[265/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n4304_k1152.cpp.o
+[266/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n3456_k1152.cpp.o
+[267/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/shapes/n1024_k5120.cpp.o
+[268/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/q5_dispatch.cpp.o
+[269/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n34816_k5120.cu.o
+[270/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n131072_k2048.cu.o
+[271/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n131072_k5120.cu.o
+[272/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/shapes/n131072_k3072.cu.o
+[273/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/fp8/shapes/n248320_k3072_f32.cu.o
+[274/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/shapes/n7168_k5120.cu.o
+[275/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/shapes/n1152_k1152.cpp.o
+[276/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/shapes/n1152_k4304.cpp.o
+[277/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/shapes/n6144_k5120.cu.o
+[278/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/shapes/n5120_k6144.cu.o
+[279/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/shapes/n34816_k5120.cpp.o
+[280/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/shapes/n248320_k5120.cpp.o
+[281/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/shapes/n248320_k2048.cpp.o
+[282/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/q6_dispatch.cpp.o
+[283/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/shapes/n1152_k1536.cpp.o
+[284/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/shapes/n5120_k17408.cu.o
+[285/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/q4_a16_mma.cu.o
+[286/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/q6_a16_simt.cu.o
+[287/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/q5_a16_mma.cu.o
+[288/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/q8_dispatch.cpp.o
+[289/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n1024_k2048.cpp.o
+[290/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n1024_k5120.cpp.o
+[291/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/q8_gemv.cu.o
+[292/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n12288_k2048.cpp.o
+[293/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/kv_cache/append/vq2_launch.cu.o
+[294/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/q5_a16_simt.cu.o
+[295/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/q8_sliced_k_mma.cu.o
+[296/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/shapes/n5120_k6144.cu.o
+[297/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/q8_simt.cu.o
+[298/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/q6_a16_mma.cu.o
+[299/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n2048_k4608.cpp.o
+[300/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/nvfp4/shapes/n5120_k17408.cu.o
+[301/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n2560_k6144.cu.o
+[302/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q6/q6_a16_sliced_k_mma.cu.o
+[303/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n4608_k4608.cpp.o
+[304/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q4/q4_a16_sliced_k_mma.cu.o
+[305/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n2048_k4096.cu.o
+[306/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q5/q5_a16_sliced_k_mma.cu.o
+[307/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n12288_k2560.cu.o
+[308/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n5120_k4608.cpp.o
+[309/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n2048_k16384.cu.o
+[310/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n10240_k2560.cu.o
+[311/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n9216_k2048.cpp.o
+[312/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/q8_mma.cu.o
+[313/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n248320_k5120.cu.o
+[314/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n12800_k2560.cu.o
+[315/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n5120_k10240.cu.o
+[316/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n2560_k2560.cu.o
+[317/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n17408_k5120.cu.o
+[318/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n5120_k25600.cu.o
+[319/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n14336_k5120.cu.o
+[320/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n1280_k2560.cu.o
+[321/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n324_k10240.cu.o
+[322/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n13952_k2560.cu.o
+[323/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n320_k10240.cu.o
+[324/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n10240_k320.cu.o
+[325/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_add/bf16/bf16_linear_add_plan.cpp.o
+[326/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/bf16/bf16_linear_add_decode.cu.o
+[327/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n2560_k640.cu.o
+[328/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/bf16/bf16_linear_add_small_t.cu.o
+[329/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_add/nvfp4/nvfp4_linear_add_plan.cpp.o
+[330/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n6144_k2560.cu.o
+[331/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/nvfp4/nvfp4_linear_add_small_t.cu.o
+[332/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/bf16/bf16_linear_add_gemm_mma.cu.o
+[333/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/nvfp4/nvfp4_linear_add_decode.cu.o
+[334/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_add/fp8/fp8_linear_add_plan.cpp.o
+[335/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/fp8/fp8_linear_add_decode.cu.o
+[336/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n34816_k5120.cu.o
+[337/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ggml/ggml_linear.cu.o
+[338/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n6144_k5120.cu.o
+[339/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q5/q5_linear_add_gemm_mma.cu.o
+[340/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q5/q5_linear_add_plan.cpp.o
+[341/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n5120_k17408.cu.o
+[342/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q5/q5_linear_add_ksplit_mma.cu.o
+[343/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n5120_k6144.cu.o
+[344/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/fp8/fp8_linear_add_a16.cu.o
+[345/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/nvfp4/nvfp4_linear_add_a4.cu.o
+[346/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n2560_k12800.cu.o
+[347/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q8/q8_linear_add_plan.cpp.o
+[348/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q5/q5_linear_add_gemm_simt.cu.o
+[349/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/linear_add.cpp.o
+[350/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/gated_delta_net/gated_delta_net.cpp.o
+[351/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q8/q8_linear_add_gemm_simt.cu.o
+[352/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/gated_delta_net/replay.cpp.o
+[353/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q8/q8_linear_add_gemm_grouped.cu.o
+[354/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/kimi_delta_attention/kimi_delta_attention.cpp.o
+[355/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear/q8/shapes/n16384_k2560.cu.o
+[356/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/fp8/fp8_linear_add_n3072_k8192.cu.o
+[357/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/kimi_delta_attention/recurrent.cu.o
+[358/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/gated_delta_net/chunked/prepare.cu.o
+[359/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/fp8/fp8_linear_add_a8.cu.o
+[360/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/kimi_delta_attention/chunked/prepare.cu.o
+[361/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_pair/q8/q8_pair_plan.cpp.o
+[362/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/kimi_delta_attention/chunked/recurrence.cu.o
+[363/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/linear_pair.cpp.o
+[364/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_pair/q8/q8_pair_decode.cu.o
+[365/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q4/q4_linear_swiglu_plan.cpp.o
+[366/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/gated_delta_net/chunked/recurrence.cu.o
+[367/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q4/q4_linear_add.cu.o
+[368/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q4/q4_linear_swiglu_gemm_mma.cu.o
+[369/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_pair/q8/q8_pair_gemm_mma.cu.o
+[370/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q5/q5_linear_add_sliced_k_mma.cu.o
+[371/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/nvfp4/nvfp4_linear_swiglu_plan.cpp.o
+[372/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q4/q4_linear_swiglu_w4a8.cu.o
+[373/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/nvfp4/nvfp4_linear_swiglu_decode.cu.o
+[374/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_attention/gated_delta_net/recurrent.cu.o
+[375/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/fp8/fp8_linear_swiglu_plan.cpp.o
+[376/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/fp8/fp8_linear_swiglu_decode.cu.o
+[377/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/nvfp4/nvfp4_linear_swiglu_small_t.cu.o
+[378/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q8/q8_linear_swiglu_decode.cu.o
+[379/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/nvfp4/nvfp4_linear_swiglu_a4.cu.o
+[380/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q8/q8_linear_swiglu_plan.cpp.o
+[381/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/fp8/fp8_linear_swiglu_n2048_k3072.cu.o
+[382/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q4/q4_linear_swiglu_gemv.cu.o
+[383/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/fp8/fp8_linear_swiglu_a16.cu.o
+[384/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/linear_swiglu.cpp.o
+[385/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/linear_topk.cpp.o
+[386/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q8/q8_linear_swiglu_stream_pair.cu.o
+[387/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/bf16/bf16_linear_swiglu_stream_pair.cu.o
+[388/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/fp8/fp8_linear_swiglu_a8.cu.o
+[389/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q8/q8_linear_add_gemm_mma.cu.o
+[390/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/fp8.cu.o
+[391/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/nvfp4/nvfp4_linear_add_a16.cu.o
+[392/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/q8.cu.o
+[393/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/fp8_m64.cu.o
+[394/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/q8_m64.cu.o
+[395/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/merge.cu.o
+[396/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_pair/q8/q8_pair_gemm_concat.cu.o
+[397/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/offloaded_sparse_moe/cuda/narrow_expert.cu.o
+[398/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/offloaded_sparse_moe/cpu/fetch_channel.cpp.o
+[399/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/nvfp4.cu.o
+[400/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/q4_m64.cu.o
+[401/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/ple/ple.cu.o
+[402/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/offloaded_sparse_moe/cpu/miss_service.cpp.o
+[403/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_topk/q4.cu.o
+[404/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q8/q8_dflash2_linear_swiglu.cu.o
+[405/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q8/q8_linear_swiglu_gemm_mma.cu.o
+[406/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_ops.cu.o
+[407/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q8/q8_linear_add_gemm_capacity.cu.o
+[408/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_rope.cu.o
+[409/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/offloaded_sparse_moe/cuda/wide_expert.cu.o
+[410/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_quantize.cu.o
+[411/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/offloaded_sparse_moe/cuda/rg16_linear.cu.o
+[412/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_flash.cu.o
+[413/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_pair/q8/q8_pair_gemm_splitk.cu.o
+[414/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_kv_encode.cu.o
+[415/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/projection_fp32/projection_fp32_p12.cu.o
+[416/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/projection_fp32/projection_fp32_mma.cu.o
+[417/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_linear_ggml_i.cu.o
+[418/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/projection_fp32/projection_fp32.cu.o
+[419/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_linear_ggml_k.cu.o
+[420/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_moe.cu.o
+[421/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/rmsnorm_rope/rmsnorm_rope.cpp.o
+[422/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/rows/rows.cu.o
+[423/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/rmsnorm_rope/launch.cu.o
+[424/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/resident_moe/resident_moe.cu.o
+[425/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/causal_softmax_attention.cpp.o
+[426/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/column_invariant.cu.o
+[427/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/screened_head/screened_head.cu.o
+[428/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/screened_head/screened_head_bf16.cu.o
+[429/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_swiglu/q8/q8_linear_swiglu_gemm_splitk.cu.o
+[430/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/bf16/plan.cpp.o
+[431/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/fp8/plan.cpp.o
+[432/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/int8/plan.cpp.o
+[433/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_attention.cu.o
+[434/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/qsa/qsa_select.cu.o
+[435/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/nvfp4/plan.cpp.o
+[436/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/qsa/qsa_prepare.cu.o
+[437/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/qsa/qsa.cu.o
+[438/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/k8v4/plan.cpp.o
+[439/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/vq2/launch.cu.o
+[440/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/fp8/tiled_launch.cu.o
+[441/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/qsa/qsa_prompt.cu.o
+[442/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/k8v4/tiled_launch.cu.o
+[443/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/nvfp4/fast_prompt_launch.cu.o
+[444/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/offloaded_sparse_moe/cuda/moe_layer.cu.o
+[445/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/packed/packed_softmax_attention.cpp.o
+[446/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_linear.cu.o
+[447/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/context/context_softmax_attention.cpp.o
+[448/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/sliding_window/sliding_window_attention.cpp.o
+[449/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/packed/launch.cu.o
+[450/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/sparse_moe/decode/sparse_moe_decode_kernels.cu.o
+[451/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/sparse_moe/decode/sparse_moe_decode_plan.cpp.o
+[452/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/sparse_moe/prefill/sparse_moe_prefill_kernels.cu.o
+[453/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/sparse_moe/prefill/sparse_moe_prefill_plan.cpp.o
+[454/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/context/launch.cu.o
+[455/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/sliding_window/launch.cu.o
+[456/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/sparse_moe/small_t/sparse_moe_small_t_plan.cpp.o
+[457/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/speculative_tree/speculative_tree.cpp.o
+[458/774] Building CXX object src/ops/CMakeFiles/infernix_ops.dir/wrapper/sparse_moe.cpp.o
+[459/774] Linking CXX static library src/ops/libinfernix_nvfp4_non_rdc.a
+[460/774] Linking CXX static library src/ops/libinfernix_offloaded_moe_cpu.a
+[461/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/sparse_moe/small_t/sparse_moe_small_t_kernels.cu.o
+[462/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/config.cc.o
+[463/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/speculative_tree/tree_compact.cu.o
+[464/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/cohere.cc.o
+[465/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/compiled_grammar.cc.o
+[466/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/deepseek.cc.o
+[467/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/glm.cc.o
+[468/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/kimi_k3.cc.o
+[469/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/minimax.cc.o
+[470/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/qwen.cc.o
+[471/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/gemma.cc.o
+[472/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/converter_ext/minimax_m3.cc.o
+[473/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/earley_parser.cc.o
+[474/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/fsm_builder.cc.o
+[475/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/fsm.cc.o
+[476/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/grammar.cc.o
+[477/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/grammar_builder.cc.o
+[478/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/grammar_compiler.cc.o
+[479/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/grammar_matcher.cc.o
+[480/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/grammar_functor.cc.o
+[481/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/grammar_parser.cc.o
+[482/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/grammar_printer.cc.o
+[483/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/json_number.cc.o
+[484/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/json_string_grammar.cc.o
+[485/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/regex_converter.cc.o
+[486/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/lark_converter.cc.o
+[487/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/suffix_automata.cc.o
+[488/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/json_schema_converter.cc.o
+[489/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/linear_add/q8/q8_linear_add_gemm_splitk.cu.o
+[490/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/support/logging.cc.o
+[491/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/support/recursion_guard.cc.o
+[492/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/testing.cc.o
+[493/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/formats.cpp.o
+[494/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/tokenizer_info.cc.o
+[495/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/layouts.cpp.o
+[496/774] Building CXX object third_party/xgrammar/CMakeFiles/infernix_xgrammar.dir/cpp/structural_tag.cc.o
+[497/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/file_io.cpp.o
+[498/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/fp8/launch.cu.o
+[499/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/reader.cpp.o
+[500/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/schema.cpp.o
+[501/774] Building CXX object src/text/CMakeFiles/infernix_text.dir/unicode.cpp.o
+[502/774] Building C object src/text/CMakeFiles/infernix_text.dir/__/__/third_party/utf8proc/utf8proc.c.o
+[503/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/binder.cpp.o
+[504/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/materializer.cpp.o
+[505/774] Building CXX object src/models/CMakeFiles/infernix_expert_offload_cache.dir/__/runtime/expert_offload/expert_state.cpp.o
+[506/774] Building CXX object src/artifact/CMakeFiles/infernix_artifact.dir/views.cpp.o
+[507/774] Building CXX object src/models/CMakeFiles/infernix_expert_offload_cache.dir/__/runtime/expert_offload/expert_cache.cpp.o
+[508/774] Building CXX object src/models/CMakeFiles/infernix_expert_offload_cache.dir/__/runtime/expert_offload/route_predictor.cpp.o
+[509/774] Building CXX object src/models/CMakeFiles/infernix_expert_offload_cache.dir/__/runtime/expert_offload/host_tier.cpp.o
+[510/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/jinja/lexer.cpp.o
+[511/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/jinja/string.cpp.o
+[512/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/jinja/json.cpp.o
+[513/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/jinja/unicode.cpp.o
+[514/774] Linking CXX static library third_party/xgrammar/libinfernix_xgrammar.a
+[515/774] Linking CXX static library src/artifact/libinfernix_artifact.a
+[516/774] Linking CXX static library src/text/libinfernix_text.a
+[517/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/jinja/parser.cpp.o
+[518/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/lossless/lossless_gdn.cu.o
+[519/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/jinja/runtime.cpp.o
+[520/774] Building CXX object src/text/CMakeFiles/infernix_grammar.dir/grammar.cpp.o
+[521/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/__/__/src/text/jinja.cpp.o
+[522/774] Building CXX object src/media/CMakeFiles/infernix_media_decode.dir/decode/jpeg_decode.cpp.o
+[523/774] Building CXX object third_party/llama-jinja/CMakeFiles/infernix_jinja.dir/jinja/value.cpp.o
+[524/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/registry.cpp.o
+[525/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/__/runtime/expert_offload/expert_bank.cpp.o
+[526/774] Building CXX object src/media/CMakeFiles/infernix_media_decode.dir/decode/decode.cpp.o
+[527/774] Building CXX object src/text/CMakeFiles/infernix_grammar.dir/json_schema.cpp.o
+[528/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/__/runtime/expert_offload/memory_plan.cpp.o
+[529/774] Building CXX object src/text/CMakeFiles/infernix_grammar.dir/json_input.cpp.o
+[530/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/__/runtime/expert_offload/expert_store.cpp.o
+[531/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/vq2/grouped_vq2.cu.o
+[532/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/vq2/grouped_q4.cu.o
+[533/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/model.cpp.o
+[534/774] Building CXX object src/text/CMakeFiles/infernix_grammar.dir/schema_composition.cpp.o
+[535/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/config.cpp.o
+[536/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/vision.cpp.o
+[537/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/vision_overlay.cpp.o
+[538/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/mtp.cpp.o
+[539/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/text.cpp.o
+[540/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/resources.cpp.o
+[541/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/dflash.cpp.o
+[542/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/dflash2.cpp.o
+[543/774] Linking CXX static library src/models/libinfernix_expert_offload_cache.a
+[544/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen4_exp/frontend/ngram_hash.cpp.o
+[545/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load.cpp.o
+[546/774] Building CXX object src/models/CMakeFiles/infernix_qwen3_5_calibrated_order.dir/qwen3_5/program/calibrated_order.cpp.o
+[547/774] Building CXX object src/models/CMakeFiles/infernix_qwen4_exp_calibrated_order.dir/qwen4_exp/program/calibrated_order.cpp.o
+[548/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/frontend/resources.cpp.o
+[549/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/load/prepare.cpp.o
+[550/774] Building CXX object src/runtime/CMakeFiles/infernix_runtime_support.dir/engine/public_types.cpp.o
+[551/774] Building CXX object src/runtime/CMakeFiles/infernix_runtime_support.dir/engine/context_cache/context_cost_defaults.cpp.o
+[552/774] Building CXX object src/runtime/CMakeFiles/infernix_runtime_support.dir/engine/kv_capacity.cpp.o
+[553/774] Linking CXX static library third_party/llama-jinja/libinfernix_jinja.a
+[554/774] Building CXX object src/runtime/CMakeFiles/infernix_runtime_support.dir/prefix_cache/block_hash.cpp.o
+[555/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen4_exp/config.cpp.o
+[556/774] Building CXX object third_party/spdlog/CMakeFiles/infernix_third_party_spdlog.dir/src/async.cpp.o
+[557/774] Building CXX object src/runtime/CMakeFiles/infernix_runtime_support.dir/prefix_cache/tap_planner.cpp.o
+[558/774] Building CXX object third_party/spdlog/CMakeFiles/infernix_third_party_spdlog.dir/src/cfg.cpp.o
+[559/774] Building CXX object third_party/spdlog/CMakeFiles/infernix_third_party_spdlog.dir/src/color_sinks.cpp.o
+[560/774] Building CXX object third_party/spdlog/CMakeFiles/infernix_third_party_spdlog.dir/src/file_sinks.cpp.o
+[561/774] Linking CXX static library src/text/libinfernix_grammar.a
+[562/774] Linking CXX static library src/media/libinfernix_media_decode.a
+[563/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/drafter_pool.cpp.o
+[564/774] Building CXX object src/runtime/CMakeFiles/infernix_runtime_support.dir/prefix_cache/prefix_index.cpp.o
+[565/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen3_5/frontend/tokenizer.cpp.o
+[566/774] Building CXX object third_party/spdlog/CMakeFiles/infernix_third_party_spdlog.dir/src/bundled_fmtlib_format.cpp.o
+[567/774] Building CXX object third_party/spdlog/CMakeFiles/infernix_third_party_spdlog.dir/src/stdout_sinks.cpp.o
+[568/774] Building CXX object src/runtime/CMakeFiles/infernix_runtime_support.dir/engine/context_cache/context_cost.cpp.o
+[569/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/route_trace.cpp.o
+[570/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/expert_stream.cpp.o
+[571/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/vram_monitor.cpp.o
+[572/774] Building CXX object src/models/CMakeFiles/infernix_model_loading.dir/qwen4_exp/load.cpp.o
+[573/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/placement.cpp.o
+[574/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/reasoning_loop.cpp.o
+[575/774] Building CXX object third_party/spdlog/CMakeFiles/infernix_third_party_spdlog.dir/src/spdlog.cpp.o
+[576/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/digest.cpp.o
+[577/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/prompt_layout.cpp.o
+[578/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/expert_residency.cpp.o
+[579/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/expert_offload.cpp.o
+/data/Infernix-main/src/runtime/expert_offload/expert_offload.cpp: In member function ‘void infernix::runtime::expert_offload::ExpertOffload::report_layers()’:
+/data/Infernix-main/src/runtime/expert_offload/expert_offload.cpp:1242:60: warning: ‘%llu’ directive output may be truncated writing between 1 and 20 bytes into a region of size between 0 and 32 [-Wformat-truncation=]
+ 1242 |             std::snprintf(part, sizeof(part), " %zu:%.1f%%(%llu)", layer,
+      |                                                            ^~~~
+/data/Infernix-main/src/runtime/expert_offload/expert_offload.cpp:1242:47: note: directive argument in the range [1, 18446744073709551615]
+ 1242 |             std::snprintf(part, sizeof(part), " %zu:%.1f%%(%llu)", layer,
+      |                                               ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:974,
+                 from /usr/include/c++/15/cstdio:47,
+                 from /usr/include/c++/15/ext/string_conversions.h:47,
+                 from /usr/include/c++/15/bits/basic_string.h:4442,
+                 from /usr/include/c++/15/string:56,
+                 from /data/Infernix-main/src/core/host_memory.h:7,
+                 from /data/Infernix-main/src/runtime/expert_offload/expert_offload.h:25,
+                 from /data/Infernix-main/src/runtime/expert_offload/expert_offload.cpp:1:
+In function ‘int snprintf(char*, size_t, const char*, ...)’,
+    inlined from ‘void infernix::runtime::expert_offload::ExpertOffload::report_layers()’ at /data/Infernix-main/src/runtime/expert_offload/expert_offload.cpp:1242:26:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:35: note: ‘__builtin___snprintf_chk’ output between 11 and 357 bytes into a destination of size 40
+   68 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   69 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   70 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+[580/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/__/runtime/expert_offload/host_expert_tier.cpp.o
+[581/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/output_session.cpp.o
+[582/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/media_cache.cpp.o
+[583/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/processor.cpp.o
+[584/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/attention.cpp.o
+[585/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/chat_template.cpp.o
+[586/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/tool_call_parser.cpp.o
+[587/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/parameters.cpp.o
+[588/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/ffn.cpp.o
+[589/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/frontend.cpp.o
+[590/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/tool_grammar.cpp.o
+[591/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/gdn.cpp.o
+[592/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/frontend/tool_contract.cpp.o
+[593/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/mtp.cpp.o
+[594/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/offloaded_moe.cpp.o
+[595/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/visual_scatter.cpp.o
+[596/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/lossless.cpp.o
+[597/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/vision_weight_stream.cpp.o
+[598/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/vision.cpp.o
+[599/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/vision_tower.cpp.o
+[600/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/vision_overlay.cpp.o
+[601/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/ngram.cpp.o
+[602/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/state/decoder_state.cpp.o
+[603/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/text.cpp.o
+[604/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/state/state_image.cpp.o
+[605/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/context_work.cpp.o
+[606/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/execution/draft.cpp.o
+[607/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/measurement.cpp.o
+[608/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/ledger_splits.cpp.o
+[609/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/round_buffers.cpp.o
+[610/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/vision_control.cpp.o
+[611/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/program.cpp.o
+[612/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/graphs.cpp.o
+[613/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/constraint.cpp.o
+[614/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/grammar_masks.cpp.o
+[615/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/prefill.cpp.o
+[616/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/program_impl.cpp.o
+[617/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/offload.cpp.o
+[618/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/nvfp4/launch.cu.o
+[619/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/decode.cpp.o
+[620/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/planning/fast_paths.cpp.o
+[621/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/elastic_kv.cpp.o
+[622/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/planning/graph_profiles.cpp.o
+[623/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/storage/draft_context.cpp.o
+[624/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/planning/request_plan.cpp.o
+[625/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/storage/sequence.cpp.o
+[626/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/speculative/mtp_draft_policy.cpp.o
+[627/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/planning/startup.cpp.o
+[628/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/transactions/context_transaction.cpp.o
+[629/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/speculative/mtp_confidence_policy.cpp.o
+[630/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/transactions/commit.cpp.o
+[631/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/transactions/binding.cpp.o
+[632/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/speculative/dflash_width_policy.cpp.o
+[633/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/speculative/tree_width_controller.cpp.o
+[634/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/transactions/pause.cpp.o
+[635/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/transactions/replay.cpp.o
+[636/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/speculative/mtp.cpp.o
+[637/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/prefix/block_keys.cpp.o
+[638/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/prefix/hybrid_host_layout.cpp.o
+[639/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/bf16/launch.cu.o
+[640/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/execution/activation_scan.cpp.o
+[641/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/prefix/hybrid_persist.cpp.o
+[642/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/speculative/target_verification.cpp.o
+[643/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/rope_positions.cpp.o
+[644/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/prefix/hybrid_cache.cpp.o
+[645/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/ngram_volume.cpp.o
+[646/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/execution/forward_lossless.cpp.o
+[647/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/fast_paths.cpp.o
+[648/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/execution/forward.cpp.o
+[649/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/execution/dflash2.cpp.o
+[650/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/execution/parameters.cpp.o
+[651/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/vision_window.cpp.o
+[652/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen3_5/program/prefix/hybrid_program.cpp.o
+[653/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/prefix/call_plan.cpp.o
+[654/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/vision_program.cpp.o
+[655/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/dflash2_program.cpp.o
+[656/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/prefill_walk.cpp.o
+[657/774] Linking CXX static library src/models/libinfernix_qwen3_5_calibrated_order.a
+[658/774] Linking CXX static library src/models/libinfernix_qwen4_exp_calibrated_order.a
+[659/774] Linking CXX static library src/runtime/libinfernix_runtime_support.a
+[660/774] Linking CXX static library third_party/spdlog/libinfernix_third_party_spdlog.a
+[661/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/prefix/state_image.cpp.o
+[662/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/cpu_rates.cpp.o
+[663/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/graph_set.cpp.o
+[664/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/constraint.cpp.o
+[665/774] Building CXX object src/runtime/CMakeFiles/infernix_engine.dir/engine/engine_plan.cpp.o
+[666/774] Building CXX object src/runtime/CMakeFiles/infernix_engine.dir/engine/expert_memory.cpp.o
+[667/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/k8v4/launch.cu.o
+[668/774] Building CXX object src/runtime/CMakeFiles/infernix_engine.dir/contract/sampling.cpp.o
+[669/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/prefix/persist.cpp.o
+[670/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/score.cpp.o
+[671/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/prefix/prefix_cache.cpp.o
+[672/774] Building CXX object src/product/CMakeFiles/infernix_product_logging.dir/logging/pretty_format.cpp.o
+[673/774] Building CXX object src/product/CMakeFiles/infernix_media_acquire.dir/media_acquire/acquire.cpp.o
+[674/774] Linking CXX static library src/product/libinfernix_media_acquire.a
+[675/774] Building CXX object src/product/CMakeFiles/infernix_product_logging.dir/logging/engine_diagnostics.cpp.o
+[676/774] Embedding the launcher's web UI and catalog
+[677/774] Building CXX object src/product/CMakeFiles/infernix_product_logging.dir/logging/logging.cpp.o
+[678/774] Building CXX object src/product/CMakeFiles/infernix_product_logging.dir/logging/startup_log.cpp.o
+[679/774] Linking CXX static library src/product/libinfernix_product_logging.a
+[680/774] Building CXX object src/runtime/CMakeFiles/infernix_engine.dir/engine/qwen4_exp_instance.cpp.o
+[681/774] Building CXX object src/runtime/CMakeFiles/infernix_engine.dir/engine/model_instance.cpp.o
+[682/774] Building CXX object src/product/CMakeFiles/infernix_product_config.dir/config/config_file.cpp.o
+[683/774] Linking CXX static library src/product/libinfernix_product_config.a
+[684/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/prefix/prefix_program.cpp.o
+[685/774] Building CXX object src/models/CMakeFiles/infernix_model_runtime.dir/qwen4_exp/program/program.cpp.o
+In file included from /data/Infernix-main/src/models/qwen4_exp/program/program.cpp:1:
+/data/Infernix-main/src/models/qwen4_exp/program/program_impl.h: In member function ‘void infernix::models::qwen4_exp::Program::shutdown_cleanup()’:
+/data/Infernix-main/src/models/qwen4_exp/program/program_impl.h:3513:64: warning: ‘%llu’ directive output may be truncated writing between 1 and 20 bytes into a region of size between 0 and 32 [-Wformat-truncation=]
+ 3513 |                 std::snprintf(part, sizeof(part), " %zu:%.1f%%(%llu)", layer,
+      |                                                                ^~~~
+In member function ‘void infernix::models::qwen4_exp::detail::ProgramImpl::report_cache_layers()’,
+    inlined from ‘void infernix::models::qwen4_exp::Program::shutdown_cleanup()’ at /data/Infernix-main/src/models/qwen4_exp/program/program.cpp:142:31:
+/data/Infernix-main/src/models/qwen4_exp/program/program_impl.h:3513:51: note: directive argument in the range [1, 18446744073709551615]
+ 3513 |                 std::snprintf(part, sizeof(part), " %zu:%.1f%%(%llu)", layer,
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:974,
+                 from /usr/include/c++/15/cstdio:47,
+                 from /usr/include/c++/15/ext/string_conversions.h:47,
+                 from /usr/include/c++/15/bits/basic_string.h:4442,
+                 from /usr/include/c++/15/string:56,
+                 from /usr/include/c++/15/bits/locale_classes.h:42,
+                 from /usr/include/c++/15/bits/ios_base.h:43,
+                 from /usr/include/c++/15/ios:46,
+                 from /usr/include/c++/15/istream:42,
+                 from /usr/include/c++/15/sstream:42,
+                 from /usr/include/c++/15/chrono:51,
+                 from /data/Infernix-main/include/infernix/types.h:4,
+                 from /data/Infernix-main/src/models/qwen3_5/frontend/frontend.h:3,
+                 from /data/Infernix-main/src/models/qwen4_exp/program/program.h:13,
+                 from /data/Infernix-main/src/models/qwen4_exp/program/program_impl.h:3:
+In function ‘int snprintf(char*, size_t, const char*, ...)’,
+    inlined from ‘void infernix::models::qwen4_exp::detail::ProgramImpl::report_cache_layers()’ at /data/Infernix-main/src/models/qwen4_exp/program/program_impl.h:3513:30,
+    inlined from ‘void infernix::models::qwen4_exp::Program::shutdown_cleanup()’ at /data/Infernix-main/src/models/qwen4_exp/program/program.cpp:142:31:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:35: note: ‘__builtin___snprintf_chk’ output between 11 and 357 bytes into a destination of size 40
+   68 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   69 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   70 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+[686/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/request_validation.cpp.o
+[687/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_chat_request.cpp.o
+[688/774] Building CXX object src/product/CMakeFiles/infernix_product_prompt_input.dir/prompt_input/prompt_input.cpp.o
+[689/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_common.cpp.o
+[690/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_chat_response.cpp.o
+[691/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_responses_state.cpp.o
+[692/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/decide.cpp.o
+[693/774] Building CXX object src/runtime/CMakeFiles/infernix_engine.dir/engine/engine.cpp.o
+[694/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/anthropic_tool_search.cpp.o
+[695/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/anthropic_messages_request.cpp.o
+[696/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_responses_response.cpp.o
+[697/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/http_transport.cpp.o
+[698/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/tool_search.cpp.o
+[699/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_responses_request.cpp.o
+[700/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/server_tools.cpp.o
+[701/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_chat_http.cpp.o
+[702/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/reasoning_store.cpp.o
+[703/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_responses_store.cpp.o
+[704/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/request_events.cpp.o
+[705/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/anthropic_messages_response.cpp.o
+[706/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/console_stats.cpp.o
+[707/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/decide_http.cpp.o
+[708/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/metrics.cpp.o
+[709/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/generation_service.cpp.o
+[710/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/prefix_miss.cpp.o
+[711/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/operational_log.cpp.o
+[712/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/translate.cpp.o
+[713/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/args.cpp.o
+[714/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/stop_control.cpp.o
+[715/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/plan_report.cpp.o
+[716/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/serve_options.cpp.o
+[717/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/metrics_json.cpp.o
+[718/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/event_log.cpp.o
+[719/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/anthropic_messages_http.cpp.o
+[720/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/events.cpp.o
+[721/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/launch_script.cpp.o
+[722/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/chats.cpp.o
+[723/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/hf_hub.cpp.o
+[724/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/request_log.cpp.o
+[725/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/model_defaults.cpp.o
+[726/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/downloads.cpp.o
+[727/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/routing.cpp.o
+[728/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/router.cpp.o
+[729/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/log_buffer.cpp.o
+[730/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/process.cpp.o
+[731/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/artifact_scan.cpp.o
+[732/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/sha256.cpp.o
+[733/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/load_advice.cpp.o
+[734/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/util.cpp.o
+[735/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/serve_help.cpp.o
+[736/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/__/__/generated/launcher_assets.cpp.o
+[737/774] Linking CXX static library src/product/libinfernix_product_prompt_input.a
+[738/774] Stamping INFERNIX build id from git (build-time)
+-- INFERNIX build id: windows-2026.11.01-92-g048d484d
+[739/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/telemetry.cpp.o
+[740/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/usage.cpp.o
+[741/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/http_server.cpp.o
+[742/774] Building CXX object apps/CMakeFiles/infernix.dir/cli/main.cpp.o
+[743/774] Building CXX object apps/CMakeFiles/infernix.dir/cli/options.cpp.o
+[744/774] Building CXX object apps/CMakeFiles/infernix-perplexity.dir/perplexity/evaluation.cpp.o
+[745/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/store.cpp.o
+[746/774] Building CXX object src/serve/CMakeFiles/infernix_serve.dir/openai_responses_http.cpp.o
+[747/774] Building CXX object apps/CMakeFiles/infernix-perplexity.dir/perplexity/corpus.cpp.o
+[748/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/updates.cpp.o
+[749/774] Building CXX object apps/CMakeFiles/infernix-perplexity.dir/perplexity/distribution.cpp.o
+[750/774] Building CXX object apps/CMakeFiles/infernix-certify.dir/certify/llama_kld.cpp.o
+/data/Infernix-main/apps/certify/llama_kld.cpp: In instantiation of ‘void infernix::certify::llama::{anonymous}::line(std::string&, const char*, Args ...) [with Args = {}; std::string = std::__cxx11::basic_string<char>]’:
+/data/Infernix-main/apps/certify/llama_kld.cpp:220:9:   required from here
+  220 |     line(out, "====== Perplexity statistics ======\n");
+      |     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/Infernix-main/apps/certify/llama_kld.cpp:64:38: warning: format not a string literal and no format arguments [-Wformat-security]
+   64 |     const int written = std::snprintf(buffer, sizeof buffer, format, args...);
+      |                         ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[751/774] Building CXX object apps/CMakeFiles/infernix-perplexity.dir/perplexity/main.cpp.o
+[752/774] Building CXX object apps/CMakeFiles/infernix-certify.dir/perplexity/distribution.cpp.o
+[753/774] Building CXX object apps/CMakeFiles/infernix-certify.dir/certify/iqs_corpus.cpp.o
+[754/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/proxy.cpp.o
+[755/774] Building CXX object apps/CMakeFiles/infernix-launcher.dir/launcher/main.cpp.o
+[756/774] Building CXX object apps/CMakeFiles/infernix-serve.dir/serve/main.cpp.o
+[757/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/supervisor.cpp.o
+[758/774] Building CXX object apps/CMakeFiles/infernix-certify.dir/certify/main.cpp.o
+[759/774] Building CXX object src/launcher/CMakeFiles/infernix_launcher.dir/launcher.cpp.o
+[760/774] Linking CXX static library src/launcher/libinfernix_launcher.a
+[761/774] Linking CXX executable apps/infernix-launcher
+[762/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/int8/launch.cu.o
+[763/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/vq2/prompt_vq2.cu.o
+[764/774] Building CUDA object src/ops/CMakeFiles/infernix_ops.dir/softmax_attention/dense/causal_cache/vq2/prompt_q4.cu.o
+[765/774] Linking CXX static library src/ops/CMakeFiles/infernix_ops.dir/cmake_device_link.o
+[766/774] Linking CXX static library src/ops/libinfernix_ops.a
+[767/774] Linking CXX static library src/models/libinfernix_model_loading.a
+[768/774] Linking CXX static library src/models/libinfernix_model_runtime.a
+[769/774] Linking CXX static library src/runtime/libinfernix_engine.a
+[770/774] Linking CXX static library src/serve/libinfernix_serve.a
+[771/774] Linking CXX executable apps/infernix
+[772/774] Linking CXX executable apps/infernix-serve
+[773/774] Linking CXX executable apps/infernix-perplexity
+[774/774] Linking CXX executable apps/infernix-certify
+BUILD_OK

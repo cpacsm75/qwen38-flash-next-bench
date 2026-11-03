@@ -1,0 +1,13 @@
+=== 2026-11-03T22:20:28+09:00 dense8-long + fp8 repeat start ===
+Running as unit: inf-dense8-bench.service; invocation ID: a506c4af3fb6478f9eed22effc1b4ec5
+--- dense8-long health ---
+{"status":"ok"}
+model id: Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix
+{"target_tokens": 390000, "prompt_tokens": 470055, "completion_tokens": 128, "eng_prompt_ms": 56302.405875, "eng_prefill_tok_s": 8348.755132126937, "eng_decode_tok_s": 109.20262160618427, "ram_base_gib": 132.2, "ram_peak_gib": 132.5, "engine_rss_gib": 127.1, "vram_peak_mib": 31504, "ttft_s": 56.4, "total_s": 57.62, "prefill_tok_s": 8333.9, "decode_tok_s": 104.9}
+written /data/bench-results/dense8_512k.json
+--- fp8 health ---
+{"status":"ok"}
+model id: Qwen3.8-Flash-Next-FP8-Infernix
+{"target_tokens": 390000, "prompt_tokens": 470055, "completion_tokens": 128, "eng_prompt_ms": 117598.26655, "eng_prefill_tok_s": 3997.125245040442, "eng_decode_tok_s": 54.35828756829563, "ram_base_gib": 133.4, "ram_peak_gib": 133.9, "engine_rss_gib": 127.6, "vram_peak_mib": 31506, "ttft_s": 117.71, "total_s": 120.1, "prefill_tok_s": 3993.5, "decode_tok_s": 53.5}
+written /data/bench-results/fp8_512k_rerun.json
+=== 2026-11-03T22:24:47+09:00 done ===

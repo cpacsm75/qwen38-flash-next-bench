@@ -1,0 +1,6 @@
+=== 2026-11-03T22:46:13+09:00 ds41 512K vram-boost start ===
+Running as unit: ds41-vram-bench.service; invocation ID: 8388fa36f0bf4b1eaea8999f266ce198
+{"status": "ok", "max_context": 524288, "model": "deepseek-v4.1-flash-1017-xq-512k-vram", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+tier: 0 experts in VRAM, 0 on the remote card (0.0 GiB), 13751 in the RAM arena (130.0 GiB), 1609 file tier; seeded in 38.7 s
+serve: VRAM ready seed -> 1539 experts in VRAM, 13751 arena (seed 0.41 s)
+model id: deepseek-v4.1-flash-1017-xq-512k-vram

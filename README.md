@@ -126,3 +126,20 @@ NVFP4 4비트 양자라 품질 트레이드오프는 별도 확인 필요. 비�
 | 38,552 | 5,757 | 167.1 | 6.75s |
 
 콜드 스타트(전문가 65GiB 로드 중) 첫 측정은 prefill 1,180으로 나오므로 웜 값과 구분해 기록한다.
+
+---
+
+## 2026-11-03 업그레이드 재벤치 (PolyStrata poly.7 · Infernix 11-03 빌드 · DeepSeek arena 130)
+
+전체 표와 상세는 [`UPGRADE_2026-11-03.md`](UPGRADE_2026-11-03.md). 요점만:
+
+| 엔진 | 이전 | 이후 | 512K 프리필 / 디코드 |
+|---|---|---|---|
+| PolyStrata Q5 | poly.6 (20d839d) | **poly.7 (fabae0d)** | 3,863.3 / 74.0 (poly.6: 3,767.2 / 72.7) |
+| Infernix FP8 | 10-31 빌드 (CUDA 13.1) | **11-03 tip (CUDA 13.4)** | 3,991 / 53.5 (구빌드: 3,788 / 54.6) — 프리필 **+5.4%**, RAM −4.9 GiB |
+| Infernix Dense8 | 동일 빌드, YaRN2 TOML | — | **8,333.9 / 104.9** (512K 첫 측정치) |
+| DeepSeek V4 XQ | arena 60 | **arena 130** | 452,727토큰: 1,056.4 / 42.0 (arena 110: 968.3 / 42.0) |
+
+- 딥시크는 arena 130에서 file tier 10,054 → **1,609**. 같은 조건의 256K는 1,274.2 / 45.1로 512K보다 프리필 +20.6%.
+- `--prompt-batch 4096 + --vram-margin 0.5`는 **채택 안 함**: expert seed +45개(+3%)뿐이고 prefill만 느려짐(7분 초과).
+- 상류 제출: PolyStrata **PR #131**, Infernix **issue #58**, Xolotl **issue #114**.

@@ -1,0 +1,7 @@
+=== 2026-11-03T22:41:58+09:00 ds41 256K @arena130 start ===
+Running as unit: ds41-256k-bench.service; invocation ID: cc5cc679ec7d4d3aaad0f369dd604f50
+{"status": "ok", "max_context": 524288, "model": "deepseek-v4.1-flash-1017-xq-512k", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+model id: deepseek-v4.1-flash-1017-xq-512k
+{"target_tokens": 200000, "prompt_tokens": 232201, "completion_tokens": 128, "eng_prompt_ms": 182227.9, "eng_prefill_tok_s": 1274.2, "eng_decode_tok_s": 45.1, "ram_base_gib": 137.2, "ram_peak_gib": 140.7, "engine_rss_gib": 135.0, "vram_peak_mib": 31078, "ttft_s": 183.99, "total_s": 186.83, "prefill_tok_s": 1262.0, "decode_tok_s": 45.1}
+written /data/bench-results/ds41_256k_arena130.json
+=== 2026-11-03T22:45:56+09:00 done ===

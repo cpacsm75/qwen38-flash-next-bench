@@ -1,0 +1,16 @@
+=== 2026-11-03T22:24:57+09:00 ds41 512K arena A/B start (power 450.00 W) ===
+--- arena 110 ---
+Running as unit: ds41-512k-bench.service; invocation ID: f8d99a4f488643ff8bac63c3edf6d8c2
+{"status": "ok", "max_context": 524288, "model": "deepseek-v4.1-flash-1017-xq-512k", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+model id: deepseek-v4.1-flash-1017-xq-512k
+--- arena line ---
+{"target_tokens": 390000, "prompt_tokens": 452727, "completion_tokens": 128, "eng_prompt_ms": 467525.9, "eng_prefill_tok_s": 968.3, "eng_decode_tok_s": 42.0, "ram_base_gib": 117.3, "ram_peak_gib": 120.8, "engine_rss_gib": 123.2, "vram_peak_mib": 31078, "ttft_s": 470.12, "total_s": 473.17, "prefill_tok_s": 963.0, "decode_tok_s": 42.0}
+written /data/bench-results/ds41_512k_arena110.json
+--- arena 130 ---
+Running as unit: ds41-512k-bench.service; invocation ID: a0cd26d7394f460a934943be5ae936c7
+{"status": "ok", "max_context": 524288, "model": "deepseek-v4.1-flash-1017-xq-512k", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+model id: deepseek-v4.1-flash-1017-xq-512k
+--- arena line ---
+{"target_tokens": 390000, "prompt_tokens": 452727, "completion_tokens": 128, "eng_prompt_ms": 428558.3, "eng_prefill_tok_s": 1056.4, "eng_decode_tok_s": 42.0, "ram_base_gib": 136.2, "ram_peak_gib": 141.1, "engine_rss_gib": 134.9, "vram_peak_mib": 31070, "ttft_s": 431.56, "total_s": 434.61, "prefill_tok_s": 1049.1, "decode_tok_s": 42.0}
+written /data/bench-results/ds41_512k_arena130.json
+=== 2026-11-03T22:41:35+09:00 ds41 512K A/B done ===

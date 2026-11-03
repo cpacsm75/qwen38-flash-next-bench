@@ -1,0 +1,77 @@
+=== 2026-11-03T22:12:57+09:00 512K-only start (power 450.00 W) ===
+--- poly-q5 health ---
+{"status": "ok", "max_context": 1048576, "model": "qwen3.8-flash-next-unsloth-ud-q5_k_xl", "images": true, "api_key": false, "image_generation": false, "loaded": true, "service": "strata"}
+
+qwen3.8-flash-next-unsloth-ud-q5_k_xl (qwen4exp, None, context 1048576)
+       prompt      tokens in            out         TTFT s  prefill tok/s   decode tok/s     cache hits      MTP right       VRAM GiB        RAM GiB          GPU %          CPU %
+        short             63            111          0.832           79.1           58.1          0.712           0.65          31.57         114.41           77.6           36.1
+  long-400000         534873            256        138.675         3863.3           74.0            0.8           0.66          31.64         115.72           99.5            7.9
+
+VRAM and RAM are the machine's use at its highest while the request ran, not the engine's alone.
+written: /data/bench-results/poly7_q5_512k_500w.json
+--- inf-fp8 health ---
+{"status":"ok"}
+{"data":[{"chat_template_caps":{"supports_tools":true},"created":1793711799,"id":"Qwen3.8-Flash-Next-FP8-Infernix","max_model_len":524288,"meta":{"ftype":"nvfp4_mul","n_ctx":524288,"n_ctx_train":262144,"n_embd":2560,"n_params":0,"n_vocab":248320,"size":122569070080},"object":"model","owned_by":"infe
+{"target_tokens": 390000, "prompt_tokens": 470055, "completion_tokens": 128, "eng_prompt_ms": 117982.813314, "eng_prefill_tok_s": 3984.097232441758, "eng_decode_tok_s": 52.83043860779832, "ram_base_gib": 133.1, "ram_peak_gib": 133.6, "engine_rss_gib": 127.6, "vram_peak_mib": 31506, "ttft_s": 118.1, "total_s": 120.56, "prefill_tok_s": 3980.2, "decode_tok_s": 51.9}
+written /data/bench-results/fp8_512k_500w.json
+--- inf-dense8 health ---
+{"status":"ok"}
+{"data":[{"chat_template_caps":{"supports_tools":true},"created":1793711958,"id":"Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix","max_model_len":262144,"meta":{"ftype":"nvfp4_mul","n_ctx":262144,"n_ctx_train":262144,"n_embd":2560,"n_params":0,"n_vocab":248320,"size":73826776832},"object":"model","owned_b
+Traceback (most recent call last):
+  File "/data/bench-results/bench_infernix.py", line 123, in <module>
+    main()
+    ~~~~^^
+  File "/data/bench-results/bench_infernix.py", line 118, in main
+    results.append(run(t))
+                   ~~~^^^
+  File "/data/bench-results/bench_infernix.py", line 72, in run
+    with urllib.request.urlopen(req, timeout=3600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+=== 2026-11-03T22:19:22+09:00 512K-only done ===
+=== 2026-11-03T22:19:32+09:00 dense8 512K start ===
+--- inf-dense8 health ---
+{"status":"ok"}
+model id: Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix
+Traceback (most recent call last):
+  File "/data/bench-results/bench_infernix.py", line 123, in <module>
+    main()
+    ~~~~^^
+  File "/data/bench-results/bench_infernix.py", line 118, in main
+    results.append(run(t))
+                   ~~~^^^
+  File "/data/bench-results/bench_infernix.py", line 72, in run
+    with urllib.request.urlopen(req, timeout=3600) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+=== 2026-11-03T22:20:04+09:00 dense8 done ===
