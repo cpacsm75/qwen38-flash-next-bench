@@ -1,0 +1,23 @@
+[
+ {
+  "id": "Law-0",
+  "correct": "A",
+  "got": "A",
+  "ok": true,
+  "secs": 12.4
+ },
+ {
+  "id": "Law-1",
+  "correct": "A",
+  "got": "A",
+  "ok": true,
+  "secs": 8.4
+ },
+ {
+  "id": "Law-9",
+  "correct": "D",
+  "got": "A",
+  "ok": false,
+  "secs": 14.7
+ }
+]
