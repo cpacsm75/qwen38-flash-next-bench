@@ -1,0 +1,38 @@
+[
+ {
+  "id": "Law-1",
+  "answer": "C",
+  "got": "D",
+  "verdict": "오답",
+  "ctx_len": 5158,
+  "srcs": [
+   "https://law.go.kr/LSW//lsSideInfoP.do?lsiSeq=268091&joNo=0014&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR",
+   "https://www.law.go.kr/LSW//lsLinkCommonInfo.do?lspttninfSeq=67293&chrClsCd=010202",
+   "https://www.law.go.kr/lsInfoP.do?lsiSeq=195125"
+  ]
+ },
+ {
+  "id": "Law-2",
+  "answer": "D",
+  "got": "C",
+  "verdict": "오답",
+  "ctx_len": 3778,
+  "srcs": [
+   "https://www.law.go.kr/LSW/lumLsLinkPop.do?lspttninfSeq=67288",
+   "https://www.law.go.kr/lsBylInfoPLinkR.do?bylCls=BE&lsNm=%EA%B2%BD%EB%B9%84%EC%97%85%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0001&bylBrNo=00",
+   "https://law.go.kr/LSW//lsSideInfoP.do?lsiSeq=268091&joNo=0002&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+  ]
+ },
+ {
+  "id": "Law-3",
+  "answer": "C",
+  "got": "D",
+  "verdict": "오답",
+  "ctx_len": 5425,
+  "srcs": [
+   "https://www.law.go.kr/LSW//lsLinkCommonInfo.do?lspttninfSeq=82191&chrClsCd=010202",
+   "https://www.law.go.kr/LSW/cgmExpcInfoP.do?cgmExpcDatSeq=412206&mode=2&ofiClsCd=350128",
+   "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=245297"
+  ]
+ }
+]

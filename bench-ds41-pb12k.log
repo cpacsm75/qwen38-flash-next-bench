@@ -1,0 +1,9 @@
+=== 2026-11-03T23:34:18+09:00 pb12288+prestage 256K start ===
+Running as unit: ds41-pb12k-bench.service; invocation ID: 2bf55ccbfb8f43798b91cdcf727b4893
+{"status": "ok", "max_context": 262144, "model": "deepseek-v4.1-flash-1017-xq-256k-pb12k", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+tier: 0 experts in VRAM, 0 on the remote card (0.0 GiB), 13751 in the RAM arena (130.0 GiB), 1609 file tier; seeded in 39.2 s
+serve: VRAM ready seed -> 1596 experts in VRAM, 13751 arena (seed 0.42 s)
+{"target_tokens": 200000, "prompt_tokens": 232201, "completion_tokens": 128, "eng_prompt_ms": 130835.2, "eng_prefill_tok_s": 1774.8, "eng_decode_tok_s": 46.7, "ram_base_gib": 137.5, "ram_peak_gib": 141.9, "engine_rss_gib": 135.5, "vram_peak_mib": 31068, "ttft_s": 132.59, "total_s": 135.33, "prefill_tok_s": 1751.3, "decode_tok_s": 46.7}
+written /data/bench-results/ds41_256k_pb12k.json
+serve: prompt phases: 232201 new = 232201 batch (130.83 s: dense 77.89, experts 49.87, logits 0.01) + DSpark tail 0 as passes (cache open 0.00 s, seed 0.00 s)
+=== 2026-11-03T23:37:24+09:00 done ===

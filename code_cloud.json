@@ -1,0 +1,37 @@
+[
+ {
+  "id": "palindrome",
+  "verdict": "통과",
+  "secs": 2.1,
+  "err": "",
+  "code_len": 133
+ },
+ {
+  "id": "merge",
+  "verdict": "통과",
+  "secs": 2.1,
+  "err": "",
+  "code_len": 397
+ },
+ {
+  "id": "wordfreq",
+  "verdict": "통과",
+  "secs": 4.7,
+  "err": "",
+  "code_len": 217
+ },
+ {
+  "id": "money",
+  "verdict": "실패",
+  "secs": 21.8,
+  "err": "NameError: name 'parse_amount' is not defined",
+  "code_len": 0
+ },
+ {
+  "id": "dividend",
+  "verdict": "통과",
+  "secs": 2.4,
+  "err": "",
+  "code_len": 133
+ }
+]

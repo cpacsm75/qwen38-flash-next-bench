@@ -1,0 +1,78 @@
+=== 2026-11-04T00:55:48+09:00 chain start (waiting for FP8 eval) ===
+FP8 결과 확인
+--- q8: start poly-q8 ---
+  port=20081
+{"status": "ok", "max_context": 1048576, "model": "qwen3.8-flash-next-unsloth-q8_0", "images": true, "api_key": false, "image_generation": false, "loaded": true, "service": "strata"}
+  model=qwen3.8-flash-next-unsloth-q8_0
+[1/25] Accounting-0           정답      8.0s  content='B'
+[2/25] Accounting-1           정답      5.4s  content='A'
+[3/25] Accounting-2           정답      4.5s  content='A'
+[4/25] Accounting-3           정답      7.5s  content='D'
+[5/25] Accounting-4           정답      7.8s  content='C'
+[6/25] Accounting-5           정답     24.7s  content='D'
+[7/25] Accounting-6           정답     23.4s  content='D'
+[8/25] Accounting-7           정답      5.2s  content='C'
+[9/25] Accounting-8           정답      7.0s  content='D'
+[10/25] Accounting-9           정답      9.0s  content='A'
+[11/25] Law-0                  오답     25.8s  content='B'
+[12/25] Law-1                  오답     20.2s  content='A'
+[13/25] Law-2                  오답     27.2s  content='B'
+[14/25] Law-3                  정답     24.8s  content='C'
+[15/25] Law-4                  오답     19.6s  content='B'
+[16/25] Law-5                  오답      5.6s  content='A'
+[17/25] Law-6                  오답      6.0s  content='C'
+[18/25] Law-7                  오답     28.5s  content='A'
+[19/25] Law-8                  오답     20.2s  content='A'
+[20/25] Law-9                  오답     21.6s  content='D'
+[21/25] calc-sibuin            정답      4.4s  content='5595000'
+[22/25] calc-dividend          정답      9.7s  content='25%, 2000000'
+[23/25] calc-vat               정답      2.7s  content='1000000'
+[24/25] trap-absent            정답      2.9s  content='없음'
+[25/25] extract                정답      2.6s  content='4520000000'
+
+==== 요약 ====
+전체       16/25 (64%)
+객관식     11/20 (55%)
+계산/함정  5/5 (100%)
+무응답     0 / 25
+오류       0 / 25
+평균 소요  13.0 s
+--- q5: start poly-q5 ---
+  port=20080
+{"status": "ok", "max_context": 1048576, "model": "qwen3.8-flash-next-unsloth-ud-q5_k_xl", "images": true, "api_key": false, "image_generation": false, "loaded": true, "service": "strata"}
+  model=qwen3.8-flash-next-unsloth-ud-q5_k_xl
+[1/25] Accounting-0           정답      5.9s  content='B'
+[2/25] Accounting-1           정답      3.9s  content='A'
+[3/25] Accounting-2           정답      3.4s  content='A'
+[4/25] Accounting-3           정답      8.3s  content='D'
+[5/25] Accounting-4           정답      5.9s  content='C'
+[6/25] Accounting-5           정답     17.3s  content='D'
+[7/25] Accounting-6           오답     17.0s  content='A'
+[8/25] Accounting-7           정답      3.4s  content='C'
+[9/25] Accounting-8           정답      4.8s  content='D'
+[10/25] Accounting-9           정답      8.8s  content='A'
+[11/25] Law-0                  오답     18.9s  content='B'
+[12/25] Law-1                  오답      5.5s  content='A'
+[13/25] Law-2                  오답     19.4s  content='B'
+[14/25] Law-3                  오답     17.7s  content='D'
+[15/25] Law-4                  오답     15.3s  content='B'
+[16/25] Law-5                  오답      2.9s  content='A'
+[17/25] Law-6                  오답      3.9s  content='C'
+[18/25] Law-7                  오답     15.2s  content='A'
+[19/25] Law-8                  오답     12.1s  content='A'
+[20/25] Law-9                  오답     17.3s  content='D'
+[21/25] calc-sibuin            정답      3.3s  content='5595000'
+[22/25] calc-dividend          정답      5.1s  content='2000000'
+[23/25] calc-vat               정답      1.8s  content='1000000'
+[24/25] trap-absent            정답      1.9s  content='없음'
+[25/25] extract                정답      1.7s  content='4520000000'
+
+==== 요약 ====
+전체       14/25 (56%)
+객관식     9/20 (45%)
+계산/함정  5/5 (100%)
+무응답     0 / 25
+오류       0 / 25
+평균 소요  8.8 s
+--- ds41-serve 재기동 ---
+=== 2026-11-04T01:15:25+09:00 chain done ===

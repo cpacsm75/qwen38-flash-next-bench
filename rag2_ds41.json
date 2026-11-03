@@ -1,0 +1,44 @@
+[
+ {
+  "id": "Law-1",
+  "answer": "C",
+  "got": "A",
+  "verdict": "오답",
+  "secs": 6.9,
+  "query": "경비업법령상 시설주가 무기를 지급할 수 있는 특수경비원은?",
+  "ctx_len": 2283,
+  "sources": [
+   "https://www.moducbt.com/question/1096251",
+   "https://www.moducbt.com/question/1094057",
+   "https://blog.naver.com/galli/223948385449?viewType=pc"
+  ]
+ },
+ {
+  "id": "Law-2",
+  "answer": "D",
+  "got": "B",
+  "verdict": "오답",
+  "secs": 35.5,
+  "query": "경비업법령상 경비원과 경비지도사의 교육에 관한 설명으로 옳지 않은 것은? (단, 교육대상 제외자는 해당하지 않는다.)",
+  "ctx_len": 7070,
+  "sources": [
+   "https://www.comcbt.com/xe/webhaesul/9923158",
+   "https://www.kinz.kr/exam/47749",
+   "https://www.kinz.kr/exam/301743"
+  ]
+ },
+ {
+  "id": "Law-3",
+  "answer": "C",
+  "got": "D",
+  "verdict": "오답",
+  "secs": 36.9,
+  "query": "청원경찰법령상 청원경찰의 복제에 관한 설명으로 옳지 않은 것은?",
+  "ctx_len": 4345,
+  "sources": [
+   "https://www.scribd.com/document/711312436/%EA%B2%BD%EB%B9%84%EC%A7%80%EB%8F%84%EC%82%AC-%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C-2021%EB%85%84-%EC%A0%9C23%ED%9A%8C-2%EC%B0%A8-%EA%B2%BD%EB%B9%84%EC%97%85%EB%B2%95-%EA%B2%BD%ED%98%B8%ED%95%99",
+   "https://www.comcbt.com/cbt/problem/11922/38/",
+   "https://m.blog.naver.com/def-english/224397776228"
+  ]
+ }
+]

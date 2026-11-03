@@ -1,0 +1,47 @@
+[
+ {
+  "id": "Law-1",
+  "answer": "C",
+  "got": "A",
+  "verdict": "오답",
+  "secs": 20.9,
+  "query": "경비업법령상 특수경비원은 시설주가 지급할 무기를 있는 법령",
+  "sources": [
+   "https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B2%BD%EB%B9%84%EC%97%85%EB%B2%95/%EC%A0%9C14%EC%A1%B0",
+   "http://www.yeslaw.com/lims/front/page/fulltext.html?action=LAW&lawid=928",
+   "https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=1000320846&chrClsCd=010202",
+   "https://law.go.kr/LSW//lsSideInfoP.do?lsiSeq=268091&joNo=0014&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+  ],
+  "ctx_len": 506
+ },
+ {
+  "id": "Law-2",
+  "answer": "D",
+  "got": "A",
+  "verdict": "오답",
+  "secs": 27.5,
+  "query": "경비지도사의 경비업법령상 설명으로 교육대상 제외자는 경비원과 해당하지 않는다 법령",
+  "sources": [
+   "https://www.comcbt.com/cbt/exam/16000/",
+   "https://0gichul.com/y2013/138761510",
+   "https://namu.wiki/w/%EA%B2%BD%EB%B9%84%EC%A7%80%EB%8F%84%EC%82%AC",
+   "https://www.comcbt.com/xe/webhaesul/9923182"
+  ],
+  "ctx_len": 548
+ },
+ {
+  "id": "Law-3",
+  "answer": "C",
+  "got": "D",
+  "verdict": "오답",
+  "secs": 26.0,
+  "query": "청원경찰법령상 청원경찰의 설명으로 복제에 것은 옳지 관한 않은 법령",
+  "sources": [
+   "https://www.scribd.com/document/711312436/%EA%B2%BD%EB%B9%84%EC%A7%80%EB%8F%84%EC%82%AC-%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C-2021%EB%85%84-%EC%A0%9C23%ED%9A%8C-2%EC%B0%A8-%EA%B2%BD%EB%B9%84%EC%97%85%EB%B2%95-%EA%B2%BD%ED%98%B8%ED%95%99",
+   "https://www.comcbt.com/cbt/problem/11922/38/",
+   "https://0gichul.com/y2013/138761510",
+   "https://cbtbank.kr/exam/pe20251115"
+  ],
+  "ctx_len": 547
+ }
+]

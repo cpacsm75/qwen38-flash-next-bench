@@ -1,0 +1,24 @@
+=== 2026-11-03T22:53:57+09:00 ds41 256K KV A/B start (power 450.00 W) ===
+=== arm: bf16 ===
+Running as unit: ds41-kv-bench.service; invocation ID: 5e08ba8dc7c146ed852e672234df7f70
+--- arm bf16 health ---
+{"status": "ok", "max_context": 262144, "model": "deepseek-v4.1-flash-1017-xq-256k-bf16", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+--- arm bf16 tier/VRAM ---
+tier: 0 experts in VRAM, 0 on the remote card (0.0 GiB), 13751 in the RAM arena (130.0 GiB), 1609 file tier; seeded in 38.9 s
+serve: VRAM ready seed -> 1566 experts in VRAM, 13751 arena (seed 0.42 s)
+model id: deepseek-v4.1-flash-1017-xq-256k-bf16
+{"target_tokens": 200000, "prompt_tokens": 232201, "completion_tokens": 128, "eng_prompt_ms": 181850.0, "eng_prefill_tok_s": 1276.9, "eng_decode_tok_s": 44.9, "ram_base_gib": 136.0, "ram_peak_gib": 140.7, "engine_rss_gib": 134.9, "vram_peak_mib": 31072, "ttft_s": 183.86, "total_s": 186.72, "prefill_tok_s": 1262.9, "decode_tok_s": 44.9}
+written /data/bench-results/ds41_256k_bf16.json
+serve: prompt phases: 232201 new = 232201 batch (181.84 s: dense 112.42, experts 66.33, logits 0.01) + DSpark tail 0 as passes (cache open 0.00 s, seed 0.00 s)
+=== arm: kvq8 ===
+Running as unit: ds41-kv-bench.service; invocation ID: 1f83117d98c948b6a6d9275bb00e24c6
+--- arm kvq8 health ---
+{"status": "ok", "max_context": 262144, "model": "deepseek-v4.1-flash-1017-xq-256k-kvq8", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+--- arm kvq8 tier/VRAM ---
+tier: 0 experts in VRAM, 0 on the remote card (0.0 GiB), 13751 in the RAM arena (130.0 GiB), 1609 file tier; seeded in 38.5 s
+serve: VRAM ready seed -> 1596 experts in VRAM, 13751 arena (seed 0.43 s)
+model id: deepseek-v4.1-flash-1017-xq-256k-kvq8
+{"target_tokens": 200000, "prompt_tokens": 232201, "completion_tokens": 128, "eng_prompt_ms": 147673.8, "eng_prefill_tok_s": 1572.4, "eng_decode_tok_s": 46.2, "ram_base_gib": 136.3, "ram_peak_gib": 140.7, "engine_rss_gib": 134.9, "vram_peak_mib": 31066, "ttft_s": 149.76, "total_s": 152.53, "prefill_tok_s": 1550.5, "decode_tok_s": 46.2}
+written /data/bench-results/ds41_256k_kvq8.json
+serve: prompt phases: 232201 new = 232201 batch (147.67 s: dense 78.28, experts 66.30, logits 0.01) + DSpark tail 0 as passes (cache open 0.00 s, seed 0.00 s)
+=== 2026-11-03T23:01:28+09:00 ds41 256K KV A/B done ===

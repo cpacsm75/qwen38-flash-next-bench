@@ -1,0 +1,9 @@
+=== 2026-11-03T23:38:30+09:00 512K pb12288+prestage+ kv-q8 start ===
+Running as unit: ds41-pb12k-bench.service; invocation ID: faa24cb50f32412c88609ff3ccb739b7
+{"status": "ok", "max_context": 524288, "model": "deepseek-v4.1-flash-1017-xq-512k-pb12k", "display_name": null, "images": false, "api_key": false, "image_generation": false, "loaded": true, "asleep": false, "service": "strata"}
+tier: 0 experts in VRAM, 0 on the remote card (0.0 GiB), 13751 in the RAM arena (130.0 GiB), 1609 file tier; seeded in 38.6 s
+serve: VRAM ready seed -> 1561 experts in VRAM, 13751 arena (seed 0.41 s)
+{"target_tokens": 390000, "prompt_tokens": 452727, "completion_tokens": 128, "eng_prompt_ms": 269435.2, "eng_prefill_tok_s": 1680.3, "eng_decode_tok_s": 45.8, "ram_base_gib": 137.0, "ram_peak_gib": 141.5, "engine_rss_gib": 135.5, "vram_peak_mib": 31080, "ttft_s": 272.32, "total_s": 275.12, "prefill_tok_s": 1662.5, "decode_tok_s": 45.8}
+written /data/bench-results/ds41_512k_pb12k.json
+serve: prompt phases: 452727 new = 452727 batch (269.43 s: dense 169.21, experts 94.88, logits 0.01) + DSpark tail 0 as passes (cache open 0.00 s, seed 0.00 s)
+=== 2026-11-03T23:43:56+09:00 done, ds41-serve 재기동 ===

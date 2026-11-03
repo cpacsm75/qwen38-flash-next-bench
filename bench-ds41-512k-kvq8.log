@@ -1,0 +1,10 @@
+=== 2026-11-03T23:02:08+09:00 ds41 512K kv-q8 start ===
+Running as unit: ds41-kvq8-bench.service; invocation ID: c7420add4d4045848d61216b12a0b137
+kv: compressed KV + indexer keys as q8_0 (--kv-q8/--kv-type)
+tier: 0 experts in VRAM, 0 on the remote card (0.0 GiB), 13751 in the RAM arena (130.0 GiB), 1609 file tier; seeded in 39.0 s
+serve: VRAM ready seed -> 1561 experts in VRAM, 13751 arena (seed 0.43 s)
+model id: deepseek-v4.1-flash-1017-xq-512k-kvq8
+{"target_tokens": 390000, "prompt_tokens": 452727, "completion_tokens": 128, "eng_prompt_ms": 302298.4, "eng_prefill_tok_s": 1497.6, "eng_decode_tok_s": 45.9, "ram_base_gib": 136.3, "ram_peak_gib": 140.9, "engine_rss_gib": 134.9, "vram_peak_mib": 31080, "ttft_s": 305.39, "total_s": 308.18, "prefill_tok_s": 1482.4, "decode_tok_s": 45.9}
+written /data/bench-results/ds41_512k_arena130_kvq8.json
+serve: prompt phases: 452727 new = 452727 batch (302.29 s: dense 168.65, experts 128.23, logits 0.01) + DSpark tail 0 as passes (cache open 0.00 s, seed 0.00 s)
+=== 2026-11-03T23:08:08+09:00 done ===

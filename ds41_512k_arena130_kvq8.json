@@ -1,0 +1,18 @@
+[
+ {
+  "target_tokens": 390000,
+  "prompt_tokens": 452727,
+  "completion_tokens": 128,
+  "eng_prompt_ms": 302298.4,
+  "eng_prefill_tok_s": 1497.6,
+  "eng_decode_tok_s": 45.9,
+  "ram_base_gib": 136.3,
+  "ram_peak_gib": 140.9,
+  "engine_rss_gib": 134.9,
+  "vram_peak_mib": 31080,
+  "ttft_s": 305.39,
+  "total_s": 308.18,
+  "prefill_tok_s": 1482.4,
+  "decode_tok_s": 45.9
+ }
+]
