@@ -1,0 +1,78 @@
+{
+ "audited_at": "2026-11-04",
+ "statutes": [
+  "경비업법 시행규칙 (law.go.kr lsiSeq=264977)",
+  "경비업법 시행령 (lsInfoP.do?lsId=002146)",
+  "경비업법 (법률 제14839호 외)",
+  "청원경찰법 (lsiSeq=59173/102493)"
+ ],
+ "items": {
+  "Law-0": {
+   "key": "C",
+   "correct": "A",
+   "verdict": "key_wrong",
+   "basis": "시행규칙 제23조(경비원의 명부): 주된 사무소·출장소·집단민원현장에 작성·비치. 근무상황기록부는 제24조의3②에 따라 1년 보관 → B의 '2년'은 거짓"
+  },
+  "Law-1": {
+   "key": "C",
+   "correct": "A",
+   "verdict": "key_wrong",
+   "basis": "시행규칙 제18조⑤2호: 사직 의사를 표명한 사람은 무기 지급 금지"
+  },
+  "Law-2": {
+   "key": "D",
+   "correct": null,
+   "verdict": "item_defect",
+   "basis": "C(경비협회가 교육 실시)도 거짓(실제는 경비원 교육기관), D(공통교육 면제)도 거짓(시행령 제15조의2는 일부 면제) → 거짓 보기 2개"
+  },
+  "Law-3": {
+   "key": "C",
+   "correct": null,
+   "verdict": "unverified",
+   "basis": "청원경찰 복제 규정 미대조"
+  },
+  "Law-4": {
+   "key": "D",
+   "correct": "B",
+   "verdict": "key_wrong",
+   "basis": "경비업법 제21조 청문: 경비업 허가취소·영업정지 및 경비지도사 자격 취소·정지 모두 청문 대상 → B가 거짓"
+  },
+  "Law-5": {
+   "key": "D",
+   "correct": "A",
+   "verdict": "key_wrong",
+   "basis": "법 제10조 결격사유: 금고 이상 형이 실효되지 않은 자는 임원 불가 → A(만 60세)"
+  },
+  "Law-6": {
+   "key": "D",
+   "correct": "C",
+   "verdict": "key_wrong",
+   "basis": "'비용효과분석은 실시할 필요 없다'가 명백한 거짓"
+  },
+  "Law-7": {
+   "key": "C",
+   "correct": null,
+   "verdict": "unverified",
+   "basis": "청원주 비치 문서·장부 미대조"
+  },
+  "Law-8": {
+   "key": "D",
+   "correct": "A",
+   "verdict": "key_wrong",
+   "basis": "시행령 제18조②1호: '채용 전 3년 이내' 경력 → '5년 전'은 제외 대상 아님"
+  },
+  "Law-9": {
+   "key": "C",
+   "correct": "D",
+   "verdict": "key_wrong",
+   "basis": "청원경찰법 제3조: 청원주 + 관할 경찰서장의 감독(지방경찰청장 아님)"
+  }
+ },
+ "scores_verified_7": {
+  "FP8": "7/7",
+  "Q8_0": "6/7",
+  "Q5_K_XL": "6/7",
+  "cloud": "5/7",
+  "local_XQ": "4/7"
+ }
+}
