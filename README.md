@@ -2,6 +2,26 @@
 
 측정일: 2026-10-31 ~ 11-01 (KST) · 헤드리스 Linux
 
+## 문서 (한국어 정본)
+
+| 문서 | 내용 |
+|---|---|
+| [QUALITY_2026-11-04.md](QUALITY_2026-11-04.md) | **품질 평가** — 5개 모델 × (KMMLU 25문항 + 도구호출 5 + RAG 3) |
+| [UPGRADE_2026-11-03.md](UPGRADE_2026-11-03.md) | PolyStrata poly.7 / Infernix main 업그레이드 및 512K 벤치 |
+| [REPORT.md](REPORT.md) | 512K/256K/1M 컨텍스트 처리량 리포트 |
+| [POST_REBOOT.md](POST_REBOOT.md) | 재부팅 후 재측정 |
+
+### 해외 저장소에 게시한 코멘트 (영문 원문)
+
+| 링크 | 게시 내용 |
+|---|---|
+| [PolyStrata #131](https://github.com/VecSzn/PolyStrata/pull/131) | poly.6 vs poly.7 512K 벤치 + Q8/Q5 품질·도구호출·RAG |
+| [Infernix #58](https://github.com/Wallawalla47/Infernix/issues/58) | CUDA 13.4 재빌드 FP8/Dense8 512K + FP8 품질·도구호출·RAG |
+| [Xolotl #114](https://github.com/Indras-Mirror/Xolotl/issues/114) | DeepSeek V4 XQ arena/prompt-batch 512K + 로컬 vs 클라우드 품질 |
+
+> 해외 메인테이너 저장소에는 **영문**으로 게시했고, 이 저장소 문서가 **한국어 정본**이다.
+> 두 문서의 수치는 동일하며, 상세 로그·원본 JSON은 이 디렉터리에 그대로 있다.
+
 ## 환경
 
 | 항목 | 값 |
