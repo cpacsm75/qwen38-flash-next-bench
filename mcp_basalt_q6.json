@@ -1,0 +1,42 @@
+[
+ {
+  "id": "t1_law",
+  "verdict": "인자불일치",
+  "detail": "{\"query\": \"개인회생 임차보증금 우선변제권\"}",
+  "finish": "tool_calls",
+  "secs": 2.4,
+  "has_tool_calls": true
+ },
+ {
+  "id": "t2_sheet",
+  "verdict": "정답",
+  "detail": "{\"path\": \"/data/2026회합1005.xlsx\", \"sheet\": \"시부인표\"}",
+  "finish": "tool_calls",
+  "secs": 2.1,
+  "has_tool_calls": true
+ },
+ {
+  "id": "t3_dividend",
+  "verdict": "인자불일치",
+  "detail": "{\"available\": 1200, \"total\": 4800, \"claim\": 800}",
+  "finish": "tool_calls",
+  "secs": 3.2,
+  "has_tool_calls": true
+ },
+ {
+  "id": "t4_multi",
+  "verdict": "인자불일치",
+  "detail": "{\"query\": \"채무자회생법\", \"article\": \"제179조\"}",
+  "finish": "tool_calls",
+  "secs": 2.0,
+  "has_tool_calls": true
+ },
+ {
+  "id": "t5_read",
+  "verdict": "정답",
+  "detail": "{\"path\": \"/data/report.xlsx\", \"sheet\": \"경제성조사\", \"max_rows\": 100}",
+  "finish": "tool_calls",
+  "secs": 2.2,
+  "has_tool_calls": true
+ }
+]
