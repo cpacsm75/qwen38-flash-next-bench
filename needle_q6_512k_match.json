@@ -1,0 +1,10 @@
+{
+ "model": "Qwen3.8-Flash-Next UD-Q6_K_XL",
+ "target": 470000,
+ "prompt_tokens": 451354,
+ "completion_tokens": 53,
+ "secs": 70.3,
+ "prefill_tok_s": 6424.0,
+ "answer": "박영희 / 2027년 3월 15일",
+ "needle_found": true
+}

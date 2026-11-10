@@ -11,14 +11,18 @@ SET = pathlib.Path("/data/bench-results/eval_set_2026-11-04.json")
 ap = argparse.ArgumentParser()
 ap.add_argument("base"); ap.add_argument("model"); ap.add_argument("out")
 ap.add_argument("--reasoning-budget", type=int, default=4096)
-ap.add_argument("--max-tokens", type=int, default=2048)
+ap.add_argument("--max-tokens", type=int, default=8192)
+ap.add_argument("--set", default=str(SET), help="문항 세트 JSON")
 a = ap.parse_args()
 
+SET = pathlib.Path(a.set)
 items = json.loads(SET.read_text(encoding="utf-8"))
 results = []
 
-SYS_MC = "한국어 객관식 문제다. 정답 보기의 문자 하나(A/B/C/D)만 출력하라. 다른 텍스트 금지."
-SYS_FREE = "계산·추출 문제다. 요구된 값만 출력하라. 설명·단위·콤마 없이. 문서에 없으면 '없음'만 출력."
+SYS_BASE = ("너는 한국인 공인회계사(KICPA)다. 모든 답변은 근거를 바탕으로 한국어 문법에 맞게 작성한다. "
+            "절대 영어나 중국어로 답하지 않는다.")
+SYS_MC = (SYS_BASE + " 한국어 객관식 문제다. 정답 보기의 문자 하나(A/B/C/D)만 출력하라. 다른 텍스트 금지.")
+SYS_FREE = (SYS_BASE + " 계산·추출 문제다. 요구된 값만 출력하라. 설명·단위·콤마 없이. 문서에 없으면 '없음'만 출력.")
 
 def ask(it):
     if it["type"] == "mc":

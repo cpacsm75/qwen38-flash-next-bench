@@ -27,13 +27,13 @@ CASES = [
 
 ap = argparse.ArgumentParser()
 ap.add_argument("base"); ap.add_argument("model"); ap.add_argument("out")
-ap.add_argument("--max-tokens", type=int, default=1024)
+ap.add_argument("--max-tokens", type=int, default=4096)
 ap.add_argument("--reasoning-budget", type=int, default=2048)
 a = ap.parse_args()
 
 def ask(prompt):
     body = {"model": a.model,
-            "messages":[{"role":"system","content":"사용자 요청에 필요한 도구를 정확히 하나 호출하라. 인자 값은 요청에 나온 그대로 넣는다."},
+            "messages":[{"role":"system","content":"너는 한국인 공인회계사(KICPA)다. 모든 답변은 근거를 바탕으로 한국어 문법에 맞게 작성한다. 절대 영어나 중국어로 답하지 않는다. 사용자 요청에 필요한 도구를 정확히 하나 호출하라. 인자 값은 요청에 나온 그대로 넣는다."},
                         {"role":"user","content":prompt}],
             "tools": TOOLS, "tool_choice":"auto", "max_tokens": a.max_tokens, "temperature": 0}
     if "20084" in a.base:
