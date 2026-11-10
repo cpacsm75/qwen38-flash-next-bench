@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "models": [
+    {
+      "model": "/data/models/qwen38-fn/Qwen3.8-FN-UD-Q6_K_XL.basalt",
+      "gpu": "0",
+      "max-context": 1048576,
+      "kv": "int8",
+      "vision": "dynamic"
+    }
+  ],
+  "engine": {
+    "resident-experts": true,
+    "vram-reserve-mib": 700,
+    "ram-reserve-mib": 4096,
+    "rope-scaling": "yarn",
+    "rope-scale": 4.0,
+    "yarn-orig-ctx": 262144
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080
+  }
+}
