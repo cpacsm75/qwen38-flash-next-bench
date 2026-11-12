@@ -1,0 +1,11 @@
+[cal] 55.2 토큰/회 -> 16304회 반복 (목표 900000)
+{
+ "model": "Qwen3.8-Flash-Next UD-Q6_K_XL",
+ "target": 900000,
+ "prompt_tokens": 864224,
+ "completion_tokens": 53,
+ "secs": 165.2,
+ "prefill_tok_s": 5230.0,
+ "answer": "박영희 / 2027년 3월 15일",
+ "needle_found": true
+}

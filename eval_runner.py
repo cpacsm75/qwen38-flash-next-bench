@@ -26,7 +26,8 @@ SYS_FREE = (SYS_BASE + " 계산·추출 문제다. 요구된 값만 출력하라
 
 def ask(it):
     if it["type"] == "mc":
-        prompt = f"{it['q']}\n\nA. {it['A']}\nB. {it['B']}\nC. {it['C']}\nD. {it['D']}\n\n정답 문자만 출력:"
+        opts = "\n".join(f"{L}. {it[L]}" for L in "ABCDE" if L in it)
+        prompt = f"{it['q']}\n\n{opts}\n\n정답 문자만 출력:"
         system = SYS_MC
     else:
         prompt = it["q"]
@@ -34,7 +35,7 @@ def ask(it):
     body = {"model": a.model,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
             "max_tokens": a.max_tokens, "temperature": 0}
-    if "20084" in a.base:
+    if "20084" in a.base or "127.0.0.1:8080" in a.base:
         body["reasoning_budget_tokens"] = a.reasoning_budget
     req = urllib.request.Request(a.base.rstrip("/") + "/v1/chat/completions",
                                  data=json.dumps(body).encode(),
@@ -59,10 +60,10 @@ def grade(it, content):
     if not c:
         return "무응답"
     if it["type"] == "mc":
-        m = re.search(r"\b([ABCD])\b", c.upper())
+        m = re.search(r"\b([ABCDE])\b", c.upper())
         if m:
             return "정답" if m.group(1) == it["a"] else "오답"
-        m = re.search(r"([ABCD])(?:[\.\)]|$)", c.upper())
+        m = re.search(r"([ABCDE])(?:[\.\)]|$)", c.upper())
         if m:
             return "정답" if m.group(1) == it["a"] else "오답"
         return "무응답"

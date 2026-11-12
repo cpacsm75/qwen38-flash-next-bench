@@ -1,0 +1,26 @@
+[1턴] conv0  prompt=  8420 cached=0 2.3s
+[1턴] conv1  prompt=  8423 cached=0 2.3s
+[1턴] conv2  prompt=  8420 cached=0 2.26s
+[1턴] conv3  prompt=  8423 cached=0 2.25s
+[1턴] conv4  prompt=  8425 cached=0 2.22s
+[1턴] conv5  prompt=  8419 cached=0 2.21s
+[1턴] conv6  prompt=  8420 cached=0 2.21s
+[1턴] conv7  prompt=  8425 cached=0 2.2s
+[1턴] conv8  prompt=  8419 cached=0 2.28s
+[1턴] conv9  prompt=  8419 cached=0 2.27s
+
+--- 1턴 완료: 이제 전부에 2턴을 보낸다 (첫 대화가 밀렸는지 확인) ---
+
+[2턴] conv0  prompt=  8445 cached=0 2.28s
+[2턴] conv1  prompt=  8448 cached=0 2.28s
+[2턴] conv2  prompt=  8445 cached=0 2.3s
+[2턴] conv3  prompt=  8448 cached=0 2.26s
+[2턴] conv4  prompt=  8450 cached=0 2.26s
+[2턴] conv5  prompt=  8444 cached=0 2.27s
+[2턴] conv6  prompt=  8445 cached=0 2.24s
+[2턴] conv7  prompt=  8450 cached=0 2.25s
+[2턴] conv8  prompt=  8444 cached=0 2.24s
+[2턴] conv9  prompt=  8444 cached=0 2.28s
+
+캐시 재사용: 0/10 대화
+판정: 10개 대화가 밀려남

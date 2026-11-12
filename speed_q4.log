@@ -1,0 +1,8 @@
+warmup         prompt=56      out=16       0.42s    38.0 tok/s
+prose          prompt=73      out=256      1.43s   178.6 tok/s
+code           prompt=73      out=256      1.39s   184.1 tok/s
+struct         prompt=84      out=97       0.76s   127.1 tok/s
+prefill_8k     prompt=8989    out=1        1.15s     0.9 tok/s
+prefill_32k    prompt=35797   out=1        4.06s     0.2 tok/s
+
+저장: /data/bench-results/speed_q4.json

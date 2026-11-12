@@ -1,0 +1,7 @@
+[split] range 82301259040-90531384943 (8230125904 bytes), 8 chunks of 1028765738
+[split] p10 assembled: 8230125904 (expected 8230125904)
+[join] concatenating 16 parts
+[join] size 131682014461 / 131682014461
+[sha] hashing...
+/data/models/qwen38-fn/Qwen3.8-FN-Uncensored-NVFP4-DQ6_K.basalt: OK
+[ok] 검증 완료 — 조각 삭제

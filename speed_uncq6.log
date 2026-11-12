@@ -1,0 +1,19 @@
+Running as unit: basalt-bench-uncq6.scope; invocation ID: 9f80a4f7458e4ee6a9c04f91bae1ef34
+basalt-bench: starting /data/basalt/basalt-v0.3.2-linux-x64/bin/basalt (log: /tmp/basalt-bench-286087/engine.log)
+basalt-bench: loading 105.9 GiB: cuda0 0.0 / 4.6 GiB
+basalt-bench: loading cuda0 28.8 / 28.8 GiB done (5 s)
+basalt-bench: loading ram 31.4 / 76.9 GiB (40%)
+basalt-bench: loading ram 76.9 / 76.9 GiB done (14 s)
+basalt-bench: engine ready in 20 s
+  run 1 conv    112.1 tok/s, 1068 tokens
+  run 1 struct  166.8 tok/s, 7230 tokens
+  run 1 prose   120.7 tok/s, 1200 tokens
+  run 1 pp16384 16676 tokens, 4478 t/s engine, 4356 t/s wall
+basalt-bench  build ffc68faa71  power limit 450 W
+
+| test      |  t/s | accept % | draft len |
+| --------- | ---: | -------: | --------: |
+| pp16384   | 4478 |        - |         - |
+| tg conv   |  112 |     76.6 |      1.78 |
+| tg struct |  167 |     95.6 |      6.67 |
+| tg prose  |  121 |     71.6 |      1.32 |

@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-12",
+  "base": "flashnext-bf16-base.kld (sha c4e02216…cf1a9), 100 chunks / 25,500 rows, T=3",
+  "gpu": "RTX 5090 450W",
+  "results": {
+    "Q8_0": {
+      "kld": 0.0197,
+      "top1": 95.36,
+      "ppl": 3.2776,
+      "sec": 649,
+      "resident_gib": 124.7,
+      "published": {
+        "kld": 0.02,
+        "top1": 95.34
+      }
+    },
+    "NVFP4_DQ6_K_aligned": {
+      "kld": 0.06169,
+      "top1": 91.67,
+      "ppl": 3.3067,
+      "sec": 252,
+      "resident_gib": 67.8,
+      "published": {
+        "kld": 0.0624,
+        "top1": 91.65
+      }
+    },
+    "NVFP4_DQ6_K_unc": {
+      "kld": 0.07773,
+      "top1": 90.73,
+      "ppl": 3.3449,
+      "sec": 252,
+      "resident_gib": 67.8,
+      "published": null
+    },
+    "Unc_Q6_K_XL_built": {
+      "kld": 0.0421,
+      "top1": 93.4,
+      "ppl": 3.3238,
+      "sec": 504,
+      "resident_gib": 105.9,
+      "source": "mradermacher Q6_K GGUF -> convert.py --sections-from Q6 aligned --compat-bf16",
+      "decode_cold_tps": 61.9
+    }
+  },
+  "findings": [
+    "both official packs reproduce the published gate within 0.0007 KLD and 0.02pp top-1 -> setup validated",
+    "the abliteration itself costs +0.0160 KLD (0.0617->0.0777, +26%) and -0.94pp top-1; NVFP4 quantization is NOT the cause",
+    "unc re-measurement was identical to the earlier run (0.07773 both times) -> the gate is deterministic",
+    "unc scores 22/22 on the 22-item eval while being 4x worse in KLD -> that eval set cannot rank packs",
+    "self-converted unc Q6 lands at 0.0421 (half the unc NVFP4 loss, 2x the aligned Q6): abliteration +0.016 plus ~0.005 from the mirror's own Q6_K recipe"
+  ]
+}

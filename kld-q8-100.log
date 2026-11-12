@@ -1,0 +1,24 @@
+Running as unit: basalt-kld-q8.scope; invocation ID: 6cb80bd5693d46159e6fe16039dd0ea3
+basalt-bench: starting the engine for the quality gate
+basalt-bench: loading 124.7 GiB: cuda0 0.0 / 5.1 GiB
+basalt-bench: loading cuda0 5.1 / 5.1 GiB done (1 s)
+basalt-bench: loading cuda0 29.2 / 29.2 GiB done (5 s)
+basalt-bench: loading ram 61.1 / 95.5 GiB (64%)
+basalt-bench: loading ram 95.5 / 95.5 GiB done (18 s)
+basalt-bench: engine ready in 24 s
+  quality 10/100 chunks, 62 s
+  quality 20/100 chunks, 128 s
+  quality 30/100 chunks, 197 s
+  quality 40/100 chunks, 262 s
+  quality 50/100 chunks, 328 s
+  quality 60/100 chunks, 393 s
+  quality 70/100 chunks, 457 s
+  quality 80/100 chunks, 524 s
+  quality 90/100 chunks, 587 s
+  quality 100/100 chunks, 649 s
+
+quality gate: 100 chunks asked, T=3
+chunks 100  rows 25500
+PPL 3.2776 +/- 0.0432   base PPL 3.2733   ln(PPL/base) 0.00132
+KLD mean 0.01970  median 0.00408  p99 0.2405  max 2.7962
+same top-1 95.36%   mean |dlogp| of the base top-1 0.06082

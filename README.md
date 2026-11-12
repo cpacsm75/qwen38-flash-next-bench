@@ -6,6 +6,7 @@
 
 | 문서 | 내용 |
 |---|---|
+| [BASALT_2026-11-12_TOOLS_AND_KNOWLEDGE.md](BASALT_2026-11-12_TOOLS_AND_KNOWLEDGE.md) | **도구가 지식을 대체하는가** — KLD 5팩 실측 + 합성 58문항 + 변호사시험 80문항(도구 유/무) + 속도 A/B |
 | [QUALITY_2026-11-04.md](QUALITY_2026-11-04.md) | **품질 평가** — 5개 모델 × (KMMLU 25문항 + 도구호출 5 + RAG 3) |
 | [UPGRADE_2026-11-03.md](UPGRADE_2026-11-03.md) | PolyStrata poly.7 / Infernix main 업그레이드 및 512K 벤치 |
 | [REPORT.md](REPORT.md) | 512K/256K/1M 컨텍스트 처리량 리포트 |

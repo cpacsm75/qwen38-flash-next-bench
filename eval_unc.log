@@ -1,0 +1,30 @@
+[1/22] Accounting-0           정답      3.1s  content='B'
+[2/22] Accounting-1           정답      1.8s  content='A'
+[3/22] Accounting-2           정답      2.0s  content='A'
+[4/22] Accounting-3           정답      2.2s  content='D'
+[5/22] Accounting-4           정답      2.1s  content='C'
+[6/22] Accounting-5           정답      2.1s  content='D'
+[7/22] Accounting-6           정답      4.7s  content='D'
+[8/22] Accounting-7           정답      1.3s  content='C'
+[9/22] Accounting-8           정답      2.1s  content='D'
+[10/22] Accounting-9           정답      1.9s  content='A'
+[11/22] Law-0                  정답      3.8s  content='A'
+[12/22] Law-1                  정답      1.9s  content='A'
+[13/22] Law-4                  정답      2.2s  content='B'
+[14/22] Law-5                  정답      2.2s  content='A'
+[15/22] Law-6                  정답      1.6s  content='C'
+[16/22] Law-8                  정답      7.0s  content='A'
+[17/22] Law-9                  정답      3.0s  content='D'
+[18/22] calc-sibuin            정답      1.2s  content='5595000'
+[19/22] calc-dividend          정답      1.1s  content='2000000'
+[20/22] calc-vat               정답      0.6s  content='1000000'
+[21/22] trap-absent            정답      0.5s  content='없음'
+[22/22] extract                정답      0.8s  content='4520000000'
+
+==== 요약 ====
+전체       22/22 (100%)
+객관식     17/17 (100%)
+계산/함정  5/5 (100%)
+무응답     0 / 22
+오류       0 / 22
+평균 소요  2.2 s

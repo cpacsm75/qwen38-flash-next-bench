@@ -1,0 +1,47 @@
+Running as unit: basalt-kld-nvfp4pair.scope; invocation ID: 759925581f714fed9db9abc82f45563c
+=== aligned /data/models/qwen38-fn/Qwen3.8-FN-NVFP4-DQ6_K.basalt
+basalt-bench: starting the engine for the quality gate
+basalt-bench: loading 67.8 GiB: cuda0 0.0 / 4.5 GiB
+basalt-bench: loading cuda0 4.5 / 4.5 GiB done (1 s)
+basalt-bench: loading cuda0 29.3 / 29.3 GiB done (5 s)
+basalt-bench: loading ram 38.5 / 38.5 GiB done (7 s)
+basalt-bench: engine ready in 13 s
+  quality 10/100 chunks, 24 s
+  quality 20/100 chunks, 51 s
+  quality 30/100 chunks, 78 s
+  quality 40/100 chunks, 104 s
+  quality 50/100 chunks, 130 s
+  quality 60/100 chunks, 155 s
+  quality 70/100 chunks, 179 s
+  quality 80/100 chunks, 205 s
+  quality 90/100 chunks, 228 s
+  quality 100/100 chunks, 252 s
+
+quality gate: 100 chunks asked, T=3
+chunks 100  rows 25500
+PPL 3.3067 +/- 0.0437   base PPL 3.2733   ln(PPL/base) 0.01015
+KLD mean 0.06169  median 0.01362  p99 0.7183  max 20.1763
+same top-1 91.67%   mean |dlogp| of the base top-1 0.12090
+=== unc /data/models/qwen38-fn/Qwen3.8-FN-Uncensored-NVFP4-DQ6_K.basalt
+basalt-bench: starting the engine for the quality gate
+basalt-bench: loading 67.8 GiB: cuda0 0.0 / 4.5 GiB
+basalt-bench: loading cuda0 4.5 / 4.5 GiB done (1 s)
+basalt-bench: loading cuda0 29.3 / 29.3 GiB done (5 s)
+basalt-bench: loading ram 38.5 / 38.5 GiB done (7 s)
+basalt-bench: engine ready in 13 s
+  quality 10/100 chunks, 24 s
+  quality 20/100 chunks, 51 s
+  quality 30/100 chunks, 79 s
+  quality 40/100 chunks, 104 s
+  quality 50/100 chunks, 130 s
+  quality 60/100 chunks, 155 s
+  quality 70/100 chunks, 179 s
+  quality 80/100 chunks, 205 s
+  quality 90/100 chunks, 229 s
+  quality 100/100 chunks, 252 s
+
+quality gate: 100 chunks asked, T=3
+chunks 100  rows 25500
+PPL 3.3449 +/- 0.0443   base PPL 3.2733   ln(PPL/base) 0.02166
+KLD mean 0.07773  median 0.01690  p99 0.9440  max 14.7326
+same top-1 90.73%   mean |dlogp| of the base top-1 0.14109

@@ -1,0 +1,40 @@
+{
+ "model": "Qwen3.8-Flash-Next Uncensored NVFP4",
+ "rows": [
+  {
+   "label": "prose",
+   "prompt_tokens": 31,
+   "completion_tokens": 256,
+   "secs": 1.41,
+   "tok_s": 181.2
+  },
+  {
+   "label": "code",
+   "prompt_tokens": 31,
+   "completion_tokens": 256,
+   "secs": 1.62,
+   "tok_s": 157.7
+  },
+  {
+   "label": "struct",
+   "prompt_tokens": 42,
+   "completion_tokens": 72,
+   "secs": 0.77,
+   "tok_s": 93.0
+  },
+  {
+   "label": "prefill_8k",
+   "prompt_tokens": 8947,
+   "completion_tokens": 1,
+   "secs": 1.27,
+   "tok_s": 0.8
+  },
+  {
+   "label": "prefill_32k",
+   "prompt_tokens": 35755,
+   "completion_tokens": 1,
+   "secs": 3.64,
+   "tok_s": 0.3
+  }
+ ]
+}

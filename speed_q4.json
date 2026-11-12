@@ -1,0 +1,40 @@
+{
+ "model": "Qwen3.8-Flash-Next UD-IQ4_XS",
+ "rows": [
+  {
+   "label": "prose",
+   "prompt_tokens": 73,
+   "completion_tokens": 256,
+   "secs": 1.43,
+   "tok_s": 178.6
+  },
+  {
+   "label": "code",
+   "prompt_tokens": 73,
+   "completion_tokens": 256,
+   "secs": 1.39,
+   "tok_s": 184.1
+  },
+  {
+   "label": "struct",
+   "prompt_tokens": 84,
+   "completion_tokens": 97,
+   "secs": 0.76,
+   "tok_s": 127.1
+  },
+  {
+   "label": "prefill_8k",
+   "prompt_tokens": 8989,
+   "completion_tokens": 1,
+   "secs": 1.15,
+   "tok_s": 0.9
+  },
+  {
+   "label": "prefill_32k",
+   "prompt_tokens": 35797,
+   "completion_tokens": 1,
+   "secs": 4.06,
+   "tok_s": 0.2
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+Running as unit: basalt-kld-uncq6.scope; invocation ID: d15d8848775346d6a0be369106556654
+basalt-bench: starting the engine for the quality gate
+basalt-bench: loading 105.9 GiB: cuda0 0.0 / 4.6 GiB
+basalt-bench: loading cuda0 29.0 / 29.0 GiB done (5 s)
+basalt-bench: loading ram 32.7 / 76.7 GiB (42%)
+basalt-bench: loading ram 76.7 / 76.7 GiB done (13 s)
+basalt-bench: engine ready in 19 s
+  quality 10/100 chunks, 48 s
+  quality 20/100 chunks, 100 s
+  quality 30/100 chunks, 154 s
+  quality 40/100 chunks, 205 s
+  quality 50/100 chunks, 257 s
+  quality 60/100 chunks, 307 s
+  quality 70/100 chunks, 357 s
+  quality 80/100 chunks, 409 s
+  quality 90/100 chunks, 456 s
+  quality 100/100 chunks, 504 s
+
+quality gate: 100 chunks asked, T=3
+chunks 100  rows 25500
+PPL 3.3238 +/- 0.0443   base PPL 3.2733   ln(PPL/base) 0.01531
+KLD mean 0.04210  median 0.00952  p99 0.4829  max 16.8538
+same top-1 93.40%   mean |dlogp| of the base top-1 0.09268
