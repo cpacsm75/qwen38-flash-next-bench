@@ -13,6 +13,7 @@ ap.add_argument("base"); ap.add_argument("model"); ap.add_argument("out")
 ap.add_argument("--reasoning-budget", type=int, default=4096)
 ap.add_argument("--max-tokens", type=int, default=8192)
 ap.add_argument("--set", default=str(SET), help="문항 세트 JSON")
+ap.add_argument("--think", action="store_true", help="8082(llama-server)에서 사고 켜기")
 a = ap.parse_args()
 
 SET = pathlib.Path(a.set)
@@ -37,6 +38,10 @@ def ask(it):
             "max_tokens": a.max_tokens, "temperature": 0}
     if "20084" in a.base or "127.0.0.1:8080" in a.base:
         body["reasoning_budget_tokens"] = a.reasoning_budget
+    if "8082" in a.base:                      # llama-server (Raon 등)
+        body["chat_template_kwargs"] = {"enable_thinking": bool(getattr(a, "think", False))}
+        # KRAFTON 권장 샘플링 — presence_penalty 를 빼면 사고가 끝나지 않는다
+        body.update({"temperature": 1.0, "top_p": 0.95, "top_k": 20, "presence_penalty": 1.5})
     req = urllib.request.Request(a.base.rstrip("/") + "/v1/chat/completions",
                                  data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json"}, method="POST")

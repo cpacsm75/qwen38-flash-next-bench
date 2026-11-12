@@ -6,6 +6,7 @@
 
 | 문서 | 내용 |
 |---|---|
+| [BASALT_2026-11-12_RAON_VS_QWEN.md](BASALT_2026-11-12_RAON_VS_QWEN.md) | **한국어 특화 모델 비교** — Raon-1 mini Q6 vs Qwen 비검열 Q6, 변호사시험 80문항(31% vs 46%) + 사고 루프 함정 |
 | [BASALT_2026-11-12_TOOLS_AND_KNOWLEDGE.md](BASALT_2026-11-12_TOOLS_AND_KNOWLEDGE.md) | **도구가 지식을 대체하는가** — KLD 5팩 실측 + 합성 58문항 + 변호사시험 80문항(도구 유/무) + 속도 A/B |
 | [QUALITY_2026-11-04.md](QUALITY_2026-11-04.md) | **품질 평가** — 5개 모델 × (KMMLU 25문항 + 도구호출 5 + RAG 3) |
 | [UPGRADE_2026-11-03.md](UPGRADE_2026-11-03.md) | PolyStrata poly.7 / Infernix main 업그레이드 및 512K 벤치 |
