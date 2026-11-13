@@ -1,0 +1,821 @@
+[
+ {
+  "id": "MOJ-공법-2023-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "면허취소 처분 이유제시 하자 치유 불복 편의 상당한 기간"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "취소권유보 실질 철회권 유보 이익형량 면허취소"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "무면허 주류판매업자에게 주류 판매 면허취소 정당한 사유"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "이유제시 하자 치유 취소소송 승소확정판결 재처분 별개의 처분 기판력"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주류면허법 종합주류도매업면허 취소"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 38.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2024-22",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "이행강제금 대집행 선택적 활용 중첩적 제재"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 토지 인도 의무 대집행 대상"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "이행강제금 반복 부과 의무 이행 징수"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "건축법 이행강제금 시정명령",
+     "article": "79"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 20.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-34",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 병합 이송 참가 행정청의 참가",
+     "article": "14"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_regulations",
+    "args": {
+     "query": "행정소송 취소소송 관련청구 병합 각하 이송 참가 직권",
+     "top": 4
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "취소소송 병합 손해배상청구 관련청구 본안 각하"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법",
+     "article": "16"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 제14조 병합 이송"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 제12조 참가 행정청"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 34.3,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-32",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 8.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-33",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "GATS 서비스무역에 관한 일반협정 시장접근 제한금지 취소사유 사인 원용"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "과징금부과처분 법이 정한 한도액 초과 위법 한도 초과 부분만 취소"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "행정처분 전제사실 형사법규 위반 형사판결 확정 전 행정처분 허용"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "식품위생법 식품접객업 영업신고 무허가 건축물 건축법 위반 신고수리 거부 위법"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "대형마트 영업시간 제한 처분 GATS 협정 위반 주장"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "영업신고 수리거부 무허가 건물 건축법 식품위생법"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 19.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-9",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "헌법재판소법 제68조 제2항 헌법소원 청구기간 위헌법률심판 제청신청 기각",
+     "article": "68"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "위헌법률심판 제청신청 각하 헌법소원 적법 재판의 전제성 직권심사"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "위헌법률심판 제청신청 기각 후 헌법소원 항소심 다시 제청신청 가능"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "헌법소원 심판 청구기간 90일 30일 위헌확인 법률 제청신청 기각 결정문 송달"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "재판의 전제성 당해사건 확정 헌법소원 각하"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 22.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-38",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "도시관리계획 입안제안 반려 처분 취소소송 대상 이익형량 실시계획인가 하자 승계",
+     "article": ""
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "도시관리계획 입안제안 반려 항고소송 대상 재량 이익형량"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "도시계획시설결정 하자 실시계획인가 승계 불가쟁력"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 25.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2024-13",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "숙박업 구조변경허가 무효확인 소의 이익 인근 여관경영자 주거안녕 생활환경"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주변영향지역결정처분 취소소송 원고적격 주민지원협의체 폐기물매립시설 2km"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주변영향지역 결정처분 취소소송 원고적격"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "영업정지처분 기간 경과 후 취소소송 소의 이익 가중사유 시행규칙"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "폐기물처리시설 설치촉진 주변지역지원 주변영향지역 결정 처분성 취소소송 대상"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "해임처분 취소소송 임기만료 소의 이익 보수"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 45.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-39",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "취소판결 기속력 반하는 처분 무효 취소"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 제30조 기속력",
+     "article": "30"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 기속력 확정판결"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "기판력 무효확인소송 기각판결 확정 처분 위법 주장"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 20.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-30",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "기관위임사무 조례 제정 법령 위임"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주민조례청구 공공시설 설치 반대 조례 제정 개폐 청구"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "기관위임사무 조례로 정하도록 위임 허용 학원 교습비 조례"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "교원인사자문위원회 조례 교원인사 교육감 고유권한 위임없이 위법"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 25.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-22",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "수익적 행정처분 직권취소 기득권 침해 공익상 필요 묵시적 취소"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "수익적 행정처분 쟁송취소 공익상 필요 직권취소区别"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "수익적 행정처분 직권취소 묵시적 취소 양립할 수 없는 처분"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "행정처분 취소 신뢰보호의 원칙 수익적 처분"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "부정한 방법 신청 행정처분 직권취소 신뢰이익"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정기본법 취소 철회",
+     "article": ""
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 25.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-29",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주택건설사업계획승인 의제 도시군관리계획결정 하자 승계 관계 행정기관 협의 주민의견청취",
+     "article": ""
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_regulations",
+    "args": {
+     "query": "주택건설사업계획승인 의제 인허가 관계 행정기관 협의 도시군관리계획결정 하자 항고소송 대상",
+     "top": 4
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 23.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-8",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "자도소주구입명령제도 신뢰보호원칙 소주제조업자"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "학교보건법 학교환경위생정화구역 노래연습장 폐쇄 이전 5년 신뢰보호원칙"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "신뢰보호원칙 소주 자도소주구입"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "무기징역 가석방 20년 부칙 위헌 신뢰이익"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 25.7,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "사정판결 직권 당사자 주장 없이 기록에 나타난 사정 기초"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "국가유공자 등록신청 공무상 상이 증명책임 불가피한 사유 없이 본인의 과실 처분청"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 15.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-21",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "D",
+  "tool_calls": [],
+  "secs": 8.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-13",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "최저임금 인상 고시 사업자 재산권 제한"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "헌법 제23조 제3항 수용의 주체 국가 등 한정 민간기업"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "사회부조 사회법상의 지위 급부에 대한 등가물 공법상의 권리 재산권 보호"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "정당한 보상 객관적인 재산가치 완전한 보상 개별적 침해"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 17.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-27",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "content": "B",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "장례식장 사용중지 행정대집행 대상"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "여객자동차 운수사업법 과징금 일괄 부과 위반행위 일부 별도 부과"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 25.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-26",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "집행정지결정 효력 본안 패소확정판결 소멸"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 집행정지",
+     "article": "23"
+    },
+    "chars": 35,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "집행정지 본안 청구 기각 확정으로 효력 소멸 장래 향하여"
+    },
+    "chars": 35,
+    "dup": false
+   }
+  ],
+  "secs": 29.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-6",
+  "type": "mc",
+  "verdict": "오류",
+  "answer": "E",
+  "content": "Remote end closed connection without response",
+  "tool_calls": [],
+  "secs": 8.3,
+  "finish": "error"
+ },
+ {
+  "id": "MOJ-공법-2021-37",
+  "type": "mc",
+  "verdict": "오류",
+  "answer": "E",
+  "content": "<urlopen error [Errno 111] Connection refused>",
+  "tool_calls": [],
+  "secs": 0.0,
+  "finish": "error"
+ }
+]

@@ -107,6 +107,8 @@ def main():
     ap.add_argument("--reasoning-budget", type=int, default=1024)
     ap.add_argument("--max-tokens", type=int, default=8192)
     ap.add_argument("--tool-prefix", default="", help="프롬프트에 덧붙일 지시(도구 없이 비교하려면 빈칸)")
+    ap.add_argument("--dummy-tools", action="store_true",
+                    help="도구가 항상 '검색 결과 없음'을 돌려주는 대조군(추론 추가효과 측정)")
     ap.add_argument("--force-first", action="store_true",
                     help="첫 턴에 lookup_law 호출을 강제한다(모델이 조회를 건너뛰는 문제 회피)")
     args = ap.parse_args()
@@ -155,7 +157,9 @@ def main():
                         txt = "이미 조회한 내용이다. 같은 조회를 반복하지 말고 확인된 내용으로 답하라."
                     else:
                         seen.add(signature)
-                        if fn == "lookup_regulations":
+                        if getattr(args, "dummy_tools", False):
+                            txt = "검색 결과 없음 (이 저장소에서는 해당 자료를 찾지 못했습니다)"
+                        elif fn == "lookup_regulations":
                             txt = difytool.lookup(a.get("query", ""), int(a.get("top", 4)))
                         else:
                             txt = lawtool.lookup(*signature)

@@ -1,0 +1,342 @@
+[
+ {
+  "id": "MOJ-공법-2023-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "stage1": "E",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "D",
+  "ctx": {
+   "regs": 39,
+   "law": 1458,
+   "prec": 1717,
+   "web": 0
+  },
+  "secs": 27.4
+ },
+ {
+  "id": "MOJ-공법-2024-22",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "stage1": "C",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "A",
+  "ctx": {
+   "regs": 39,
+   "law": 243,
+   "prec": 1829,
+   "web": 0
+  },
+  "secs": 27.2
+ },
+ {
+  "id": "MOJ-공법-2026-34",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "stage1": "B",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "B",
+  "ctx": {
+   "regs": 39,
+   "law": 240,
+   "prec": 1002,
+   "web": 0
+  },
+  "secs": 26.5
+ },
+ {
+  "id": "MOJ-공법-2022-32",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "stage1": "C",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "A",
+  "ctx": {
+   "regs": 21,
+   "law": 238,
+   "prec": 1828,
+   "web": 0
+  },
+  "secs": 66.4
+ },
+ {
+  "id": "MOJ-공법-2019-33",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "stage1": "D",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "B",
+  "ctx": {
+   "regs": 39,
+   "law": 1195,
+   "prec": 1830,
+   "web": 0
+  },
+  "secs": 28.8
+ },
+ {
+  "id": "MOJ-공법-2022-9",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "stage1": "B",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "A",
+  "ctx": {
+   "regs": 39,
+   "law": 332,
+   "prec": 1703,
+   "web": 0
+  },
+  "secs": 26.9
+ },
+ {
+  "id": "MOJ-공법-2023-38",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "stage1": "C",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "E",
+  "ctx": {
+   "regs": 39,
+   "law": 4320,
+   "prec": 1830,
+   "web": 0
+  },
+  "secs": 38.2
+ },
+ {
+  "id": "MOJ-공법-2024-13",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "stage1": "D",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "D",
+  "ctx": {
+   "regs": 39,
+   "law": 1235,
+   "prec": 1441,
+   "web": 0
+  },
+  "secs": 31.2
+ },
+ {
+  "id": "MOJ-공법-2021-39",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "stage1": "E",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "E",
+  "ctx": {
+   "regs": 21,
+   "law": 241,
+   "prec": 1827,
+   "web": 0
+  },
+  "secs": 65.0
+ },
+ {
+  "id": "MOJ-공법-2019-30",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "stage1": "A",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "A",
+  "ctx": {
+   "regs": 21,
+   "law": 1190,
+   "prec": 1713,
+   "web": 0
+  },
+  "secs": 66.2
+ },
+ {
+  "id": "MOJ-공법-2022-22",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "stage1": "A",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "A",
+  "ctx": {
+   "regs": 39,
+   "law": 1720,
+   "prec": 1770,
+   "web": 0
+  },
+  "secs": 30.6
+ },
+ {
+  "id": "MOJ-공법-2023-29",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "stage1": "A",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "A",
+  "ctx": {
+   "regs": 39,
+   "law": 3268,
+   "prec": 1320,
+   "web": 0
+  },
+  "secs": 32.1
+ },
+ {
+  "id": "MOJ-공법-2019-8",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "stage1": "C",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "C",
+  "ctx": {
+   "regs": 39,
+   "law": 159,
+   "prec": 1681,
+   "web": 0
+  },
+  "secs": 32.3
+ },
+ {
+  "id": "MOJ-공법-2019-28",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "stage1": "E",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "D",
+  "ctx": {
+   "regs": 39,
+   "law": 238,
+   "prec": 1206,
+   "web": 0
+  },
+  "secs": 25.7
+ },
+ {
+  "id": "MOJ-공법-2023-21",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "stage1": "D",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "D",
+  "ctx": {
+   "regs": 39,
+   "law": 232,
+   "prec": 1131,
+   "web": 0
+  },
+  "secs": 28.5
+ },
+ {
+  "id": "MOJ-공법-2023-13",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "stage1": "D",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "D",
+  "ctx": {
+   "regs": 39,
+   "law": 1097,
+   "prec": 1640,
+   "web": 0
+  },
+  "secs": 26.9
+ },
+ {
+  "id": "MOJ-공법-2026-27",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "stage1": "B",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "B",
+  "ctx": {
+   "regs": 39,
+   "law": 2363,
+   "prec": 1613,
+   "web": 0
+  },
+  "secs": 27.3
+ },
+ {
+  "id": "MOJ-공법-2022-26",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "stage1": "D",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "D",
+  "ctx": {
+   "regs": 21,
+   "law": 1235,
+   "prec": 522,
+   "web": 0
+  },
+  "secs": 63.0
+ },
+ {
+  "id": "MOJ-공법-2026-6",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "stage1": "C",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "E",
+  "ctx": {
+   "regs": 21,
+   "law": 2718,
+   "prec": 1829,
+   "web": 0
+  },
+  "secs": 73.6
+ },
+ {
+  "id": "MOJ-공법-2021-37",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "stage1": "E",
+  "confidence": "medium",
+  "used": "researched",
+  "final": "E",
+  "ctx": {
+   "regs": 21,
+   "law": 239,
+   "prec": 1828,
+   "web": 0
+  },
+  "secs": 64.9
+ }
+]

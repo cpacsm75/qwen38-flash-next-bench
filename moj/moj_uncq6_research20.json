@@ -1,0 +1,382 @@
+[
+ {
+  "id": "MOJ-공법-2023-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "E",
+  "queries": {
+   "law": "주류면허법",
+   "reg": "면허취소"
+  },
+  "secs": 22.5,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 1458,
+   "prec": 2143,
+   "web": 12
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2024-22",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "queries": {
+   "law": "행정대집행 이행강제금",
+   "reg": "이행강제금 부과"
+  },
+  "secs": 16.8,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 243,
+   "prec": 4559,
+   "web": 498
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-34",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "A",
+  "queries": {
+   "law": "행정소송법",
+   "reg": "이송 병합 참가"
+  },
+  "secs": 19.7,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 1235,
+   "prec": 1564,
+   "web": 362
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-32",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "E",
+  "queries": {
+   "law": "공유재산 사용허가",
+   "reg": "부담 부관"
+  },
+  "secs": 57.7,
+  "ctx_chars": {
+   "regs": 21,
+   "law": 238,
+   "prec": 2222,
+   "web": 12
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-33",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "A",
+  "queries": {
+   "law": "행정소송",
+   "reg": "취소소송"
+  },
+  "secs": 18.5,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 1195,
+   "prec": 1096,
+   "web": 537
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-9",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "B",
+  "queries": {
+   "law": "헌법소원",
+   "reg": "위헌제청"
+  },
+  "secs": 17.8,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 332,
+   "prec": 1800,
+   "web": 397
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-38",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "queries": {
+   "law": "국토계획법 도시관리계획",
+   "reg": "기반시설 주민제안 실시계획인가"
+  },
+  "secs": 26.3,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 4324,
+   "prec": 1706,
+   "web": 486
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2024-13",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "D",
+  "queries": {
+   "law": "행정소송법",
+   "reg": "법률상이익"
+  },
+  "secs": 20.2,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 1235,
+   "prec": 1564,
+   "web": 476
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-39",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "queries": {
+   "law": "행정소송법 취소판결",
+   "reg": "확정판결 효력"
+  },
+  "secs": 58.8,
+  "ctx_chars": {
+   "regs": 21,
+   "law": 241,
+   "prec": 3442,
+   "web": 537
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-30",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "queries": {
+   "law": "지방자치법",
+   "reg": "조례"
+  },
+  "secs": 62.2,
+  "ctx_chars": {
+   "regs": 21,
+   "law": 4656,
+   "prec": 1411,
+   "web": 392
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-22",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "queries": {
+   "law": "수익적 행정처분 취소",
+   "reg": "직권취소"
+  },
+  "secs": 16.4,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 238,
+   "prec": 1866,
+   "web": 493
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-29",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "queries": {
+   "law": "주택법",
+   "reg": "사업계획승인 의제"
+  },
+  "secs": 23.2,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 3268,
+   "prec": 4720,
+   "web": 379
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-8",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "C",
+  "queries": {
+   "law": "신뢰보호원칙",
+   "reg": "소주"
+  },
+  "secs": 19.6,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 159,
+   "prec": 1526,
+   "web": 487
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "E",
+  "queries": {
+   "law": "행정소송 증명책임",
+   "reg": "사정판결 비공개"
+  },
+  "secs": 32.9,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 238,
+   "prec": 2158,
+   "web": 453
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-21",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "D",
+  "queries": {
+   "law": "헌법 경제질서",
+   "reg": "경제규제 판례"
+  },
+  "secs": 19.8,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 232,
+   "prec": 1137,
+   "web": 397
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-13",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "queries": {
+   "law": "재산권",
+   "reg": "손실보상"
+  },
+  "secs": 20.0,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 1097,
+   "prec": 2181,
+   "web": 453
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-27",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "D",
+  "queries": {
+   "law": "행정대집행",
+   "reg": "과태료 이의"
+  },
+  "secs": 17.6,
+  "ctx_chars": {
+   "regs": 39,
+   "law": 2363,
+   "prec": 1976,
+   "web": 439
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-26",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "queries": {
+   "law": "행정소송법",
+   "reg": "집행정지"
+  },
+  "secs": 73.3,
+  "ctx_chars": {
+   "regs": 21,
+   "law": 1235,
+   "prec": 1564,
+   "web": 478
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-6",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "queries": {
+   "law": "가축전염병 예방법",
+   "reg": "살처분 보상금"
+  },
+  "secs": 62.0,
+  "ctx_chars": {
+   "regs": 21,
+   "law": 2718,
+   "prec": 2961,
+   "web": 243
+  },
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-37",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "queries": {
+   "law": "식품위생법",
+   "reg": "영업정지 과징금"
+  },
+  "secs": 64.8,
+  "ctx_chars": {
+   "regs": 21,
+   "law": 3133,
+   "prec": 2138,
+   "web": 349
+  },
+  "finish": "stop"
+ }
+]
