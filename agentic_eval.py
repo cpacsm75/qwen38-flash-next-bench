@@ -55,6 +55,21 @@ TOOLS = [{
             "required": ["kind", "query"],
         },
     },
+}, {
+    "type": "function",
+    "function": {
+        "name": "lookup_precedent",
+        "description": "판례 코퍼스(15만 건, 원문) 의미검색. 최신 판례 우선으로 재정렬한다. "
+                       "판례의 법리가 쟁점일 때 lookup_law 대신 이 도구를 쓴다.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "query": {"type": "string", "description": "검색 질의(자연어)"},
+                "top": {"type": "integer", "description": "가져올 판례 수(기본 2)"},
+            },
+            "required": ["query"],
+        },
+    },
 }]
 
 SYS = ("너는 한국 법률·회계 실무자다. 근거가 필요한 문제에서는 lookup_law 도구로 법령·판례를 조회한 뒤 "
@@ -148,7 +163,9 @@ def main():
                         a = json.loads(c["function"].get("arguments") or "{}")
                     except Exception:
                         a = {}
-                    if fn == "lookup_regulations":
+                    if fn == "lookup_precedent":
+                        signature = ("prec_lbox", a.get("query", ""), str(a.get("top", 2)))
+                    elif fn == "lookup_regulations":
                         signature = ("reg", a.get("query", ""), str(a.get("top", 4)))
                     else:
                         signature = (a.get("kind", "law"), a.get("query", ""), a.get("article") or "")
@@ -159,6 +176,14 @@ def main():
                         seen.add(signature)
                         if getattr(args, "dummy_tools", False):
                             txt = "검색 결과 없음 (이 저장소에서는 해당 자료를 찾지 못했습니다)"
+                        elif fn == "lookup_precedent":
+                            sys.path.insert(0, "/data/models/lbox")
+                            import lbox_search as L
+                            hits = L.search("/data/models/lbox/index_corpus", a.get("query", ""),
+                                            int(a.get("top", 2)), min_year=2000, recency=0.05)
+                            txt = "\n\n".join(
+                                f"[판례 {h['doc']} · {h.get('year')}년 · off {h['off']}] {h['text'][:900]}"
+                                for h in hits) or "(검색 결과 없음)"
                         elif fn == "lookup_regulations":
                             txt = difytool.lookup(a.get("query", ""), int(a.get("top", 4)))
                         else:

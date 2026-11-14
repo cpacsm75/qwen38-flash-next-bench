@@ -6,6 +6,7 @@
 
 | 문서 | 내용 |
 |---|---|
+| [BASALT_2026-11-14_LBOX_RAON_CLOUD_EDGE0.md](BASALT_2026-11-14_LBOX_RAON_CLOUD_EDGE0.md) | **판례 인덱스 38만청크 · Raon 로컬 vs 클라우드 · Edge0 설치** — 클라우드 Raon 은 사고 폭주로 벤치 불가, 도구는 '내용'이 있어야 효과 |
 | [BASALT_2026-11-13_RAG_TOOLS_ORACLE.md](BASALT_2026-11-13_RAG_TOOLS_ORACLE.md) | **RAG·도구는 정답률을 올리는가** — 같은 80문항 3조건(자율 도구 44 > 도구 없음 37 > 강제 주입 31), 빈 도구 대조군, T=0 결정성 |
 | [BASALT_2026-11-12_RAON_VS_QWEN.md](BASALT_2026-11-12_RAON_VS_QWEN.md) | **한국어 특화 모델 비교** — Raon-1 mini Q6 vs Qwen 비검열 Q6, 변호사시험 80문항(31% vs 46%) + 사고 루프 함정 |
 | [BASALT_2026-11-12_TOOLS_AND_KNOWLEDGE.md](BASALT_2026-11-12_TOOLS_AND_KNOWLEDGE.md) | **도구가 지식을 대체하는가** — KLD 5팩 실측 + 합성 58문항 + 변호사시험 80문항(도구 유/무) + 속도 A/B |
