@@ -55,25 +55,40 @@ TOOLS = [{
             "required": ["kind", "query"],
         },
     },
-}, {
-    "type": "function",
-    "function": {
-        "name": "lookup_precedent",
-        "description": "판례 코퍼스(15만 건, 원문) 의미검색. 최신 판례 우선으로 재정렬한다. "
-                       "판례의 법리가 쟁점일 때 lookup_law 대신 이 도구를 쓴다.",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "query": {"type": "string", "description": "검색 질의(자연어)"},
-                "top": {"type": "integer", "description": "가져올 판례 수(기본 2)"},
-            },
-            "required": ["query"],
-        },
-    },
 }]
+
+# 판례 조회는 lookup_law(kind=prec) 하나로 통일한다. lbox 의미검색 결과도 같은 호출에 합친다.
 
 SYS = ("너는 한국 법률·회계 실무자다. 근거가 필요한 문제에서는 lookup_law 도구로 법령·판례를 조회한 뒤 "
        "그 내용에 근거해 답하라. 최종 답은 요구된 형식만 출력한다(객관식은 보기 문자 하나).")
+
+
+def lbox_prec(query: str, top: int = 2) -> str:
+    """steampc01 lbox_serve API 경유 판례 의미검색. 2000년 이전 제외·2015년 이후 우선."""
+    try:
+        _key = open("/data/bench-results/.lbox_api_key", encoding="utf-8").read().strip()
+        _body = json.dumps({
+            "query": query, "knowledge_id": "index_corpus",
+            "retrieval_setting": {"top_k": top, "score_threshold": 0.0}}).encode()
+        _req = urllib.request.Request(
+            "http://100.110.89.27:8093/retrieval", data=_body,
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {_key}"})
+        with urllib.request.urlopen(_req, timeout=180) as _r:
+            _recs = json.load(_r).get("records", [])
+
+        def _yr(r):
+            try:
+                return int((r.get("metadata") or {}).get("year") or 0)
+            except (TypeError, ValueError):
+                return 0
+        _recs = [r for r in _recs if _yr(r) >= 2000] or _recs
+        _recs.sort(key=lambda r: (-(1 if _yr(r) >= 2015 else 0), -r.get("score", 0)))
+        return "\n\n".join(
+            f"[판례 {r.get('title', '')} · {_yr(r)}년 · score {r.get('score', 0):.3f}] "
+            f"{str(r.get('content', ''))[:2900]}"
+            for r in _recs[:top]) or "(판례 검색 결과 없음)"
+    except Exception as _e:
+        return f"(판례 검색 실패: {str(_e)[:100]})"
 
 
 def post(url, body, timeout=900):
@@ -163,9 +178,7 @@ def main():
                         a = json.loads(c["function"].get("arguments") or "{}")
                     except Exception:
                         a = {}
-                    if fn == "lookup_precedent":
-                        signature = ("prec_lbox", a.get("query", ""), str(a.get("top", 2)))
-                    elif fn == "lookup_regulations":
+                    if fn == "lookup_regulations":
                         signature = ("reg", a.get("query", ""), str(a.get("top", 4)))
                     else:
                         signature = (a.get("kind", "law"), a.get("query", ""), a.get("article") or "")
@@ -176,21 +189,20 @@ def main():
                         seen.add(signature)
                         if getattr(args, "dummy_tools", False):
                             txt = "검색 결과 없음 (이 저장소에서는 해당 자료를 찾지 못했습니다)"
-                        elif fn == "lookup_precedent":
-                            sys.path.insert(0, "/data/models/lbox")
-                            import lbox_search as L
-                            hits = L.search("/data/models/lbox/index_corpus", a.get("query", ""),
-                                            int(a.get("top", 2)), min_year=2000, recency=0.05)
-                            txt = "\n\n".join(
-                                f"[판례 {h['doc']} · {h.get('year')}년 · off {h['off']}] {h['text'][:900]}"
-                                for h in hits) or "(검색 결과 없음)"
                         elif fn == "lookup_regulations":
                             txt = difytool.lookup(a.get("query", ""), int(a.get("top", 4)))
+                        elif fn == "lookup_precedent":
+                            # 구 명칭 호환: lookup_law(kind=prec)와 동일 처리
+                            txt = lawtool.lookup("prec", a.get("query", ""), "") + "\n\n" + \
+                                lbox_prec(a.get("query", ""), int(a.get("top", 2)))
                         else:
                             txt = lawtool.lookup(*signature)
+                            if signature[0] == "prec":
+                                # 판례는 MCP + lbox 의미검색을 한 번에 합친다
+                                txt += "\n\n" + lbox_prec(a.get("query", ""), 2)
                     tool_log.append({"name": fn, "args": a, "chars": len(txt), "dup": dup})
                     messages.append({"role": "tool", "tool_call_id": c["id"],
-                                     "content": txt[:2500]})
+                                     "content": txt[:6000]})
             verdict = grade(it, content)
         except Exception as e:
             verdict, content, fin = "오류", f"{e}"[:200], "error"

@@ -1,0 +1,2137 @@
+[
+ {
+  "id": "MOJ-공법-2023-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "E",
+  "tool_calls": [],
+  "secs": 20.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2024-22",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-34",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "content": "B",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 이송 관련청구 병합 참가"
+    },
+    "chars": 248,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "취소소송 병합 부당이득반환청구 처분 취소 확정 선결문제"
+    },
+    "chars": 3409,
+    "dup": false
+   }
+  ],
+  "secs": 9.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-32",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "B",
+  "tool_calls": [],
+  "secs": 3.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-33",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-9",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "헌법재판소법 제68조 제2항 헌법소원심판 청구기간 위헌법률심판 제청신청 기각",
+     "article": "68"
+    },
+    "chars": 275,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "헌법소원 제청신청 각하 직권심사 재판의 전제성 적법요건"
+    },
+    "chars": 4932,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "위헌결정 행정처분 당연무효 아님 특별한 사정"
+    },
+    "chars": 3165,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "헌법소원 항소심 승소 확정 재판의 전제성 상실"
+    },
+    "chars": 2575,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "위헌법률심판제청신청 반복 신청 동일 사유 부적법 항소심"
+    },
+    "chars": 3411,
+    "dup": false
+   }
+  ],
+  "secs": 17.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-38",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "도시관리계획 입안제안 반려 처분성 이익형량 실시계획인가 승계"
+    },
+    "chars": 2659,
+    "dup": false
+   }
+  ],
+  "secs": 6.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2024-13",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [],
+  "secs": 3.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-39",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "행정소송 취소판결 기속력 기각판결 기판력 무효확인소송 위법주장"
+    },
+    "chars": 3819,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "확정판결 기속력 반하는 행정처분 당연무효 취소사유"
+    },
+    "chars": 3644,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "기각판결 확정 기판력 무효확인소송 처분 위법 주장할 수 있는지"
+    },
+    "chars": 6607,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "취소판결 기속력 기본적 사실관계 동일 새로운 처분사유 종전 처분 당시 이미 존재 알고 있었다"
+    },
+    "chars": 4214,
+    "dup": false
+   }
+  ],
+  "secs": 14.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-30",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "기관위임사무 조례로 정하도록 위임 허용 여부"
+    },
+    "chars": 4033,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주민 조례 제정 개정 폐지 청구 공공시설 설치 반대 허용되지 아니함"
+    },
+    "chars": 4040,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "기관위임사무 조례에 위임하는 것을 금하는 법리 없음 지방자치단체"
+    },
+    "chars": 4101,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주민 조례 제정 청구 공공시설 설치 반대 내용 청구권자 적격"
+    },
+    "chars": 1367,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주민 조례 제정 청구 반대 내용 공공시설"
+    },
+    "chars": 4000,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "교원인사자문위원회 조례 교원인사 심의 위임없이 위법"
+    },
+    "chars": 3100,
+    "dup": false
+   }
+  ],
+  "secs": 18.3,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-22",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "수익적 행정처분 직권취소 실정법상 근거 기득권 공익상 필요 쟁송취소",
+     "article": ""
+    },
+    "chars": 6268,
+    "dup": false
+   },
+   {
+    "name": "lookup_regulations",
+    "args": {
+     "query": "수익적 행정처분 직권취소 신뢰이익 부정한 방법 묵시적 취소",
+     "top": 4
+    },
+    "chars": 702,
+    "dup": false
+   }
+  ],
+  "secs": 18.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-29",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 2.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-8",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "C",
+  "tool_calls": [],
+  "secs": 2.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "사정판결 직권 당사자의 명백한 주장 없음 기록에 나타난 사정"
+    },
+    "chars": 3696,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "국가유공자 등록신청인 상이 증명책임 불가피한 사유 없이 본인의 과실 피고 처분청"
+    },
+    "chars": 5156,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "사정판결 법원 직권 당사자 주장 없이도 가능 행정소송법 제26조 직권심리주의"
+    },
+    "chars": 3731,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "사정판결 공공복리 직권으로 판단 원고 주장 없어도 직권심리주의 행정소송법 제26조"
+    },
+    "chars": 6188,
+    "dup": false
+   }
+  ],
+  "secs": 22.7,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-21",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "헌법 제126조"
+    },
+    "chars": 1951,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "택시운송사업 운송수입금 전액관리제 헌법 제126조 기업경영 국가의 광범한 감독 통제 관리"
+    },
+    "chars": 2703,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "소비자불매운동 위법성조각 제3자"
+    },
+    "chars": 6730,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "대한민국헌법 제121조",
+     "article": "121"
+    },
+    "chars": 664,
+    "dup": false
+   }
+  ],
+  "secs": 12.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2023-13",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "최저임금 고시 사업자 재산권 제한 직업의 자유"
+    },
+    "chars": 318,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "헌법 제23조 제3항 수용의 주체 국가 등 공적 기관 한정 민간기업"
+    },
+    "chars": 340,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "최저임금"
+    },
+    "chars": 635,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "수용의 주체"
+    },
+    "chars": 278,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "최저임금 고시 재산권"
+    },
+    "chars": 290,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "정당한 보상 객관적 재산가치 완전한 보상"
+    },
+    "chars": 310,
+    "dup": false
+   }
+  ],
+  "secs": 11.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-27",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "content": "B",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "장례식장 사용중지 행정대집행"
+    },
+    "chars": 3264,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "건축법 시정명령 상대방 위법상태 시정할 수 있는 법률상 사실상 지위"
+    },
+    "chars": 2883,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "병역법 병역의무 기피자 인적사항 공개 결정 항고소송 대상 처분"
+    },
+    "chars": 6122,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "여객자동차 운수사업법 과징금 여러 위반행위 일괄 부과처분 원칙"
+    },
+    "chars": 5560,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "질서위반행위규제법 제20조 이의제기 과태료 부과처분 효력 상실"
+    },
+    "chars": 3137,
+    "dup": false
+   }
+  ],
+  "secs": 17.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2022-26",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "행정소송법 집행정지",
+     "article": "23"
+    },
+    "chars": 241,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "집행정지 결정의 효력 소멸 본안 패소 확정판결"
+    },
+    "chars": 6342,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "집행정지 본안 패소 확정 시 장래에 향하여 효력 소멸"
+    },
+    "chars": 3560,
+    "dup": false
+   }
+  ],
+  "secs": 8.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-6",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "가축전염병 예방법 제48조 제1항 축산계열화사업자 계약사육농가 보상금 재산권 침해 헌법재판소",
+     "article": ""
+    },
+    "chars": 2784,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "가축전염병 예방법 보상금 축산계열화사업자"
+    },
+    "chars": 315,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "가혹한 부담 조정적 보상 입법형성재량"
+    },
+    "chars": 825,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "축산계열화"
+    },
+    "chars": 204,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "축산계열화사업자 계약사육농가 보상금"
+    },
+    "chars": 2517,
+    "dup": false
+   }
+  ],
+  "secs": 12.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-37",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [],
+  "secs": 2.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-8",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [],
+  "secs": 3.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-20",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "권한쟁의심판 당사자능력 국회 상임위원회 위원장 소위원회 교섭단체"
+    },
+    "chars": 2394,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "국회의원 권한쟁의심판 임기만료 의원직 상실 심판절차 종료 법률의 제개정 행위 피청구인"
+    },
+    "chars": 1705,
+    "dup": false
+   }
+  ],
+  "secs": 7.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2019-15",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주민등록번호 변경 헌법소원 주민등록법 제7조 개인정보자기결정권 헌법불합치 법익균형성"
+    },
+    "chars": 2783,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "detc",
+     "query": "주민등록번호 변경 불허 부진정입법부작위 헌법불합치"
+    },
+    "chars": 326,
+    "dup": false
+   }
+  ],
+  "secs": 6.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2021-24",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "content": "**B**\n\n- ㄱ. ○ — 실시계획인가처분은 해당 사업을 구체화하여 현실적으로 실현하기 위한 형성행위로서 이에 따라 토지수용권 등이 구체적으로 발생한다.\n- ㄴ. × — 행정절차법은 행정계획의 수립·확정절차에 관한 직접적인 법적 근거를 두고 있지 않다.\n- ㄷ. ○ — 도시계획시설결정에 있어 형성의 재량은 무제한적이지 않고, 관련 공익과 사익의 비교·형량",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "도시계획시설결정 실시계획인가 하자승계 중대 명백 행정계획 형성재량 형량",
+     "article": ""
+    },
+    "chars": 2495,
+    "dup": false
+   }
+  ],
+  "secs": 8.3,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2020-11",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2025-33",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "산업단지개발계획 변경 형평의 원칙 폐기물소각시설 증설"
+    },
+    "chars": 5767,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "행정계획 기속력 계획재량 일탈 취소판결 확정 후 도시관리계획"
+    },
+    "chars": 4821,
+    "dup": false
+   }
+  ],
+  "secs": 7.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-18",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "B",
+  "tool_calls": [],
+  "secs": 3.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2026-39",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "하도급거래 공정화에 관한 법률 벌점 부과 항고소송 대상 처분 사실행위",
+     "article": ""
+    },
+    "chars": 5770,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "철도운행사업 국가배상법 적용 사경제적 작용 철도시설물 설치 관리 하자",
+     "article": ""
+    },
+    "chars": 4264,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "대한변호사협회 변호사 등록 공권력 행사 주체 내부 기준 사법적 성질",
+     "article": ""
+    },
+    "chars": 2942,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "행정기관 사이 권한 존부 범위 다툼 내부적 분쟁 기관소송 권한쟁의심판 항고소송 당사자능력",
+     "article": ""
+    },
+    "chars": 2564,
+    "dup": false
+   }
+  ],
+  "secs": 9.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2025-22",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "근로복지공단 개별 사업장 사업종류 결정 행정행위 확인적 처분"
+    },
+    "chars": 3945,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "요양기관 업무정지처분 대물적 처분 속임수 보험자 요양급여비용"
+    },
+    "chars": 4702,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "공중위생관리법 영업 양도 양수 영업소개설 통보 양도인 영업정지 양수인"
+    },
+    "chars": 4764,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "건축허가 대물적 성질 건축주 인적 요소 형식적 심사"
+    },
+    "chars": 4266,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "근로복지공단 사업종류 결정 확인적 행정행위 항고소송 대상 처분"
+    },
+    "chars": 6742,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주택재건축조합설립인가처분 설권적 처분 성격"
+    },
+    "chars": 4474,
+    "dup": false
+   }
+  ],
+  "secs": 15.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-공법-2025-27",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "개발행위허가 운영지침 행정규칙 대외적 구속력"
+    },
+    "chars": 6864,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "미리 공표하지 않은 처분기준 적용 처분 적법성 결정적 지표 행정규칙"
+    },
+    "chars": 4607,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "산업재해보상보험법 시행령 별표3 업무상질병 구체적인 인정기준 예시적 고용노동부 고시 대외적 구속력"
+    },
+    "chars": 2713,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "금융기관 검사 및 제재에 관한 규정 제18조 법규명령 효력 대외적 구속력"
+    },
+    "chars": 4516,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "업무상질병으로 인한 산재보험 급여 지급사유에 관한 기준 고시 대외적 구속력 행정규칙"
+    },
+    "chars": 5228,
+    "dup": false
+   }
+  ],
+  "secs": 18.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2020-34",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "C",
+  "tool_calls": [],
+  "secs": 3.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2022-41",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "content": "B",
+  "tool_calls": [],
+  "secs": 3.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2021-27",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "B",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주택임대차보호법 대항력 임차인 아닌 배우자 전입신고",
+     "article": ""
+    },
+    "chars": 3452,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "임차인 아닌 배우자 전입신고 대항력 92다41589"
+    },
+    "chars": 2218,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "전대차 전대인 임차권 대항력 유지 전대인 전입신고"
+    },
+    "chars": 3918,
+    "dup": false
+   }
+  ],
+  "secs": 13.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2019-52",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [],
+  "secs": 2.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2025-18",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "B",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주위토지통행권 무상 토지 일부양도 구분소유적 공유 통행권 소멸"
+    },
+    "chars": 2962,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "민법 주위토지통행권",
+     "article": "220"
+    },
+    "chars": 238,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주위토지통행권"
+    },
+    "chars": 3752,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주위토지통행권 특정승계인"
+    },
+    "chars": 2773,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "주위토지통행권 무상"
+    },
+    "chars": 7060,
+    "dup": false
+   }
+  ],
+  "secs": 16.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2021-33",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "예약완결권 제척기간 행사 소장 부본 송달"
+    },
+    "chars": 3158,
+    "dup": false
+   }
+  ],
+  "secs": 5.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2026-69",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "어음법 배서 담보책임 면제 인수 지급 담보하지 아니하는 뜻 기재",
+     "article": "15"
+    },
+    "chars": 260,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "어음법",
+     "article": "15"
+    },
+    "chars": 902,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "어음법",
+     "article": "19"
+    },
+    "chars": 1039,
+    "dup": false
+   }
+  ],
+  "secs": 7.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2025-55",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [],
+  "secs": 2.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2025-49",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "공유물분할 청구 조정 성립 물권변동 등기 요건"
+    },
+    "chars": 3030,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "공유물분할청구 필요적 공동소송 소송요건 흠"
+    },
+    "chars": 1248,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "공유물분할 조정이 성립 분필절차 소유권 취득"
+    },
+    "chars": 3047,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "공유물분할청구 조정조서 형성판결과 같은 효력"
+    },
+    "chars": 3369,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "고유필수적 공동소송 공동소송인 중 1인 소송요건 흠 나머지 부적법"
+    },
+    "chars": 3958,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "공유물분할 지분비율 교환가치 비율 경제적 가치 상응"
+    },
+    "chars": 5178,
+    "dup": false
+   }
+  ],
+  "secs": 21.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2020-62",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2022-26",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [],
+  "secs": 2.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2026-42",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 2.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2021-16",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "법정지상권 성립 배제 특약 제3자 대항"
+    },
+    "chars": 6385,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "법정지상권 등기 없이 토지 소유권이전등기 제3자 대항"
+    },
+    "chars": 3780,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "강제경매 건물 매수인 법정지상권 취득"
+    },
+    "chars": 5110,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "법정지상권 지료 미지급 소멸청구 지료 결정"
+    },
+    "chars": 5736,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "저당권설정 당시 법정지상권 성립 배제 특약 유효 경락인 대항 99다21064"
+    },
+    "chars": 2910,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "법정지상권 등기 불요 토지 양수인 제3자 대항 97다24228"
+    },
+    "chars": 1532,
+    "dup": false
+   }
+  ],
+  "secs": 16.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2024-55",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 2.7,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2020-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "금전채권의 질권자 직접청구권 제3채무자 부당이득반환 입질채권 발생원인계약 무효",
+     "article": ""
+    },
+    "chars": 2993,
+    "dup": false
+   }
+  ],
+  "secs": 7.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2020-33",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "상속재산분할협의 상속분 포기 사해행위 공동담보 감소 상속개시 전 채권자"
+    },
+    "chars": 3910,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "상속재산분할 대상 상속개시 당시 상속재산 처분 대가 물상대위"
+    },
+    "chars": 5641,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "상속재산분할협의 사해행위 상속개시 전에 채권을 취득한 채권자 공동담보 감소 없음"
+    },
+    "chars": 4279,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "상속재산분할협의 사해행위 상속채권자 상속개시 후 채권 취득 책임재산 공동담보"
+    },
+    "chars": 4262,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "상속재산분할협의 전부 해제 새로운 분할협의 일부 해제"
+    },
+    "chars": 3224,
+    "dup": false
+   }
+  ],
+  "secs": 21.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2020-13",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2019-6",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "근저당권이전 부기등기 피담보채무 소멸 말소등기 소의이익"
+    },
+    "chars": 4137,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "근저당권 경매신청시 피담보채무 확정 경매신청 취하 소급효 채무확정 번복"
+    },
+    "chars": 2017,
+    "dup": false
+   }
+  ],
+  "secs": 8.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2019-42",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2024-67",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "민사소송법 보조참가",
+     "article": "84"
+    },
+    "chars": 241,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "민사소송법",
+     "article": "84"
+    },
+    "chars": 624,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "보조참가 참가신청 허가 결정 당사자 이의"
+    },
+    "chars": 6618,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "query": "민사소송법",
+     "kind": "law",
+     "article": "88"
+    },
+    "chars": 832,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "민사소송법",
+     "article": "89"
+    },
+    "chars": 730,
+    "dup": false
+   }
+  ],
+  "secs": 12.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2021-18",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2021-23",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "**E**\n\n- ㄱ. ✗ — 이행의 최고는 반드시 미리 상당한 기간을 명시하여 행하여야 하는 것은 아니다(기간 명시 없이도 최고로서 효력 있음).\n- ㄴ. ○ — 신원보증인의 채무는 신원보증계약에 기한 채무로서 이행기의 정함이 없는 채무이므로, 채권자의 이행청구(최고)가 없으면 지체책임이 생기지 않는다.\n- ㄷ. ✗ — 금전채무에 관하여 이행지체에 대비한 ",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "지연손해금 비율 약정 손해배상액의 예정 감액 대상 금전채무"
+    },
+    "chars": 5935,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "이행최고 상당한 기간 명시 하지 않아도 해제권 발생"
+    },
+    "chars": 2985,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "매매계약 무효 악의의 수익자 매매대금 법정이율 5% 동시이행 이행지체 손해배상"
+    },
+    "chars": 4656,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "이행기의 정함이 없는 채권 양수인 소 제기 소송계속 중 채권양도통지 이행지체 책임 다음날"
+    },
+    "chars": 4432,
+    "dup": false
+   }
+  ],
+  "secs": 15.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2025-34",
+  "type": "mc",
+  "verdict": "무응답",
+  "answer": "C",
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "민법 인지청구의 기간 상속이 개시된 사실을 안 때",
+     "article": "863"
+    },
+    "chars": 253,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "인지청구 상속개시 사실을 안 날 친생자 관계 인지 제소기간 기산점"
+    },
+    "chars": 5075,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "민법",
+     "article": "867"
+    },
+    "chars": 983,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "인지한 자 상속분에 상당한 가액청구권 제척기간 3년 상속개시 사실을 안 날"
+    },
+    "chars": 2779,
+    "dup": false
+   }
+  ],
+  "secs": 15.1,
+  "finish": "length"
+ },
+ {
+  "id": "MOJ-민사법-2020-59",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-민사법-2024-24",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "B",
+  "tool_calls": [],
+  "secs": 2.7,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2026-15",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "사인위조 사문서위조 실체적 경합범 인장 위조 문서위조",
+     "article": ""
+    },
+    "chars": 2273,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "대리권 있는 자 타인 명의 문서 작성 사문서위조 성립하지 아니함 포괄적 위임"
+    },
+    "chars": 3581,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "사망한 사람 명의 문서 사문서위조죄 객체 성립"
+    },
+    "chars": 2915,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "한 행위数个 죄명 위반 상상적 경합범 하나의 문서 명의인 두 사람 사문서위조"
+    },
+    "chars": 1976,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "사인위조죄와 사문서위조죄 실체적 경합범 관계"
+    },
+    "chars": 3051,
+    "dup": false
+   }
+  ],
+  "secs": 19.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2024-22",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "ABC",
+  "tool_calls": [],
+  "secs": 3.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2023-28",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 2.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2024-25",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 2.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2019-11",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "A",
+  "content": "A",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "도의적 책임론 성격책임론 인격책임론 책임의 근거"
+    },
+    "chars": 2803,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "성격적 결함 심신장애 충동조절장애 정신병 동등"
+    },
+    "chars": 4033,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "임금 퇴직금 체불 책임조각사유 기대가능성 불가피한 사정"
+    },
+    "chars": 4291,
+    "dup": false
+   }
+  ],
+  "secs": 11.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2021-10",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2023-27",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "B",
+  "tool_calls": [],
+  "secs": 3.2,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2023-7",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "E",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "건축자재 치우지 않은 부작위 업무방해 작위에 의한 업무방해와 동등한 형법적 가치"
+    },
+    "chars": 5060,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "부진정 부작위범 작위의무 사회상규 조리 방조 부작위 기망 고지의무"
+    },
+    "chars": 2441,
+    "dup": false
+   }
+  ],
+  "secs": 7.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2021-34",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "B",
+  "tool_calls": [],
+  "secs": 3.7,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2024-19",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "C",
+  "content": "C",
+  "tool_calls": [],
+  "secs": 2.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2019-34",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2020-36",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "B",
+  "content": "E",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "전문증거 증거능력 문자정보 범행 수단 재전문진술 상담원 검사 진술조서 본래증거 알선수재 영상녹화물 독립적 증거 건강보험심사평가원 회신 형사소송법 제315조 제3호"
+    },
+    "chars": 1884,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "건강보험심사평가원 입원진료 적정성 회신"
+    },
+    "chars": 3576,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "수사기관 참고인 영상녹화물 독립적인 증거"
+    },
+    "chars": 2871,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "재전문진술 기재 진술조서 상담원 증거능력"
+    },
+    "chars": 1416,
+    "dup": false
+   }
+  ],
+  "secs": 15.1,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2025-35",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2021-14",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "A",
+  "content": "C",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "임대인 임차인 경매 진행 사실 고지하지 않은 사기죄 등기부 열람 가능"
+    },
+    "chars": 2258,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "부진정부작위범 보증인지위 보증의무 구별 착오 법률의 착오"
+    },
+    "chars": 2626,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "부작위범 작위의무 이행 사실상 불가능 기대가능성"
+    },
+    "chars": 5353,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "부진정부작위범 행위태양의 동가치성 제한 기능"
+    },
+    "chars": 2540,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "의사 치료 중단 퇴원 허용 보호자 방치 환자 사망 부작위 살인 방조"
+    },
+    "chars": 3009,
+    "dup": false
+   }
+  ],
+  "secs": 11.4,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2025-34",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "횡령 피해자 여러 명 하나의 행위 상상적 경합",
+     "article": ""
+    },
+    "chars": 3198,
+    "dup": false
+   }
+  ],
+  "secs": 7.5,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2025-16",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.6,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2023-8",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.3,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2026-35",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.3,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2019-27",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "B",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "압수수색영장 팩스 영장사본 제시 전자정보 반출 별건 영장"
+    },
+    "chars": 1738,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "압수수색영장 유효기간 집행 종료 효력 상실"
+    },
+    "chars": 4486,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "압수수색영장 사본 팩스 송신 제시"
+    },
+    "chars": 6451,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "prec",
+     "query": "영장 제시 원본 사본 이메일 계정 접근권한"
+    },
+    "chars": 4525,
+    "dup": false
+   }
+  ],
+  "secs": 13.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2022-18",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "C",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 2.9,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2023-9",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "B",
+  "content": "B",
+  "tool_calls": [],
+  "secs": 3.0,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2021-23",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "D",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.3,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2021-30",
+  "type": "mc",
+  "verdict": "무응답",
+  "answer": "B",
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "형사소송법 영장 집행 원본 제시 급속 체포영장",
+     "article": "70"
+    },
+    "chars": 254,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "형사소송법",
+     "article": "70"
+    },
+    "chars": 1186,
+    "dup": false
+   },
+   {
+    "name": "lookup_law",
+    "args": {
+     "kind": "law",
+     "query": "형사소송법",
+     "article": "200조의2"
+    },
+    "chars": 1501,
+    "dup": false
+   }
+  ],
+  "secs": 10.3,
+  "finish": "length"
+ },
+ {
+  "id": "MOJ-형사법-2025-27",
+  "type": "mc",
+  "verdict": "오답",
+  "answer": "E",
+  "content": "A",
+  "tool_calls": [],
+  "secs": 3.8,
+  "finish": "stop"
+ },
+ {
+  "id": "MOJ-형사법-2023-18",
+  "type": "mc",
+  "verdict": "정답",
+  "answer": "D",
+  "content": "D",
+  "tool_calls": [],
+  "secs": 2.7,
+  "finish": "stop"
+ }
+]
