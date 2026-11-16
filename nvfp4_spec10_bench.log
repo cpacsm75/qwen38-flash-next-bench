@@ -1,0 +1,10 @@
+[bench] nvfp4_spec10  22:48:56
+basalt-bench  build ffc68faa71  power limit 450 W
+
+| test      | t/s | accept % | draft len |
+| --------- | --: | -------: | --------: |
+| pp16384   | 929 |        - |         - |
+| tg conv   |  30 |     70.4 |      2.79 |
+| tg struct |  54 |     97.0 |      6.94 |
+| tg prose  |  38 |     64.0 |      1.92 |
+[bench] exit=0 22:52:55

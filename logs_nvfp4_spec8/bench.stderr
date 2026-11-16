@@ -1,0 +1,9 @@
+basalt-bench: starting /data/basalt/basalt-v0.3.2-linux-x64/bin/basalt (log: /data/bench-results/logs_nvfp4_spec8/engine.log)
+basalt-bench: loading 67.8 GiB: cuda0 0.0 / 4.5 GiB
+basalt-bench: loading cuda0 4.5 / 4.5 GiB done (1 s)
+basalt-bench: loading cuda0 29.1 / 29.1 GiB done (5 s)
+basalt-bench: engine ready in 6 s
+  run 1 conv    33.9 tok/s, 1040 tokens
+  run 1 struct  53.7 tok/s, 7230 tokens
+  run 1 prose   37.1 tok/s, 1200 tokens
+  run 1 pp16384 16676 tokens, 952 t/s engine, 914 t/s wall
