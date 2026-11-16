@@ -1,0 +1,18 @@
+basalt-bench: starting ./bin/basalt (log: /data/bench-results/logs_dq8_040/engine.log)
+basalt-bench: loading 68.4 GiB: cuda0 0.0 / 5.2 GiB
+basalt-bench: loading cuda0 5.2 / 5.2 GiB done (1 s)
+basalt-bench: loading cuda0 29.1 / 29.1 GiB done (5 s)
+basalt-bench: loading ram 39.4 / 39.4 GiB done (8 s)
+basalt-bench: engine ready in 14 s
+  run 1 conv    238.0 tok/s, 1034 tokens
+  run 1 struct  453.1 tok/s, 7230 tokens
+  run 1 prose   236.7 tok/s, 1200 tokens
+  run 1 pp16384 16676 tokens, 5871 t/s engine, 5764 t/s wall
+basalt-bench  build 99dc78cb51  power limit 450 W
+
+| test      |  t/s | accept % | draft len |
+| --------- | ---: | -------: | --------: |
+| pp16384   | 5871 |        - |         - |
+| tg conv   |  238 |     69.6 |      2.11 |
+| tg struct |  453 |     98.1 |      6.90 |
+| tg prose  |  237 |     66.5 |      1.82 |

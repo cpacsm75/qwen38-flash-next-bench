@@ -1,0 +1,545 @@
+basalt: gpus: RTX 5090 (nvidia-smi 0) main
+basalt generate: experts Q8_0/Q8_0, layers 0-47: decode device-planned tail + grouped kernels, prefill MMQ, CPU tier dot
+basalt generate: PCIe probe: 53.8 GB/s host->device (best of 53.7 53.2 53.8 53.3) -> pcie_frac 0.55 (default 0.55)
+basalt generate: /data/models/qwen38-fn/Qwen3.8-FN-Q8_0.basalt experts (largest blob 5.22 MB), token embedding Q8_0 in mapped host memory (644 MiB, 0.2 s), its first 8192 rows in VRAM (21.2 MiB)
+basalt generate: profile /data/basalt/basalt-v0.4.0-linux-x64/data/profiles/qwen4exp-48x512.prof: 24576 ranked pairs, built for 24576 slots
+basalt load: total 133859005952
+basalt load: plan cuda0 5513303552
+basalt load: cuda0 0 214208000
+basalt load: cuda0 2662400 214208000
+basalt load: cuda0 6190976 214208000
+basalt load: cuda0 19753856 214208000
+basalt load: cuda0 23031552 214208000
+basalt load: cuda0 26562176 214208000
+basalt load: cuda0 30090880 214208000
+basalt load: cuda0 32712320 214208000
+basalt load: cuda0 36240896 214208000
+basalt load: cuda0 39769472 214208000
+basalt load: cuda0 43300096 214208000
+basalt load: cuda0 46828800 214208000
+basalt load: cuda0 49450240 214208000
+basalt load: cuda0 52978816 214208000
+basalt load: cuda0 56507392 214208000
+basalt load: cuda0 60038016 214208000
+basalt load: cuda0 63566720 214208000
+basalt load: cuda0 66188160 214208000
+basalt load: cuda0 69716736 214208000
+basalt load: cuda0 73245312 214208000
+basalt load: cuda0 76775936 214208000
+basalt load: cuda0 80304640 214208000
+basalt load: cuda0 82926080 214208000
+basalt load: cuda0 86454656 214208000
+basalt load: cuda0 89983232 214208000
+basalt load: cuda0 93513856 214208000
+basalt load: cuda0 97042560 214208000
+basalt load: cuda0 99664000 214208000
+basalt load: cuda0 103192576 214208000
+basalt load: cuda0 106721152 214208000
+basalt load: cuda0 110251776 214208000
+basalt load: cuda0 113780480 214208000
+basalt load: cuda0 116401920 214208000
+basalt load: cuda0 119930496 214208000
+basalt load: cuda0 123459072 214208000
+basalt load: cuda0 126989696 214208000
+basalt load: cuda0 130518400 214208000
+basalt load: cuda0 133139840 214208000
+basalt load: cuda0 136668416 214208000
+basalt load: cuda0 140196992 214208000
+basalt load: cuda0 143727616 214208000
+basalt load: cuda0 147256320 214208000
+basalt load: cuda0 149877760 214208000
+basalt load: cuda0 153406336 214208000
+basalt load: cuda0 156934912 214208000
+basalt load: cuda0 160465536 214208000
+basalt load: cuda0 163994240 214208000
+basalt load: cuda0 166615680 214208000
+basalt load: cuda0 170144256 214208000
+basalt load: cuda0 173672832 214208000
+basalt load: cuda0 177203456 214208000
+basalt load: cuda0 180732160 214208000
+basalt load: cuda0 183353600 214208000
+basalt load: cuda0 186882176 214208000
+basalt load: cuda0 190410752 214208000
+basalt load: cuda0 193941376 214208000
+basalt load: cuda0 197470080 214208000
+basalt load: cuda0 200091520 214208000
+basalt load: cuda0 203620096 214208000
+basalt load: cuda0 207148672 214208000
+basalt load: cuda0 210679296 214208000
+basalt load: cuda0 214208000 214208000
+basalt load: cuda0 214208000 214208000
+basalt generate: 204 MiB of weights loaded from /data/models/qwen38-fn/Qwen3.8-FN-Q8_0.basalt in 0.1 s (497 tensors skipped: served from the source tensors)
+basalt hc8: 194 hyper-connection matrices held only as 8-bit copies (659 MiB of copies) in 0.0 s
+basalt load: cuda0 0 3119513600
+basalt load: cuda0 44564480 3119513600
+basalt load: cuda0 83210240 3119513600
+basalt load: cuda0 114544640 3119513600
+basalt load: cuda0 160849920 3119513600
+basalt load: cuda0 205414400 3119513600
+basalt load: cuda0 245452800 3119513600
+basalt load: cuda0 278876160 3119513600
+basalt load: cuda0 330055680 3119513600
+basalt load: cuda0 368701440 3119513600
+basalt load: cuda0 400035840 3119513600
+basalt load: cuda0 435200000 3119513600
+basalt load: cuda0 466534400 3119513600
+basalt load: cuda0 503091200 3119513600
+basalt load: cuda0 536514560 3119513600
+basalt load: cuda0 587694080 3119513600
+basalt load: cuda0 626339840 3119513600
+basalt load: cuda0 657674240 3119513600
+basalt load: cuda0 692838400 3119513600
+basalt load: cuda0 724172800 3119513600
+basalt load: cuda0 760729600 3119513600
+basalt load: cuda0 794152960 3119513600
+basalt load: cuda0 845332480 3119513600
+basalt load: cuda0 883978240 3119513600
+basalt load: cuda0 915312640 3119513600
+basalt load: cuda0 950476800 3119513600
+basalt load: cuda0 981811200 3119513600
+basalt load: cuda0 1016975360 3119513600
+basalt load: cuda0 1048309760 3119513600
+basalt load: cuda0 1084866560 3119513600
+basalt load: cuda0 1118289920 3119513600
+basalt load: cuda0 1169469440 3119513600
+basalt load: cuda0 1208115200 3119513600
+basalt load: cuda0 1239449600 3119513600
+basalt load: cuda0 1274613760 3119513600
+basalt load: cuda0 1305948160 3119513600
+basalt load: cuda0 1342504960 3119513600
+basalt load: cuda0 1375928320 3119513600
+basalt load: cuda0 1427107840 3119513600
+basalt load: cuda0 1465753600 3119513600
+basalt load: cuda0 1497088000 3119513600
+basalt load: cuda0 1533644800 3119513600
+basalt load: cuda0 1567068160 3119513600
+basalt load: cuda0 1618247680 3119513600
+basalt load: cuda0 1658286080 3119513600
+basalt load: cuda0 1691709440 3119513600
+basalt load: cuda0 1742888960 3119513600
+basalt load: cuda0 1781534720 3119513600
+basalt load: cuda0 1812869120 3119513600
+basalt load: cuda0 1848033280 3119513600
+basalt load: cuda0 1879367680 3119513600
+basalt load: cuda0 1915924480 3119513600
+basalt load: cuda0 1949347840 3119513600
+basalt load: cuda0 2000527360 3119513600
+basalt load: cuda0 2039173120 3119513600
+basalt load: cuda0 2070507520 3119513600
+basalt load: cuda0 2105671680 3119513600
+basalt load: cuda0 2137006080 3119513600
+basalt load: cuda0 2173562880 3119513600
+basalt load: cuda0 2206986240 3119513600
+basalt load: cuda0 2258165760 3119513600
+basalt load: cuda0 2296811520 3119513600
+basalt load: cuda0 2328145920 3119513600
+basalt load: cuda0 2363310080 3119513600
+basalt load: cuda0 2394644480 3119513600
+basalt load: cuda0 2429808640 3119513600
+basalt load: cuda0 2461143040 3119513600
+basalt load: cuda0 2497699840 3119513600
+basalt load: cuda0 2531123200 3119513600
+basalt load: cuda0 2582302720 3119513600
+basalt load: cuda0 2620948480 3119513600
+basalt load: cuda0 2652282880 3119513600
+basalt load: cuda0 2687447040 3119513600
+basalt load: cuda0 2718781440 3119513600
+basalt load: cuda0 2755338240 3119513600
+basalt load: cuda0 2788761600 3119513600
+basalt load: cuda0 2839941120 3119513600
+basalt load: cuda0 2878586880 3119513600
+basalt load: cuda0 2909921280 3119513600
+basalt load: cuda0 2946478080 3119513600
+basalt load: cuda0 2979901440 3119513600
+basalt load: cuda0 3031080960 3119513600
+basalt load: cuda0 3069726720 3119513600
+basalt load: cuda0 3101061120 3119513600
+basalt load: cuda0 3119513600 3119513600
+basalt generate: 301 native projection matrices, 2975.00 MiB of weights, in 0.6 s
+basalt generate: the SSD is kept awake while rows are read: one page of the table after 40 ms without a read, until 60 s after the last request 
+basalt generate: PLE on, table 320001536 rows of /data/models/qwen38-fn/Qwen3.8-FN-Q8_0.basalt
+basalt load: kv cuda0 568084224 16720 568084224
+basalt hc8: the draft layer's hyper-connection matrices as 8-bit copies only (37.5 MiB of bf16 left out)
+basalt load: cuda0 0 784566272
+basalt load: cuda0 76777472 784566272
+basalt load: cuda0 784566272 784566272
+basalt load: cuda0 784566272 784566272
+basalt load: kv draft cuda0 36402960 16720 36402960
+basalt mtp: draft layer loaded, 794 MiB of VRAM (experts 675, dense 73), files read in 0.19 s (3889 MiB/s)
+basalt load: cuda0 0 675430400
+basalt load: cuda0 675430400 675430400
+basalt load: cuda0 675430400 675430400
+basalt generate: native head: Q8_0, 675430400 bytes, in 0.1 s
+basalt generate: GPU 0: NVIDIA GeForce RTX 5090, compute capability 12.0
+basalt generate: experts via mmap (--mmap-experts)
+basalt load: cuda0 0 719585280
+basalt load: cuda0 7372800 719585280
+basalt load: cuda0 14791680 719585280
+basalt load: cuda0 22210560 719585280
+basalt load: cuda0 29629440 719585280
+basalt load: cuda0 37048320 719585280
+basalt load: cuda0 44467200 719585280
+basalt load: cuda0 51886080 719585280
+basalt load: cuda0 59304960 719585280
+basalt load: cuda0 66723840 719585280
+basalt load: cuda0 74142720 719585280
+basalt load: cuda0 81561600 719585280
+basalt load: cuda0 88980480 719585280
+basalt load: cuda0 96399360 719585280
+basalt load: cuda0 103818240 719585280
+basalt load: cuda0 111237120 719585280
+basalt load: cuda0 118656000 719585280
+basalt load: cuda0 126074880 719585280
+basalt load: cuda0 133493760 719585280
+basalt load: cuda0 140912640 719585280
+basalt load: cuda0 148331520 719585280
+basalt load: cuda0 155750400 719585280
+basalt load: cuda0 163169280 719585280
+basalt load: cuda0 170588160 719585280
+basalt load: cuda0 178007040 719585280
+basalt load: cuda0 185425920 719585280
+basalt load: cuda0 192844800 719585280
+basalt load: cuda0 200263680 719585280
+basalt load: cuda0 207682560 719585280
+basalt load: cuda0 215101440 719585280
+basalt load: cuda0 222520320 719585280
+basalt load: cuda0 229939200 719585280
+basalt load: cuda0 237358080 719585280
+basalt load: cuda0 244776960 719585280
+basalt load: cuda0 252195840 719585280
+basalt load: cuda0 259614720 719585280
+basalt load: cuda0 267033600 719585280
+basalt load: cuda0 274452480 719585280
+basalt load: cuda0 281871360 719585280
+basalt load: cuda0 289290240 719585280
+basalt load: cuda0 296709120 719585280
+basalt load: cuda0 304128000 719585280
+basalt load: cuda0 311546880 719585280
+basalt load: cuda0 318965760 719585280
+basalt load: cuda0 326384640 719585280
+basalt load: cuda0 333803520 719585280
+basalt load: cuda0 341222400 719585280
+basalt load: cuda0 348641280 719585280
+basalt load: cuda0 356060160 719585280
+basalt load: cuda0 363479040 719585280
+basalt load: cuda0 370897920 719585280
+basalt load: cuda0 378316800 719585280
+basalt load: cuda0 385735680 719585280
+basalt load: cuda0 393154560 719585280
+basalt load: cuda0 400573440 719585280
+basalt load: cuda0 407992320 719585280
+basalt load: cuda0 415411200 719585280
+basalt load: cuda0 422830080 719585280
+basalt load: cuda0 430248960 719585280
+basalt load: cuda0 437667840 719585280
+basalt load: cuda0 445086720 719585280
+basalt load: cuda0 452505600 719585280
+basalt load: cuda0 459924480 719585280
+basalt load: cuda0 467343360 719585280
+basalt load: cuda0 474762240 719585280
+basalt load: cuda0 482181120 719585280
+basalt load: cuda0 489600000 719585280
+basalt load: cuda0 497018880 719585280
+basalt load: cuda0 504437760 719585280
+basalt load: cuda0 511856640 719585280
+basalt load: cuda0 519275520 719585280
+basalt load: cuda0 526694400 719585280
+basalt load: cuda0 534113280 719585280
+basalt load: cuda0 541532160 719585280
+basalt load: cuda0 548951040 719585280
+basalt load: cuda0 556369920 719585280
+basalt load: cuda0 563788800 719585280
+basalt load: cuda0 571207680 719585280
+basalt load: cuda0 578626560 719585280
+basalt load: cuda0 586045440 719585280
+basalt load: cuda0 593464320 719585280
+basalt load: cuda0 600883200 719585280
+basalt load: cuda0 608302080 719585280
+basalt load: cuda0 615720960 719585280
+basalt load: cuda0 623139840 719585280
+basalt load: cuda0 630558720 719585280
+basalt load: cuda0 637977600 719585280
+basalt load: cuda0 645396480 719585280
+basalt load: cuda0 652815360 719585280
+basalt load: cuda0 660234240 719585280
+basalt load: cuda0 667653120 719585280
+basalt load: cuda0 675072000 719585280
+basalt load: cuda0 682490880 719585280
+basalt load: cuda0 689909760 719585280
+basalt load: cuda0 697328640 719585280
+basalt load: cuda0 704747520 719585280
+basalt load: cuda0 712166400 719585280
+basalt load: cuda0 719585280 719585280
+basalt load: cuda0 719585280 719585280
+basalt hc8: 8-bit hyper-connection copies, 680 MiB of VRAM
+basalt generate: expert cache auto: 24.94 GiB free, 700 MiB reserved (+39 MiB for the draft head, +399 MiB for what loads after) -> 4899 slots
+basalt generate: expert cache 4899 slots, 23.83 GiB of VRAM; policy is
+basalt generate: the GPU computes the experts in the cache; it rounds differently from the CPU,
+                 so a reply can differ slightly from a run without the cache (same quality).
+                 PROFILE, ranked by routing frequency, no eviction.
+basalt load: plan cuda0 31097841152
+basalt load: plan ram 102761164800
+basalt load: cuda0 0 25584537600
+basalt load: cuda0 255897600 25584537600
+basalt load: cuda0 511795200 25584537600
+basalt load: cuda0 767692800 25584537600
+basalt load: cuda0 1023590400 25584537600
+basalt load: cuda0 1279488000 25584537600
+basalt load: cuda0 1535385600 25584537600
+basalt load: cuda0 1791283200 25584537600
+basalt load: cuda0 2047180800 25584537600
+basalt load: cuda0 2303078400 25584537600
+basalt load: cuda0 2558976000 25584537600
+basalt load: cuda0 2814873600 25584537600
+basalt load: cuda0 3070771200 25584537600
+basalt load: cuda0 3326668800 25584537600
+basalt load: cuda0 3582566400 25584537600
+basalt load: cuda0 3838464000 25584537600
+basalt load: cuda0 4094361600 25584537600
+basalt load: cuda0 4350259200 25584537600
+basalt load: cuda0 4606156800 25584537600
+basalt load: cuda0 4862054400 25584537600
+basalt load: cuda0 5117952000 25584537600
+basalt load: cuda0 5373849600 25584537600
+basalt load: cuda0 5629747200 25584537600
+basalt load: cuda0 5885644800 25584537600
+basalt load: cuda0 6141542400 25584537600
+basalt load: cuda0 6397440000 25584537600
+basalt load: cuda0 6653337600 25584537600
+basalt load: cuda0 6909235200 25584537600
+basalt load: cuda0 7165132800 25584537600
+basalt load: cuda0 7421030400 25584537600
+basalt load: cuda0 7676928000 25584537600
+basalt load: cuda0 7932825600 25584537600
+basalt load: cuda0 8188723200 25584537600
+basalt load: cuda0 8444620800 25584537600
+basalt load: cuda0 8700518400 25584537600
+basalt load: cuda0 8956416000 25584537600
+basalt load: cuda0 9212313600 25584537600
+basalt load: cuda0 9468211200 25584537600
+basalt load: cuda0 9724108800 25584537600
+basalt load: cuda0 9980006400 25584537600
+basalt load: cuda0 10235904000 25584537600
+basalt load: cuda0 10491801600 25584537600
+basalt load: cuda0 10747699200 25584537600
+basalt load: cuda0 11003596800 25584537600
+basalt load: cuda0 11259494400 25584537600
+basalt load: cuda0 11515392000 25584537600
+basalt load: cuda0 11771289600 25584537600
+basalt load: cuda0 12027187200 25584537600
+basalt load: cuda0 12283084800 25584537600
+basalt load: cuda0 12538982400 25584537600
+basalt load: cuda0 12794880000 25584537600
+basalt load: cuda0 13050777600 25584537600
+basalt load: cuda0 13306675200 25584537600
+basalt load: cuda0 13562572800 25584537600
+basalt load: cuda0 13818470400 25584537600
+basalt load: cuda0 14074368000 25584537600
+basalt load: cuda0 14330265600 25584537600
+basalt load: cuda0 14586163200 25584537600
+basalt load: cuda0 14842060800 25584537600
+basalt load: cuda0 15097958400 25584537600
+basalt load: cuda0 15353856000 25584537600
+basalt load: cuda0 15609753600 25584537600
+basalt load: cuda0 15865651200 25584537600
+basalt load: cuda0 16121548800 25584537600
+basalt load: cuda0 16377446400 25584537600
+basalt load: cuda0 16633344000 25584537600
+basalt load: cuda0 16889241600 25584537600
+basalt load: cuda0 17145139200 25584537600
+basalt load: cuda0 17401036800 25584537600
+basalt load: cuda0 17656934400 25584537600
+basalt load: cuda0 17912832000 25584537600
+basalt load: cuda0 18168729600 25584537600
+basalt load: cuda0 18424627200 25584537600
+basalt load: cuda0 18680524800 25584537600
+basalt load: cuda0 18936422400 25584537600
+basalt load: cuda0 19192320000 25584537600
+basalt load: cuda0 19448217600 25584537600
+basalt load: cuda0 19704115200 25584537600
+basalt load: cuda0 19960012800 25584537600
+basalt load: cuda0 20215910400 25584537600
+basalt load: cuda0 20471808000 25584537600
+basalt load: cuda0 20727705600 25584537600
+basalt load: cuda0 20983603200 25584537600
+basalt load: cuda0 21239500800 25584537600
+basalt load: cuda0 21495398400 25584537600
+basalt load: cuda0 21751296000 25584537600
+basalt load: cuda0 22007193600 25584537600
+basalt load: cuda0 22263091200 25584537600
+basalt load: cuda0 22518988800 25584537600
+basalt load: cuda0 22774886400 25584537600
+basalt load: cuda0 23030784000 25584537600
+basalt load: cuda0 23286681600 25584537600
+basalt load: cuda0 23542579200 25584537600
+basalt load: cuda0 23798476800 25584537600
+basalt load: cuda0 24054374400 25584537600
+basalt load: cuda0 24310272000 25584537600
+basalt load: cuda0 24566169600 25584537600
+basalt load: cuda0 24822067200 25584537600
+basalt load: cuda0 25077964800 25584537600
+basalt load: cuda0 25333862400 25584537600
+basalt load: cuda0 25584537600 25584537600
+basalt generate: pre-filled 4899 of 4899 slots from the profile in 3.6 s (7044 MB/s); slot 0 verified
+basalt generate: R4 hit path ON - resident experts are computed on the GPU
+basalt generate: session is up (engine 0.4.0)
+basalt generate: token graph hit path: 4899 resident experts, decided on the device
+basalt generate: 7 expert-pool workers + the host thread
+basalt: FileExpertSource: allocating 104.60 GiB page-locked cache complement
+basalt load: plan ram 102761164800
+basalt load: ram 0 102761164800
+basalt load: ram 1039257600 102761164800
+basalt load: ram 2219520000 102761164800
+basalt load: ram 3248332800 102761164800
+basalt load: ram 4313702400 102761164800
+basalt load: ram 5473075200 102761164800
+basalt load: ram 6548889600 102761164800
+basalt load: ram 7609036800 102761164800
+basalt load: ram 8705740800 102761164800
+basalt load: ram 9823334400 102761164800
+basalt load: ram 10862592000 102761164800
+basalt load: ram 12021964800 102761164800
+basalt load: ram 13056000000 102761164800
+basalt load: ram 14090035200 102761164800
+basalt load: ram 15150182400 102761164800
+basalt load: ram 16205107200 102761164800
+basalt load: ram 17275699200 102761164800
+basalt load: ram 18367180800 102761164800
+basalt load: ram 19458662400 102761164800
+basalt load: ram 20565811200 102761164800
+basalt load: ram 21683404800 102761164800
+basalt load: ram 22717440000 102761164800
+basalt load: ram 23772364800 102761164800
+basalt load: ram 24858624000 102761164800
+basalt load: ram 25903104000 102761164800
+basalt: FileExpertSource: copied cache complement through layer 8/48 (26.59 GiB, 4 s)
+basalt load: ram 27010252800 102761164800
+basalt load: ram 28065177600 102761164800
+basalt load: ram 29093990400 102761164800
+basalt load: ram 30122803200 102761164800
+basalt load: ram 31167283200 102761164800
+basalt load: ram 32196096000 102761164800
+basalt load: ram 33235353600 102761164800
+basalt load: ram 34269388800 102761164800
+basalt load: ram 35423539200 102761164800
+basalt load: ram 36452352000 102761164800
+basalt load: ram 37559500800 102761164800
+basalt load: ram 38598758400 102761164800
+basalt: FileExpertSource: copied cache complement through layer 16/48 (39.49 GiB, 6 s)
+basalt load: ram 39638016000 102761164800
+basalt load: ram 40677273600 102761164800
+basalt load: ram 41706086400 102761164800
+basalt load: ram 42734899200 102761164800
+basalt load: ram 43789824000 102761164800
+basalt load: ram 44818636800 102761164800
+basalt load: ram 45863116800 102761164800
+basalt load: ram 46912819200 102761164800
+basalt load: ram 48046080000 102761164800
+basalt load: ram 49074892800 102761164800
+basalt load: ram 50119372800 102761164800
+basalt load: ram 51153408000 102761164800
+basalt load: ram 52297113600 102761164800
+basalt: FileExpertSource: copied cache complement through layer 24/48 (52.69 GiB, 8 s)
+basalt load: ram 53325926400 102761164800
+basalt load: ram 54354739200 102761164800
+basalt load: ram 55399219200 102761164800
+basalt load: ram 56459366400 102761164800
+basalt load: ram 57493401600 102761164800
+basalt load: ram 58522214400 102761164800
+basalt load: ram 59624140800 102761164800
+basalt load: ram 60689510400 102761164800
+basalt load: ram 61728768000 102761164800
+basalt load: ram 62762803200 102761164800
+basalt load: ram 63822950400 102761164800
+basalt load: ram 64851763200 102761164800
+basalt load: ram 65896243200 102761164800
+basalt load: ram 66961612800 102761164800
+basalt load: ram 67995648000 102761164800
+basalt load: ram 69034905600 102761164800
+basalt load: ram 70068940800 102761164800
+basalt load: ram 71186534400 102761164800
+basalt load: ram 72262348800 102761164800
+basalt load: ram 73390387200 102761164800
+basalt load: ram 74492313600 102761164800
+basalt load: ram 75526348800 102761164800
+basalt load: ram 76565606400 102761164800
+basalt: FileExpertSource: copied cache complement through layer 32/48 (77.54 GiB, 12 s)
+basalt load: ram 77620531200 102761164800
+basalt load: ram 78649344000 102761164800
+basalt load: ram 79683379200 102761164800
+basalt load: ram 80759193600 102761164800
+basalt load: ram 81788006400 102761164800
+basalt load: ram 82837708800 102761164800
+basalt load: ram 83871744000 102761164800
+basalt load: ram 84905779200 102761164800
+basalt load: ram 85981593600 102761164800
+basalt load: ram 87015628800 102761164800
+basalt load: ram 88044441600 102761164800
+basalt load: ram 89099366400 102761164800
+basalt load: ram 90159513600 102761164800
+basalt: FileExpertSource: copied cache complement through layer 40/48 (90.40 GiB, 14 s)
+basalt load: ram 91193548800 102761164800
+basalt load: ram 92285030400 102761164800
+basalt load: ram 93366067200 102761164800
+basalt load: ram 94400102400 102761164800
+basalt load: ram 95470694400 102761164800
+basalt load: ram 96499507200 102761164800
+basalt load: ram 97533542400 102761164800
+basalt load: ram 98567577600 102761164800
+basalt load: ram 99612057600 102761164800
+basalt load: ram 100646092800 102761164800
+basalt load: ram 101701017600 102761164800
+basalt load: ram 102745497600 102761164800
+basalt: FileExpertSource: copied cache complement through layer 48/48 (102.74 GiB, 16 s)
+basalt load: ram 102761164800 102761164800
+basalt: FileExpertSource: cache complement: allocation 0.3 s, read 15.7 s (7.04 GB/s, 100.0% unbuffered), registration 2.3 s
+basalt: FileExpertSource: 384 free places for the adaptive swaps (1 blob sizes, 1912 MiB)
+basalt: FileExpertSource: mapped pinned cache complement ready: resident 104.60 GiB, pinned 104.60 GiB in 18 s; page-locked and mapped
+basalt: FileExpertSource: 1446 of the prompt path's 1446 lendable slots keep their experts in RAM too
+basalt generate: resident RAM mode: 104.60 GiB of experts in RAM (page-locked), 4899 in the GPU cache; adaptive swaps exchange them with the GPU cache (no file reads)
+basalt generate: prompt path lends at most 85% of the cache (86% of the expert bytes pinned)
+basalt serve: prompt chunk auto: 16640 tokens, a 384-slot ring
+basalt serve: the prompt path borrows 1446 CUDA0 cache slots (7.03 GiB)
+basalt hc: CUDA0: the hyper-connection read runs as staged (the norm per token and stream, the down projection's activations staged ahead by cp.async); checked bit for bit against the plain read on this card
+basalt verify: side branches at stream priority -5
+basalt verify: the MoE tail planned on the device
+basalt verify: the CPU pool warms its likeliest next-layer expert between doorbells
+basalt verify: window up to 8 tokens, 125.1 MiB of device buffers
+basalt mtp: draft head over 106811 tokens (rows read from the main head)
+basalt mtp: draft head context rows: 512
+basalt mtp: draft head tiers: 40525 base rows, 65774 added rows read after an added token
+basalt serve: 628 MiB of VRAM free with everything loaded
+basalt generate: experts live in VRAM 23.8 GiB (20%), peer GPU 0.0 GiB (0%), RAM 95.7 GiB (80%), file (SSD) 0.0 GiB (0%); 119.5 GiB in all
+basalt serve: RAM 69.31 GiB free, guard 2.00 GiB
+basalt verify: warning: fallback: glue off for the layer's experts (types 8 / 8)
+basalt verify: captured the 1-token window (upload no error, sync no error), 225 programmatic dependent launches
+basalt verify: captured the 2-token window (upload no error, sync no error), 225 programmatic dependent launches
+basalt verify: captured the 3-token window (upload no error, sync no error), 225 programmatic dependent launches
+basalt verify: captured the 4-token window (upload no error, sync no error), 225 programmatic dependent launches
+basalt verify: captured the 5-token window (upload no error, sync no error), 298 programmatic dependent launches
+basalt verify: captured the 6-token window (upload no error, sync no error), 298 programmatic dependent launches
+basalt verify: captured the 7-token window (upload no error, sync no error), 298 programmatic dependent launches
+basalt verify: captured the 8-token window (upload no error, sync no error), 298 programmatic dependent launches
+basalt serve: prompt 38 tokens = 0 reused + 38 read in 487 ms (78.1 tok/s), 1068 generated in 13738 ms (77.7 tok/s), drafts accepted 641 of 838, 1 checkpoints
+basalt serve: decode expert cache hit rate: 76.7% (469388 hits / 612000 lookups)
+basalt serve: adaptive swaps: 21620 into the VRAM tier this request, 0 deferred (no free RAM place)
+basalt serve: resident RAM: 104.60 GiB of experts in RAM, 14746 exchanged with the VRAM tier, 0 blob reads from the file
+basalt serve: expert tiers: GPU 469388 hits this request; since the start RAM 143503 blobs, files 0 blobs 5.2 MB read
+basalt serve: suffix drafts: 7 windows, 11 of 12 drafts accepted
+basalt serve: prompt 98 tokens = 0 reused + 98 read in 572 ms (171.3 tok/s), 7230 generated in 61329 ms (117.9 tok/s), drafts accepted 6289 of 6437, 1 checkpoints
+basalt serve: decode expert cache hit rate: 81.7% (2897173 hits / 3545280 lookups)
+basalt serve: adaptive swaps: 27644 into the VRAM tier this request, 0 deferred (no free RAM place)
+basalt serve: resident RAM: 104.60 GiB of experts in RAM, 34205 exchanged with the VRAM tier, 0 blob reads from the file
+basalt serve: expert tiers: GPU 2897173 hits this request; since the start RAM 768344 blobs, files 0 blobs 5.2 MB read
+basalt serve: suffix drafts: 36 windows, 136 of 187 drafts accepted
+basalt serve: prompt 19 tokens = 0 reused + 19 read in 256 ms (74.4 tok/s), 1051 generated in 11285 ms (93.1 tok/s), drafts accepted 565 of 755, 1 checkpoints
+basalt serve: decode expert cache hit rate: 81.9% (491749 hits / 600480 lookups)
+basalt serve: adaptive swaps: 16890 into the VRAM tier this request, 0 deferred (no free RAM place)
+basalt serve: resident RAM: 104.60 GiB of experts in RAM, 46081 exchanged with the VRAM tier, 0 blob reads from the file
+basalt serve: expert tiers: GPU 491749 hits this request; since the start RAM 877173 blobs, files 0 blobs 5.2 MB read
+basalt serve: suffix drafts: 1 windows, 1 of 5 drafts accepted
+basalt serve: prompt 16676 tokens = 0 reused + 16676 read in 4351 ms (3832.8 tok/s), 32 generated in 953 ms (33.6 tok/s), drafts accepted 15 of 16, 1 checkpoints
+basalt serve: decode expert cache hit rate: 36.9% (7258 hits / 19680 lookups)
+basalt serve: adaptive swaps: 1912 into the VRAM tier this request, 0 deferred (no free RAM place)
+basalt serve: resident RAM: 104.60 GiB of experts in RAM, 47424 exchanged with the VRAM tier, 0 blob reads from the file
+basalt serve: expert tiers: GPU 7258 hits this request; since the start RAM 929394 blobs, files 0 blobs 5.2 MB read

@@ -6,6 +6,7 @@
 
 | 문서 | 내용 |
 |---|---|
+| [BASALT_2026-11-16_040_ALLPACKS.md](BASALT_2026-11-16_040_ALLPACKS.md) | **0.4.0 전 팩 벤치** — Q8 78/118/93, DQ6_K 251/472/244, DQ8 238/453/237, cgroup 함정 기록 |
 | [BASALT_2026-11-16_040_NVFP4.md](BASALT_2026-11-16_040_NVFP4.md) | **0.4.0 NVFP4 8배 향상** — 0.3.2 대비 decode 약 8배·prefill 약 6배, 싱글 5090이 외부 듀얼 측정치의 2배 |
 | [BASALT_2026-11-14_LBOX_RAON_CLOUD_EDGE0.md](BASALT_2026-11-14_LBOX_RAON_CLOUD_EDGE0.md) | **판례 인덱스 38만청크 · Raon 로컬 vs 클라우드 · Edge0 설치** — 클라우드 Raon 은 사고 폭주로 벤치 불가, 도구는 '내용'이 있어야 효과 |
 | [BASALT_2026-11-13_RAG_TOOLS_ORACLE.md](BASALT_2026-11-13_RAG_TOOLS_ORACLE.md) | **RAG·도구는 정답률을 올리는가** — 같은 80문항 3조건(자율 도구 44 > 도구 없음 37 > 강제 주입 31), 빈 도구 대조군, T=0 결정성 |

@@ -1,0 +1,20 @@
+basalt-bench: starting ./bin/basalt (log: /data/bench-results/logs_q8_040/engine.log)
+basalt-bench: loading 124.7 GiB: cuda0 0.0 / 5.1 GiB
+basalt-bench: loading cuda0 5.1 / 5.1 GiB done (1 s)
+basalt-bench: loading cuda0 29.0 / 29.0 GiB done (5 s)
+basalt-bench: loading ram 57.5 / 95.7 GiB (60%)
+basalt-bench: loading ram 95.7 / 95.7 GiB done (18 s)
+basalt-bench: engine: warning: fallback: glue off for the layer's experts (types 8 / 8)
+basalt-bench: engine ready in 25 s
+  run 1 conv    77.7 tok/s, 1068 tokens
+  run 1 struct  117.9 tok/s, 7230 tokens
+  run 1 prose   93.1 tok/s, 1051 tokens
+  run 1 pp16384 16676 tokens, 3833 t/s engine, 3721 t/s wall
+basalt-bench  build 99dc78cb51  power limit 450 W
+
+| test      |  t/s | accept % | draft len |
+| --------- | ---: | -------: | --------: |
+| pp16384   | 3833 |        - |         - |
+| tg conv   |   78 |     76.5 |      1.94 |
+| tg struct |  118 |     97.7 |      6.83 |
+| tg prose  |   93 |     74.8 |      1.54 |
