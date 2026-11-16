@@ -1,0 +1,22 @@
+basalt-bench: starting the engine for the quality gate
+basalt-bench: loading 68.4 GiB: cuda0 0.0 / 5.2 GiB
+basalt-bench: loading cuda0 5.2 / 5.2 GiB done (1 s)
+basalt-bench: loading cuda0 29.3 / 29.3 GiB done (5 s)
+basalt-bench: loading ram 39.1 / 39.1 GiB done (7 s)
+basalt-bench: engine ready in 13 s
+  quality 10/100 chunks, 24 s
+  quality 20/100 chunks, 51 s
+  quality 30/100 chunks, 79 s
+  quality 40/100 chunks, 105 s
+  quality 50/100 chunks, 131 s
+  quality 60/100 chunks, 156 s
+  quality 70/100 chunks, 181 s
+  quality 80/100 chunks, 207 s
+  quality 90/100 chunks, 231 s
+  quality 100/100 chunks, 255 s
+
+quality gate: 100 chunks asked, T=3
+chunks 100  rows 25500
+PPL 3.2833 +/- 0.0431   base PPL 3.2733   ln(PPL/base) 0.00306
+KLD mean 0.05642  median 0.01201  p99 0.6454  max 13.6002
+same top-1 92.06%   mean |dlogp| of the base top-1 0.11417
